@@ -12,16 +12,24 @@
       "peran": "Juara — patokan 'apa yang berhasil'",
       "metrik": [
         [
-          "Views (jendela kartu Key metrics)",
-          "36K"
-        ],
-        [
-          "Views seumur hidup (publik)",
+          "Views seumur hidup",
           "49,2K"
         ],
         [
           "Total play time",
-          "68 jam 17 menit"
+          "77 jam 20 menit"
+        ],
+        [
+          "Rata-rata ditonton (average watch time)",
+          "5,8 detik dari 14,1 detik"
+        ],
+        [
+          "Menonton sampai habis (watched full video)",
+          "12,32%"
+        ],
+        [
+          "Follower baru dari video ini",
+          "1,6K"
         ],
         [
           "Suka",
@@ -38,16 +46,16 @@
         [
           "Simpan",
           "2.095"
-        ],
-        [
-          "Follower baru dari video ini",
-          "1.5K"
         ]
       ],
       "retention": [
         [
           "Rata-rata ditonton",
-          "41% dari 14 detik"
+          "41% dari 14 detik (= 5,8 detik)"
+        ],
+        [
+          "Menonton sampai habis",
+          "12,32%"
         ],
         [
           "Titik paling banyak ditinggalkan",
@@ -56,6 +64,10 @@
         [
           "Titik paling banyak disukai",
           "0:01"
+        ],
+        [
+          "Views per penonton",
+          "1,8× (49,2K views / 27,4K penonton) — banyak yang menonton ulang"
         ]
       ],
       "traffic": [
@@ -130,11 +142,14 @@
       ],
       "temuan": [
         "For You 70,9% → akun TIDAK sedang ditekan platform; kalau retensinya cukup, kontenmu memang dilempar.",
-        "Retensi 41% dengan drop terbesar di detik ke-1: detik pertama kehilangan paling banyak penonton, dan di detik itu juga paling banyak yang menyukai — jadi frame pembuka menentukan dua-duanya.",
-        "99% penonton bukan follower, dan video ini menghasilkan 1,5K follower baru → mesin pertumbuhanmu adalah For You, bukan follower lama.",
-        "Simpan 2.095 (4,3% dari views) jauh di atas share (290) dan komentar (88) → kekuatan videomu ada di 'disimpan', bukan 'dibicarakan'.",
-        "Yang dicari orang: 'yoo nari' + 'manhwa' + 'nari next door webtoon' → nama karakter dan kata 'manhwa' bekerja di pencarian."
-      ]
+        "Rata-rata ditonton 5,8 detik dari 14,1 detik (41%), dan cuma 12,32% yang menonton sampai habis — penonton berhenti di tengah, bukan di akhir.",
+        "Drop terbesar di 0:01, dan di 0:01 juga paling banyak yang suka → detik pertama menentukan dua-duanya.",
+        "Views per penonton 1,8× → orang mengulang videonya. Aset nyata: video ini 'diputar ulang', bukan 'dihabiskan sekali'.",
+        "99% penonton bukan follower, dan video ini menghasilkan 1,6K follower baru → mesin tumbuh = For You, bukan follower lama.",
+        "Simpan 2.095 (4,3%) jauh di atas share (290) dan komentar (88) → kekuatan di 'disimpan', bukan 'dibicarakan'.",
+        "Yang dicari orang: 'yoo nari' 14,1% + 'manhwa' 13,6% + 'nari next door webtoon' 6,1% → nama karakter + kata 'manhwa' bekerja."
+      ],
+      "catatan_angka": "Kartu Key metrics dengan jendela lain (Sep 28–Nov 2) menampilkan 36K views / 68 jam / 1,5K follower — itu angka per-periode, bukan seumur hidup. Angka seumur hidup ada di kartu 'Updated on 11/13/2026': 49,2K / 77 jam / 1,6K."
     }
   ]
 }

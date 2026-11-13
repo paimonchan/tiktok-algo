@@ -38,6 +38,18 @@
       "why": "Bottleneck sebenarnya: jangkauan per video"
     },
     {
+      "metric": "Rata-rata ditonton (retensi)",
+      "now": "41% di video juara (5,8 detik)",
+      "target": "naikkan bertahap; jaga ≥40% saat reach naik",
+      "why": "Penentu utama apakah For You melanjutkan distribusi"
+    },
+    {
+      "metric": "Menonton sampai habis",
+      "now": "12,32% di video juara",
+      "target": "di atas 12% sambil durasi pendek",
+      "why": "Ketuntasan lemah = sinyal negatif; hasil 'diputar ulang' lebih berharga"
+    },
+    {
       "metric": "Like rate per video",
       "now": "4,1%–14,7% (median 8,4%)",
       "target": "≥8% konsisten",
