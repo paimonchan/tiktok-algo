@@ -205,15 +205,109 @@
     if (stamp) stamp.textContent = tgl(p.updated_at || (p.entries && p.entries.length ? p.entries[p.entries.length - 1].date : ''));
   }
 
+  /* ---------- alat harian: centang, momentum, template laporan ---------- */
+  function todayKey() {
+    var d = new Date();
+    return 'ttlab-aksi-' + d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+  }
+
+  function renderActionChecklist(items) {
+    var ul = el('nextActions');
+    if (!ul) return;
+    var store = {};
+    try { store = JSON.parse(localStorage.getItem(todayKey()) || '{}') || {}; } catch (e) { store = {}; }
+    ul.innerHTML = items.map(function (txt, i) {
+      var done = !!store[i];
+      return '<li' + (done ? ' class="done"' : '') + '><label><input type="checkbox" data-i="' + i + '"' + (done ? ' checked' : '') + '> <span>' + esc(txt) + '</span></label></li>';
+    }).join('');
+    var status = el('actionStatus');
+    function refresh() {
+      var boxes = ul.querySelectorAll('input');
+      var n = 0, tot = boxes.length;
+      boxes.forEach(function (cb) {
+        var li = cb.closest('li');
+        if (li) li.classList.toggle('done', cb.checked);
+        if (cb.checked) n++;
+      });
+      if (status) status.textContent = n + '/' + tot + ' selesai' + (tot > 0 && n === tot ? ' — beres, ulangi besok' : '');
+    }
+    ul.addEventListener('change', function (ev) {
+      var cb = ev.target;
+      if (!cb || cb.tagName !== 'INPUT') return;
+      store[cb.dataset.i] = cb.checked;
+      try { localStorage.setItem(todayKey(), JSON.stringify(store)); } catch (e2) {}
+      refresh();
+    });
+    var reset = el('actionReset');
+    if (reset) reset.addEventListener('click', function () {
+      store = {};
+      try { localStorage.removeItem(todayKey()); } catch (e3) {}
+      ul.querySelectorAll('input').forEach(function (cb) { cb.checked = false; });
+      refresh();
+    });
+    refresh();
+  }
+
+  function renderSparkline(videos) {
+    var box = el('viewTrend');
+    if (!box || !videos || !videos.length) return;
+    var vs = videos.slice().sort(function (a, b) { return (a.date + (a.time || '')).localeCompare(b.date + (b.time || '')); });
+    var max = Math.max.apply(null, vs.map(function (v) { return v.views; }));
+    var n = vs.length, w = 100, h = 30, bw = (w / n) * 0.66;
+    var bars = vs.map(function (v, i) {
+      var hh = Math.max(1.6, Math.sqrt(v.views / max) * h);
+      var x = i * (w / n) + (w / n) * 0.17;
+      var lr = pct(v.likes, v.views);
+      var cls = 'bar';
+      if (v.views > 2000 && lr != null && lr >= 5) cls = 'bar-hit';
+      else if (v.views > 2000) cls = 'bar-far';
+      else if (lr != null && lr >= 8) cls = 'bar-good';
+      var label = tgl(v.date) + ' · ' + compact(v.views) + ' views' + (lr == null ? '' : ' · like ' + pctStr(lr));
+      return '<rect class="' + cls + '" x="' + x.toFixed(2) + '" y="' + (h - hh).toFixed(2) + '" width="' + bw.toFixed(2) + '" height="' + hh.toFixed(2) + '" rx="0.7"><title>' + esc(label) + '</title></rect>';
+    }).join('');
+    box.innerHTML = '<svg viewBox="0 0 100 32" preserveAspectRatio="none" role="img" aria-label="Views per video, ' + n + ' terakhir">' +
+      '<g transform="translate(0,1)">' + bars + '</g></svg>' +
+      '<p class="ui-quiet" style="margin:.55rem 0 0">Views ' + n + ' video terakhir, skala akar (biar 21 ribu dan 87 tetap kelihatan). ' +
+      '<span class="legend"><i class="key key-hit"></i>jangkauan + resonansi <i class="key key-far"></i>jangkauan saja ' +
+      '<i class="key key-good"></i>resonansi saja</span></p>';
+  }
+
+  function renderReportButton() {
+    var btn = el('copyReport');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var d = new Date();
+      var txt = 'Update TikTok @elite.paimonchan — ' + d.toLocaleDateString('id-ID') + '\n' +
+        'Follower sekarang: \n' +
+        'Video baru (views masing-masing): \n' +
+        'Rata-rata durasi tonton: \n' +
+        '% selesai nonton: \n' +
+        '% traffic dari For You: \n' +
+        'Catatan (apa yang kuubah): ';
+      var done = function () { if (el('copyState')) el('copyState').textContent = 'Tersalin — tempel di Telegram kita.'; };
+      var fail = function () { if (el('copyState')) el('copyState').textContent = 'Gagal menyalin otomatis; salin manual dari kotak ini.'; window.prompt('Template update:', txt); };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(done).catch(fail);
+      else fail();
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     if (el('statusStats') || el('headline') || el('statusTargets') || el('statusPhases') || el('nextActions') || el('ytCard')) {
-      fetchJson('data/status.json').then(renderStatus).catch(function (e) { fail('statusStats', e); });
+      fetchJson('data/status.json').then(function (s) {
+        renderStatus(s);
+        var cur = s.phases.filter(function (p) { return p.status === 'berjalan'; })[0] || s.phases[0];
+        renderActionChecklist(cur.goals);
+      }).catch(function (e) { fail('statusStats', e); });
     }
     if (el('latestProgress') || el('lastUpdated')) {
       fetchJson('data/progress.json').then(function (p) { renderLatestProgress(p); renderProgress(p); }).catch(function (e) { fail('latestProgress', e); fail('progressTimeline', e); });
     }
-    if (el('auditVideos') || el('auditPatterns') || el('auditExperiments')) {
-      fetchJson('data/audit.json').then(renderAudit).catch(function (e) { fail('auditVideos', e); });
+    renderReportButton();
+    if (el('auditVideos') || el('auditPatterns') || el('auditExperiments') || el('viewTrend')) {
+      fetchJson('data/audit.json').then(function (a) {
+        renderAudit(a);
+        renderSparkline(a.videos);
+      }).catch(function (e) { fail('auditVideos', e); });
     }
   });
 })();

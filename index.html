@@ -8,7 +8,7 @@
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#0f6f63">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/style.css?v=6">
+<link rel="stylesheet" href="assets/style.css?v=7">
 <script>
   try {
     var t = localStorage.getItem('theme');
@@ -52,18 +52,27 @@
         </div>
         <div class="side-block">
           <h2>Hari ini</h2>
-          <ul id="nextActions" class="check tight"><li>Memuat…</li></ul>
+          <ul id="nextActions" class="check tap tight"><li>Memuat…</li></ul>
+          <p class="ui-quiet" id="actionStatus" style="margin:.6rem 0 0"></p>
+          <button class="mini" id="actionReset" type="button">reset centang</button>
         </div>
         <div class="side-block">
           <h2>Aku minta dari kamu</h2>
           <ul id="auditWanted" class="check tight"><li>Memuat…</li></ul>
           <p class="ui-quiet" style="margin:.55rem 0 0">Empat angka dari TikTok Studio — tanpa ini diagnosis masih hipotesis.</p>
+          <button class="btn-primary" id="copyReport" type="button">Salin template update</button>
+          <p class="ui-quiet" id="copyState" style="margin:.5rem 0 0">Tap → tempel di Telegram, aku yang isi ke situs.</p>
         </div>
         </div>
       </aside>
 
       <div class="content">
         <div class="stats" id="statusStats"><p class="ui-quiet" style="margin:0">Memuat…</p></div>
+
+        <section class="spark">
+          <h2>Momentum views</h2>
+          <div id="viewTrend"><p class="ui-quiet">Memuat…</p></div>
+        </section>
 
         <section>
           <h2>Progres terakhir</h2>
