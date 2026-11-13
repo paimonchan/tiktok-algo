@@ -275,8 +275,8 @@
   });
 
   // ---- Analitik dari sisi pemilik (Studio) ----
-  fetch(ROOT + 'data/studio.json?t=' + Date.now()).then(function (r) { return r.json(); }).then(function (st) {
-    var box = document.getElementById('studioCards');
+  fetchJson('data/studio.json').then(function (st) {
+    var box = el('studioCards');
     if (!box) return;
     box.innerHTML = st.videos.map(function (v) {
       function baris(judul, arr) {
@@ -293,9 +293,8 @@
         '<p class="ui-quiet" style="margin:.6rem 0 0">' + esc(v.terbit_konfirmasi) + '</p>' +
         '</article>';
     }).join('');
-  }).catch(function () {
-    var box = document.getElementById('studioCards');
-    if (box) box.innerHTML = '<p class="ui-quiet">Data Studio belum bisa dimuat.</p>';
+  }).catch(function (e) {
+    fail('studioCards', e);
   });
 
 })();
