@@ -73,11 +73,26 @@
       "result": "For You 70,9% · retensi 41% dari 14 detik dengan drop terbesar di 0:01 · 99% penonton non-follower · 2.095 simpan · 1,5K follower baru dari video ini.",
       "decision": "Hipotesis 'tidak pernah masuk For You' gugur. Fokus pindah ke retensi detik pertama + perbandingan antar-video (minta 3 layar: 12 Nov, 13 Nov, 10 Nov).",
       "status": "berjalan"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "koreksi",
+      "title": "Koreksi: kartu 36K views itu tab PROMOTE, bukan jendela tanggal",
+      "followers": 4414,
+      "likes": 15000,
+      "videos": 125,
+      "median_views": 107,
+      "actions": [
+        "Pemilik akun mengoreksi: angka di kartu yang kutandai 'jendela Sep 28–Nov 2' itu angka Promote"
+      ],
+      "result": "Dipisah: organik/Overall = 49,2K views, 77 jam play, rata-rata 5,8 detik, tuntas 12,32%, 1,6K follower baru. Promote = 36K views.",
+      "decision": "Diagnosa soal video kecil (jalur organik) tidak terpengaruh. Tapi 'video juara' sebagai patokan perlu dihitung ulang dari bagian organiknya saja — menunggu jawaban: Promote 36K itu untuk video ini atau total akun, dan apakah masih berjalan.",
+      "status": "berjalan"
     }
   ],
   "next_checkpoint": {
     "date": "2026-11-15",
-    "ask": "Kirim layar Overview (retensi + traffic sources) untuk 3 video: 12 Nov (21,2K), 13 Nov (223), 10 Nov (88)",
-    "why": "Perbandingan inilah yang memisahkan retensi vs kelayakan vs distribusi"
+    "ask": "(1) Promote 36K itu untuk video 27 Sep saja atau total akun, dan apakah kampanyenya masih jalan? (2) Kirim tab Overview untuk 3 video: 12 Nov, 13 Nov, 10 Nov",
+    "why": "Pisahkan organik vs berbayar dulu, baru tetapkan patokan playbook"
   }
 }
