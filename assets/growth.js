@@ -194,7 +194,11 @@
 
     var nc = el('nextCheckpoint');
     if (nc && p.next_checkpoint) {
-      nc.innerHTML = '<span class="label">Checkpoint berikutnya — ' + esc(tgl(p.next_checkpoint.date)) + '</span><p style="margin-bottom:.4em">' + esc(p.next_checkpoint.ask) + '</p><p class="ui-quiet" style="margin-bottom:0">' + esc(p.next_checkpoint.why) + '</p>';
+      var h2 = nc.querySelector('h2');
+      nc.innerHTML = (h2 ? h2.outerHTML : '') +
+        '<p style="margin:0 0 .45rem"><strong>' + esc(p.next_checkpoint.ask) + '</strong></p>' +
+        '<p class="ui-quiet" style="margin:0">' + esc(p.next_checkpoint.why) + '</p>';
+      if (h2) nc.querySelector('h2').textContent = 'Checkpoint · ' + tgl(p.next_checkpoint.date);
     }
 
     var stamp = el('lastUpdated');

@@ -8,7 +8,7 @@
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#0f6f63">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/style.css?v=5">
+<link rel="stylesheet" href="assets/style.css?v=6">
 <script>
   try {
     var t = localStorage.getItem('theme');
@@ -36,83 +36,81 @@
 </header>
 
 <main id="main">
-  <div class="wrap">
-    <section style="padding-top:1.6rem">
+<div class="wrap">
+    <div class="pagehead">
       <p class="eyebrow">Diukur <span id="auditDate">13 Nov 2026</span> · <a href="https://www.tiktok.com/@elite.paimonchan">profil</a></p>
-      <h1 style="margin-bottom:.35em">Review @elite.paimonchan</h1>
-      <p class="lede" style="margin-bottom:1.1rem">
-        <strong>4.414 follower, tapi 10 dari 12 video terakhir cuma 77–217 views.</strong>
-        Follower ada, penonton tidak. Ini masalah distribusi per video, bukan topiknya.
-      </p>
-    </section>
-
-    <div class="mission">
-      <h2>⚠ Kerjakan dulu (P0)</h2>
-      <ul class="check" style="margin-bottom:0">
-        <li>Cek status kelayakan tiap video di TikTok Studio — kalau ada "tidak layak untuk For You", usaha lain sia-sia.</li>
-        <li>Stop unggah berdekatan: 8 Nov ada dua video berjarak <strong>1 menit</strong>; 9 &amp; 12 Nov dua video sehari dengan tag sama.</li>
-      </ul>
+      <h1>Review @elite.paimonchan</h1>
+      <p class="lede"><strong>4.414 follower, tapi 10 dari 12 video terakhir cuma 77–217 views.</strong> Follower ada, penonton tidak. Ini masalah distribusi per video, bukan topiknya.</p>
     </div>
 
-    <section>
-      <h2>Yang aku minta dari kamu</h2>
-      <ul class="check tight" id="auditWanted"><li>Memuat…</li></ul>
-    </section>
+    <div class="layout">
+      <aside class="sidebar" aria-label="Yang menuntut dikerjakan">
+        <div class="side-sticky">
+        <div class="side-block urgent">
+          <h2>Kerjakan dulu · P0</h2>
+          <ul class="check tight" style="margin-bottom:0">
+            <li>Cek status kelayakan tiap video di TikTok Studio — kalau ada "tidak layak untuk For You", usaha lain sia-sia.</li>
+            <li>Stop unggah berdekatan: 8 Nov dua video berjarak <strong>1 menit</strong>; 9 &amp; 12 Nov dua video sehari, tag sama.</li>
+          </ul>
+        </div>
+        <div class="side-block">
+          <h2>Aku minta dari kamu</h2>
+          <ul id="auditWanted" class="check tight"><li>Memuat…</li></ul>
+        </div>
+        </div>
+      </aside>
 
-    <hr>
+      <div class="content">
+        <section>
+          <h2 style="margin-top:0">Dua masalah, obat beda</h2>
+          <ul class="plain">
+            <li><strong>Resonansi tanpa reach</strong> — 13 Nov: 217 views, 32 likes (14,7%). Yang nonton suka, tapi sedikit → perbaiki hook, jangan ganti topik.</li>
+            <li><strong>Reach tanpa resonansi</strong> — 12 Nov: 21,1K views, 133 likes (0,63%), 1 komentar. Dilempar ke bukan penggemar → tambah konteks di layar detik pertama.</li>
+          </ul>
+        </section>
 
-    <section>
-      <h2>Dua masalah, obat beda</h2>
-      <ul class="plain">
-        <li><strong>Resonansi tanpa reach</strong> — 13 Nov: 217 views, 32 likes (14,7%). Yang nonton suka, tapi sedikit → perbaiki hook, jangan ganti topik.</li>
-        <li><strong>Reach tanpa resonansi</strong> — 12 Nov: 21,1K views, 133 likes (0,63%), 1 komentar. Dilempar ke bukan penggemar → tambah konteks di layar detik pertama.</li>
-      </ul>
-    </section>
+        <hr>
 
-    <hr>
+        <section>
+          <h2>12 video terakhir</h2>
+          <p class="ui-quiet" style="margin-top:0">Like rate = likes ÷ views. Ini pembeda "tidak dilempar" vs "dilempar tapi tidak nyangkut".</p>
+          <div id="auditVideos"><p class="ui-quiet">Memuat…</p></div>
+        </section>
 
-    <section>
-      <h2>12 video terakhir</h2>
-      <p class="ui-quiet" style="margin-top:0">Like rate = likes ÷ views. Ini pembeda "tidak dilempar" vs "dilempar tapi tidak nyangkut".</p>
-      <div id="auditVideos"><p class="ui-quiet">Memuat…</p></div>
-    </section>
+        <hr>
 
-    <hr>
+        <section>
+          <h2>Pola yang terlihat</h2>
+          <ul class="plain" id="auditPatterns"><li>Memuat…</li></ul>
+        </section>
 
-    <section>
-      <h2>Pola yang terlihat</h2>
-      <ul class="plain" id="auditPatterns"><li>Memuat…</li></ul>
-    </section>
+        <hr>
 
-    <hr>
+        <section>
+          <h2>Eksperimen terjadwal</h2>
+          <div id="auditExperiments"><p class="ui-quiet">Memuat…</p></div>
+          <p class="ui-quiet" style="margin-top:.6rem">Aturannya: satu variabel per batch 3–5 video, dinilai setelah 72 jam.</p>
+        </section>
 
-    <section>
-      <h2>Eksperimen terjadwal</h2>
-      <div id="auditExperiments"><p class="ui-quiet">Memuat…</p></div>
-      <p class="ui-quiet" style="margin-top:.6rem">Aturannya: satu variabel per batch 3–5 video, dinilai setelah 72 jam.</p>
-    </section>
+        <details>
+          <summary>Sampel video lebih lama (likes saja, dari cuplikan mesin pencari)</summary>
+          <div id="auditOlder" style="padding-top:.6rem"><p class="ui-quiet">Memuat…</p></div>
+        </details>
 
-    <details>
-      <summary>Sampel video lebih lama (likes saja, dari cuplikan mesin pencari)</summary>
-      <div id="auditOlder" style="padding-top:.6rem"><p class="ui-quiet">Memuat…</p></div>
-    </details>
-
-    <details>
-      <summary>Catatan kejujuran &amp; metode ukur</summary>
-      <div class="prose" style="padding-top:.6rem">
-        <p id="auditMethod">—</p>
-        <ul>
-          <li>Audit ini membaca <em>luar</em> akun. Kesimpulan penyebab (hook, kelayakan, follower inert) adalah hipotesis paling masuk akal — bukan kepastian.</li>
-          <li>Angka bergerak cepat; snapshot ini berlaku 13 Nov 2026. Yang diperbarui rutin ada di <a href="progress.html">Progress</a>.</li>
-          <li>Tidak ada trik beli view, follow-tukar-follow, atau hashtag ajaib di sini — nol manfaat atau berisiko kelayakan.</li>
-        </ul>
-        <p class="ui-quiet">Cara kerja sistem di balik diagnosis: <a href="bedah.html">Riset</a>. Versi praktis: <a href="playbook.html">Playbook</a>.</p>
+        <details>
+          <summary>Catatan kejujuran &amp; metode ukur</summary>
+          <div class="prose" style="padding-top:.6rem">
+            <p id="auditMethod">—</p>
+            <ul>
+              <li>Audit ini membaca <em>luar</em> akun. Kesimpulan penyebab (hook, kelayakan, follower inert) adalah hipotesis paling masuk akal — bukan kepastian.</li>
+              <li>Angka bergerak cepat; snapshot ini berlaku 13 Nov 2026. Yang diperbarui rutin ada di <a href="progress.html">Progress</a>.</li>
+              <li>Tidak ada trik beli view, follow-tukar-follow, atau hashtag ajaib di sini.</li>
+            </ul>
+            <p class="ui-quiet">Cara kerja sistem di balik diagnosis: <a href="bedah.html">Riset</a>. Versi praktis: <a href="playbook.html">Playbook</a>.</p>
+          </div>
+        </details>
       </div>
-    </details>
-
-    <section style="padding-top:1rem">
-      <p class="ui-quiet">Lihat juga: <a href="index.html">Status</a> (angka + aksi harian), <a href="progress.html">Progress</a> (log bertahap).</p>
-    </section>
+    </div>
   </div>
 </main>
 

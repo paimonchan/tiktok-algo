@@ -426,6 +426,43 @@ details { margin: 1rem 0; }
 details summary { cursor: pointer; font-weight: 640; padding: .45rem 0; }
 details summary:hover { color: var(--accent); }
 
+/* ---------- layout: konten + sidebar ---------- */
+.pagehead { padding: 1.7rem 0 .9rem; }
+.pagehead h1 { margin-bottom: .3em; }
+.pagehead .lede { margin-bottom: .2rem; }
+.layout { display: grid; gap: 1.3rem; align-items: start; }
+.sidebar { display: grid; gap: .85rem; }
+.side-block {
+  background: var(--bg-elev); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 1rem 1.05rem; box-shadow: var(--shadow);
+}
+.side-block h2 {
+  margin: 0 0 .55rem; padding: 0; font-size: .78rem; font-weight: 700;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--fg-faint);
+}
+.side-block.urgent { border-left: 3px solid var(--t2); }
+.side-block.urgent h2 { color: var(--t2); }
+.side-block > :last-child { margin-bottom: 0; }
+.side-block ul, .side-block ol { padding-left: 1.15em; margin-bottom: 0; }
+.side-block .check { padding-left: 0; }
+.content > section > h2:first-child { margin-top: 0; }
+.content > .stats { margin-top: 0; }
+
+/* sidebar: anak tidak boleh ikut melar, kalau tidak sticky tidak punya ruang gerak */
+.sidebar { align-content: start; }
+.side-sticky { display: grid; gap: .85rem; align-self: start; }
+@media (min-width: 980px) {
+  .layout { grid-template-columns: minmax(0, 1fr) 19.5rem; gap: 2rem; align-items: stretch; }
+  .layout > .content { grid-column: 1; grid-row: 1; }
+  .layout > .sidebar { grid-column: 2; grid-row: 1; align-self: stretch; }
+  .side-sticky { position: sticky; top: 4.6rem; }
+}
+
+/* angka & tabel: sejajarkan digit biar enak dibandingkan */
+.stat-v, table td, table th { font-variant-numeric: tabular-nums; }
+.stat-v { font-size: 1.6rem; }
+.linklist a { font-weight: 620; }
+
 @media print {
   .site-header, .theme-btn, footer.site-footer { display: none; }
   body { background: #fff; color: #000; font-size: 12pt; }
