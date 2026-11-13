@@ -2,7 +2,7 @@
   "handle": "@elite.paimonchan",
   "url": "https://www.tiktok.com/@elite.paimonchan",
   "measured_at": "2026-11-13",
-  "method": "TikTok memblokir akses dari server (WAF), jadi angka diambil dari endpoint embed publik: /embed/@elite.paimonchan (followers, likes, 12 video terakhir + views) dan /embed/v2/<id> (likes | komentar | share per video). Tanggal upload dihitung dari 32 bit teratas ID video.",
+  "method": "TikTok memblokir akses dari server (WAF), jadi angka diambil dari endpoint embed publik: /embed/@elite.paimonchan (followers, likes, 12 video terakhir + views) dan /embed/v2/<id> (durasi, suka, komentar, share per video). Tanggal unggahan dihitung dari 32 bit teratas ID video (Unix time), ditampilkan WIB.",
   "totals": {
     "followers": 4414,
     "following": 11,
@@ -13,8 +13,10 @@
   "headline": "4.414 follower tapi video baru hanya dapat ±100 views — follower lama tidak menonton, dan For You hampir tidak melempar.",
   "videos": [
     {
+      "id": "7690059710254288134",
       "date": "2026-09-27",
       "time": "03:59",
+      "durasi_detik": 14,
       "views": 49200,
       "likes": 4059,
       "comments": 88,
@@ -23,113 +25,135 @@
       "mode": "keduanya"
     },
     {
+      "id": "7697834339182071048",
       "date": "2026-10-18",
       "time": "02:48",
+      "durasi_detik": 60,
       "views": 8359,
-      "likes": null,
-      "comments": null,
-      "shares": null,
-      "note": "",
-      "mode": "terukur"
+      "likes": 341,
+      "comments": 3,
+      "shares": 8,
+      "note": "Satu-satunya video 1 menit",
+      "mode": "keduanya"
     },
     {
+      "id": "7705416037914709269",
       "date": "2026-11-07",
       "time": "13:09",
+      "durasi_detik": 15,
       "views": 105,
-      "likes": null,
-      "comments": null,
-      "shares": null,
+      "likes": 9,
+      "comments": 0,
+      "shares": 0,
       "note": "",
       "mode": ""
     },
     {
+      "id": "7705620884161056020",
       "date": "2026-11-08",
       "time": "02:24",
+      "durasi_detik": 15,
       "views": 77,
-      "likes": null,
-      "comments": null,
-      "shares": null,
-      "note": "Dua video berjarak 1 menit",
+      "likes": 6,
+      "comments": 0,
+      "shares": 0,
+      "note": "Berjarak 64 detik dari video berikutnya",
       "mode": ""
     },
     {
+      "id": "7705621158854479124",
       "date": "2026-11-08",
       "time": "02:25",
+      "durasi_detik": 15,
       "views": 93,
-      "likes": null,
-      "comments": null,
-      "shares": null,
-      "note": "Dua video berjarak 1 menit",
+      "likes": 6,
+      "comments": 1,
+      "shares": 0,
+      "note": "Berjarak 64 detik dari video sebelumnya",
       "mode": ""
     },
     {
+      "id": "7706032424349748487",
       "date": "2026-11-09",
       "time": "05:01",
+      "durasi_detik": 14,
       "views": 145,
-      "likes": null,
-      "comments": null,
-      "shares": null,
+      "likes": 17,
+      "comments": 2,
+      "shares": 1,
       "note": "Dua video di hari yang sama",
       "mode": ""
     },
     {
+      "id": "7706130759555239176",
       "date": "2026-11-09",
       "time": "11:23",
+      "durasi_detik": 14,
       "views": 106,
-      "likes": null,
-      "comments": null,
-      "shares": null,
+      "likes": 11,
+      "comments": 0,
+      "shares": 1,
       "note": "Dua video di hari yang sama",
       "mode": ""
     },
     {
+      "id": "7706404381922577672",
       "date": "2026-11-10",
       "time": "05:04",
+      "durasi_detik": 15,
       "views": 88,
-      "likes": null,
-      "comments": null,
-      "shares": null,
+      "likes": 6,
+      "comments": 0,
+      "shares": 1,
       "note": "",
       "mode": ""
     },
     {
+      "id": "7706702170921487634",
       "date": "2026-11-11",
       "time": "00:20",
+      "durasi_detik": 13,
       "views": 107,
-      "likes": null,
-      "comments": null,
-      "shares": null,
+      "likes": 11,
+      "comments": 0,
+      "shares": 1,
       "note": "",
       "mode": ""
     },
     {
+      "id": "7707157230516276498",
       "date": "2026-11-12",
       "time": "05:46",
+      "durasi_detik": 11,
       "views": 21100,
       "likes": 133,
       "comments": 1,
       "shares": 10,
-      "note": "Didistribusi luas tapi tidak nyangkut",
+      "note": "Dilempar jauh, tapi audiensnya tidak nyangkut",
       "mode": "reach tanpa resonansi"
     },
     {
+      "id": "7707284411263274258",
       "date": "2026-11-12",
       "time": "13:59",
-      "views": 87,
-      "likes": null,
-      "comments": null,
-      "shares": null,
+      "durasi_detik": 9,
+      "views": 88,
+      "likes": 9,
+      "comments": 0,
+      "shares": 1,
       "note": "Dua video di hari yang sama",
       "mode": ""
     },
     {
+      "id": "7707508455661178119",
       "date": "2026-11-13",
       "time": "04:29",
-      "views": 217,
+      "durasi_detik": 12,
+      "views": 218,
       "likes": 32,
       "comments": 1,
       "shares": 7,
-      "note": "Nyangkut tapi tidak dilempar",
+      "note": "Like rate 14,7% tapi cuma 218 views",
       "mode": "resonansi tanpa reach"
     }
   ],
@@ -161,79 +185,80 @@
   ],
   "patterns": [
     {
+      "title": "Jangkauan mentok di ±100 views",
+      "detail": "9 dari 12 video di bawah 220 views, padahal like rate-nya 6,5%–11,7%.",
+      "meaning": "Video yang dilihat orang memang disukai, tapi prediksi jangkauannya tidak jalan — indikasi masalah distribusi/gerbang kelayakan, bukan kualitas isi."
+    },
+    {
+      "title": "Like rate justru sehat (median 8,4%)",
+      "detail": "12 video: 4,1%–14,7% (median 8,4%). Terendah cuma satu video, 12 Nov (0,63%).",
+      "meaning": "Asumsi lama 'interaksi menurun' salah. Konten bukan masalah utama — jangan ganti format dulu."
+    },
+    {
       "title": "Follower jauh di atas jangkauan",
-      "detail": "4.414 follower, tetapi 10 dari 12 video terakhir hanya 77–217 views. Median ±100.",
-      "meaning": "Follower lama sudah tidak menonton, dan For You tidak melempar video baru."
+      "detail": "4.414 follower, tapi 10 dari 12 video terakhir di bawah 220 views.",
+      "meaning": "Follower lama sudah tidak menonton (audiens inert) dan For You tidak melempar video baru."
     },
     {
-      "title": "Dua video berjarak 1 menit (8 Nov 02:24 & 02:25)",
-      "detail": "Juga terjadi 9 Nov dan 12 Nov: dua unggahan di hari yang sama dengan set hashtag yang sama.",
-      "meaning": "Skor ranking punya suku negatif untuk kreator/tag yang berulang di hari sama — video saling berebut slot."
+      "title": "Dua video berjarak 64 detik (8 Nov 09:24:30 & 09:25:34 WIB)",
+      "detail": "Juga 9 Nov dan 12 Nov: dua unggahan di hari sama, set hashtag sama.",
+      "meaning": "Video saling berebut slot. Skor ranking punya suku negatif untuk kreator/tag yang berulang di hari yang sama."
     },
     {
-      "title": "Reach tanpa resonansi vs resonansi tanpa reach",
-      "detail": "12 Nov: 21,1K views tapi like rate 0,63% dan 1 komentar. 13 Nov: 217 views tapi like rate 14,7%.",
-      "meaning": "Obatnya beda: yang pertama hook-nya salah sasaran, yang kedua prediksi detik pertama gagal."
+      "title": "Durasi 9–15 detik (satu video 60 detik)",
+      "detail": "Video 1 menit (18 Okt) dapat 8,4K views dan 341 suka (4,1%).",
+      "meaning": "Durasi pendek bukan jaminan; 15 detik juga sempit untuk hook + konteks."
     },
     {
       "title": "Gurun komentar",
-      "detail": "1 komentar di video 21,1K views; 1 komentar di video 217 views.",
-      "meaning": "Tidak ada percakapan meski follower 4.414; sinyal komentar tidak pernah didapat."
-    },
-    {
-      "title": "Format mendatar, kualitas interaksi menurun",
-      "detail": "27 Sep: like rate 8,2% (4.059 likes / 49,2K views, 290 share). Sekarang mayoritas di bawah 3%.",
-      "meaning": "Bukti niche ini bisa jalan sudah ada di akun sendiri — masalahnya format, bukan topik."
-    },
-    {
-      "title": "Volume tinggi di median yang datar",
-      "detail": "±125 video, ±15K likes total, tetapi median view ±100.",
-      "meaning": "Menambah jumlah video bukan jawabannya; yang kurang retensi."
+      "detail": "0–2 komentar per video, bahkan di video 21,1K views cuma 1.",
+      "meaning": "Tidak ada percakapan yang terbentuk meski follower 4.414 — sinyal komentar (target prediksi resmi) tidak pernah didapat."
     }
   ],
   "experiments": [
     {
       "id": "E1",
-      "change": "5 variasi dari video 27 Sep: ubah satu elemen tiap variasi",
-      "metric": "like rate & % selesai"
+      "change": "Cek status kelayakan tiap video di TikTok Studio (P0 — sekarang paling menentukan)",
+      "metric": "ada/tidak 'tidak layak untuk For You'"
     },
     {
       "id": "E2",
-      "change": "pakai struktur video 13 Nov sebagai standar hook (3 pembuka berbeda)",
-      "metric": "views median"
-    },
-    {
-      "id": "E3",
-      "change": "tambah konteks 3–6 kata di layar pada detik pertama",
-      "metric": "like rate ≥5%"
-    },
-    {
-      "id": "E4",
-      "change": "jeda ≥8 jam antar unggahan, maksimal 1 video/hari",
+      "change": "Uji 5 variasi dari video 27 Sep (49,2K views, like rate 8,3%, 290 share), satu elemen per variasi",
       "metric": "views per video"
     },
     {
+      "id": "E3",
+      "change": "Pakai struktur video 13 Nov (like rate 14,7%) sebagai standar, uji 3 pembuka berbeda",
+      "metric": "views per video"
+    },
+    {
+      "id": "E4",
+      "change": "Jeda ≥8 jam antar unggahan, maksimal 1 video/hari",
+      "metric": "views per video tidak lagi 77–93"
+    },
+    {
       "id": "E5",
-      "change": "seri bernomor (Sirin Part 1/2/3) + playlist + bio berjadwal",
+      "change": "Seri bernomor (Sirin Part 1/2/3) + playlist + bio berjadwal",
       "metric": "follow baru per 1.000 views"
     }
   ],
   "owner_numbers_wanted": [
     {
-      "metric": "Rata-rata durasi tonton",
-      "resolves": "Apakah masalahnya di detik pertama"
-    },
-    {
-      "metric": "Persentase selesai nonton",
-      "resolves": "Kualitas retensi vs benchmark 55% tidak selesai"
-    },
-    {
       "metric": "Persentase traffic dari For You",
-      "resolves": "For You tinggi + views kecil = masalah hook; For You rendah = masalah kelayakan/audiens"
+      "resolves": "For You tinggi + views kecil = masalah prediksi/kelayakan; For You rendah = masalah akun"
+    },
+    {
+      "metric": "Status kelayakan tiap video",
+      "resolves": "Kalau ada 'tidak layak untuk For You', itu sebab tunggal views mentok ±100"
+    },
+    {
+      "metric": "Rata-rata durasi tonton + % selesai",
+      "resolves": "Dengan durasi 9–15 detik: retensi tinggi atau tidak"
     },
     {
       "metric": "Follower baru per 1.000 views",
-      "resolves": "Apakah masalahnya konversi follow, bukan jangkauan"
+      "resolves": "Apakah masalahnya konversi follow atau jangkauan"
     }
-  ]
+  ],
+  "verified_at": "2026-11-13 (cek ulang dari akun)"
 }

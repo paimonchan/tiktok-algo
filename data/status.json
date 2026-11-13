@@ -29,35 +29,35 @@
       "source": "Halaman /about kanal YouTube"
     }
   ],
-  "headline_finding": "4.414 follower tapi video baru hanya dapat ±100 views. Jumlah follower jauh di atas jangkauan — artinya follower lama sudah tidak menonton, dan For You hampir tidak melempar.",
+  "headline_finding": "4.414 follower, tapi video baru mentok ±100 views — padahal yang menonton menyukainya (median like rate 8,4%). Masalahnya jangkauan/distribusi, bukan kualitas konten. Mulai dari P0.",
   "targets": [
     {
-      "metric": "Like rate per video",
-      "now": "0,6%–3% (terbaik 8,2%)",
-      "target": "≥5% konsisten",
-      "why": "Ukuran langsung: hook & durasi bekerja atau tidak"
-    },
-    {
       "metric": "Median views",
-      "now": "±100",
+      "now": "±107",
       "target": "≥1.000 dalam 4 minggu",
-      "why": "Bukti For You melempar, dengan volume yang sama"
+      "why": "Bottleneck sebenarnya: jangkauan per video"
     },
     {
-      "metric": "Selesai nonton (completion)",
+      "metric": "Like rate per video",
+      "now": "4,1%–14,7% (median 8,4%)",
+      "target": "≥8% konsisten",
+      "why": "Sudah tercapai — bukan ini yang menahan"
+    },
+    {
+      "metric": "% traffic dari For You",
+      "now": "belum dikirim",
+      "target": ">60%",
+      "why": "Memisahkan masalah prediksi dari masalah kelayakan"
+    },
+    {
+      "metric": "% selesai nonton",
       "now": "belum dikirim",
       "target": "≥50%",
-      "why": "Retensi per video, bukan jumlah video"
-    },
-    {
-      "metric": "Follower baru per 1.000 views",
-      "now": "belum dikirim",
-      "target": "≥10",
-      "why": "Metrik pertumbuhan akun, bukan jumlah views"
+      "why": "Durasi 9–15 detik: retensi dalam durasi pendek"
     },
     {
       "metric": "Komentar per video",
-      "now": "0–1",
+      "now": "0–2",
       "target": "≥10",
       "why": "Sinyal ranking resmi + bahan balasan berbentuk video"
     }
@@ -69,9 +69,9 @@
       "window": "Minggu 1 (13–19 Nov 2026)",
       "status": "berjalan",
       "goals": [
-        "Cek status kelayakan tiap video terakhir di TikTok Studio",
-        "Berhenti posting dua video <6 jam dengan tag sama",
-        "Turunkan volume ke 3–4 video/minggu"
+        "Cek status kelayakan tiap video di TikTok Studio — ini P0",
+        "Stop unggah berdekatan (8 Nov: dua video berjarak 64 detik)",
+        "Maksimal 1 unggahan/hari, 3–4 video per minggu"
       ],
       "done_when": "Semua video baru bebas catatan \"tidak layak untuk For You\" dan tidak ada lagi posting berdekatan"
     },
@@ -112,9 +112,9 @@
       "s": "12 video terakhir · target ≥1.000"
     },
     {
-      "k": "Like rate terakhir",
-      "v": "14,7%",
-      "s": "video 13 Nov (217 views) · target ≥5%"
+      "k": "Median like rate",
+      "v": "8,4%",
+      "s": "4,1%–14,7% · sudah sehat"
     }
   ]
 }

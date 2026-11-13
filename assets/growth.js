@@ -121,7 +121,7 @@
           return '<tr><td data-label="Tanggal">' + esc(tgl(v.date)) + ' <span class="ui-quiet">' + esc(v.time || '') + '</span></td>' +
             '<td data-label="Views"><strong>' + compact(v.views) + '</strong></td>' +
             '<td data-label="Like rate">' + (lr == null ? '—' : '<strong>' + pctStr(lr) + '</strong>') + '</td>' +
-            '<td data-label="Catatan">' + esc(v.note || '') + mode + (extra.length ? '<br><span class="ui-quiet">' + extra.join(' · ') + '</span>' : '') + '</td></tr>';
+            '<td data-label="Catatan">' + (v.durasi_detik ? '<span class="ui-quiet">' + v.durasi_detik + ' dtk</span> · ' : '') + esc(v.note || '') + mode + (extra.length ? '<br><span class="ui-quiet">' + extra.join(' · ') + '</span>' : '') + '</td></tr>';
         }).join('') + '</tbody></table>';
     }
 
