@@ -8,7 +8,7 @@
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#0f6f63">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/style.css?v=8">
+<link rel="stylesheet" href="assets/style.css?v=10">
 <script>
   try {
     var t = localStorage.getItem('theme');
@@ -46,15 +46,18 @@
     <div class="layout">
       <aside class="sidebar" aria-label="Checkpoint dan cara update">
         <div class="side-sticky">
-        <div class="side-block urgent" id="nextCheckpoint">
-          <h2>Checkpoint</h2>
-          <p style="margin:0">Memuat…</p>
-        </div>
-        <div class="side-block">
-          <h2>Cara update</h2>
-          <p style="margin:0" id="progressHow">Memuat…</p>
-        </div>
-        </div>
+        <details class="side-block urgent" data-collapse="mobile" open id="nextCheckpoint">
+          <summary><span class="side-title">Checkpoint</span></summary>
+          <div class="side-body">
+            <p style="margin:0">Memuat…</p>
+          </div>
+        </details>
+        <details class="side-block" data-collapse="mobile">
+          <summary><span class="side-title">Cara update</span></summary>
+          <div class="side-body">
+            <p style="margin:0" id="progressHow">Memuat…</p>
+          </div>
+        </details>
       </aside>
 
       <div class="content">
@@ -103,7 +106,7 @@
   </div>
 </footer>
 
-<script src="assets/app.js?v=8" defer></script>
-<script src="assets/growth.js?v=8" defer></script>
+<script src="assets/app.js?v=10" defer></script>
+<script src="assets/growth.js?v=10" defer></script>
 </body>
 </html>

@@ -194,11 +194,10 @@
 
     var nc = el('nextCheckpoint');
     if (nc && p.next_checkpoint) {
-      var h2 = nc.querySelector('h2');
-      nc.innerHTML = (h2 ? h2.outerHTML : '') +
+      nc.innerHTML = '<summary><span class="side-title"></span></summary><div class="side-body">' +
         '<p style="margin:0 0 .45rem"><strong>' + esc(p.next_checkpoint.ask) + '</strong></p>' +
-        '<p class="ui-quiet" style="margin:0">' + esc(p.next_checkpoint.why) + '</p>';
-      if (h2) nc.querySelector('h2').textContent = 'Checkpoint · ' + tgl(p.next_checkpoint.date);
+        '<p class="ui-quiet" style="margin:0">' + esc(p.next_checkpoint.why) + '</p></div>';
+      nc.querySelector('.side-title').textContent = 'Checkpoint · ' + tgl(p.next_checkpoint.date);
     }
 
     var stamp = el('lastUpdated');
@@ -236,6 +235,22 @@
       '<i class="key key-good"></i>resonansi saja</span></p>';
   }
 
+  /* ---------- sidebar: di HP dilipat, di desktop terbuka ---------- */
+  function setupCollapse() {
+    var blocks = document.querySelectorAll('.side-block[data-collapse="mobile"]');
+    if (!blocks.length || !window.matchMedia) return;
+    var mq = window.matchMedia('(min-width: 980px)');
+    function apply() {
+      blocks.forEach(function (d) {
+        if (mq.matches) d.setAttribute('open', '');
+        else if (!d.hasAttribute('data-open-mobile')) d.removeAttribute('open');
+      });
+    }
+    apply();
+    if (mq.addEventListener) mq.addEventListener('change', apply);
+    else if (mq.addListener) mq.addListener(apply);
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     if (el('statusStats') || el('headline') || el('statusTargets') || el('statusPhases') || el('nextActions') || el('ytCard')) {
       fetchJson('data/status.json').then(function (s) {
@@ -247,6 +262,7 @@
     if (el('latestProgress') || el('lastUpdated')) {
       fetchJson('data/progress.json').then(function (p) { renderLatestProgress(p); renderProgress(p); }).catch(function (e) { fail('latestProgress', e); fail('progressTimeline', e); });
     }
+    setupCollapse();
     if (el('auditVideos') || el('auditPatterns') || el('auditExperiments') || el('viewTrend')) {
       fetchJson('data/audit.json').then(function (a) {
         renderAudit(a);
