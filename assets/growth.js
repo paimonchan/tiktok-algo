@@ -297,4 +297,22 @@
     fail('studioCards', e);
   });
 
+
+  // ---- tabel perbandingan antar-video ----
+  fetchJson('data/studio.json').then(function (st) {
+    var box = el('studioBanding');
+    if (!box) return;
+    if (st.kesimpulan_utama) {
+      box.insertAdjacentHTML('beforebegin', '<p class="ui-quiet" style="margin:.2rem 0 .8rem">' + esc(st.kesimpulan_utama) + '</p>');
+    }
+    if (!st.perbandingan) { box.innerHTML = ''; return; }
+    var head = ['Video', 'Views', 'Retensi', 'Tuntas', 'Like', 'Share', 'Simpan', 'Follower/1.000 views', 'Promote'];
+    box.innerHTML = '<table class="stack"><thead><tr>' + head.map(function (h) { return '<th>' + esc(h) + '</th>'; }).join('') +
+      '</tr></thead><tbody>' + st.perbandingan.map(function (r) {
+        return '<tr>' + r.map(function (c, i) {
+          return '<td data-label="' + esc(head[i]) + '">' + (i === 0 ? '<strong>' + esc(c) + '</strong>' : esc(c)) + '</td>';
+        }).join('') + '</tr>';
+      }).join('') + '</tbody></table>';
+  }).catch(function (e) { fail('studioBanding', e); });
+
 })();

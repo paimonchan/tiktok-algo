@@ -369,7 +369,187 @@
           "≈62%"
         ]
       ]
+    },
+    {
+      "id": "7707508455661178119",
+      "label": "Sirin Animeek !!!!",
+      "terbit": "13 Nov 2026 11:29 WIB",
+      "terbit_konfirmasi": "Studio: 'Posted on Nov 13, 2026, 11:29 AM' — cocok dengan waktu terbit dari data publik",
+      "durasi_detik": 13,
+      "peran": "Sampel ORGANIK MURNI — retensi terbaik, jangkauan terkecil",
+      "metrik": [
+        [
+          "Views",
+          "228"
+        ],
+        [
+          "Total play time",
+          "21 menit 16 detik"
+        ],
+        [
+          "Rata-rata ditonton (average watch time)",
+          "6,5 detik dari 12,7 detik"
+        ],
+        [
+          "Menonton sampai habis (watched full video)",
+          "13,2%"
+        ],
+        [
+          "Follower baru dari video ini",
+          "0"
+        ],
+        [
+          "Suka",
+          "35"
+        ],
+        [
+          "Komentar",
+          "1"
+        ],
+        [
+          "Share",
+          "7"
+        ],
+        [
+          "Simpan",
+          "11"
+        ]
+      ],
+      "promote": [
+        [
+          "Promote",
+          "TIDAK ADA — kartunya tidak punya tab Overall/Promote, jadi video ini organik murni"
+        ]
+      ],
+      "organik": [
+        [
+          "Views organik",
+          "228"
+        ],
+        [
+          "Follower baru organik",
+          "0"
+        ]
+      ],
+      "retention": [
+        [
+          "Rata-rata ditonton",
+          "51% dari 12,7 detik (= 6,5 detik) — TERTINGGI dari 3 video"
+        ],
+        [
+          "Menonton sampai habis",
+          "13,2% — lebih tinggi dari video juara (12,32%)"
+        ],
+        [
+          "Titik paling banyak disukai",
+          "0:00 (puncak 24%)"
+        ],
+        [
+          "Kurva like",
+          "puncak tajam di 00:00 lalu turun di bawah 10%"
+        ]
+      ],
+      "traffic": [
+        [
+          "Belum dikirim",
+          "—"
+        ]
+      ],
+      "viewers": [
+        [
+          "Usia 18–24",
+          "50%"
+        ],
+        [
+          "25–34",
+          "46%"
+        ],
+        [
+          "35–44",
+          "2%"
+        ],
+        [
+          "45–54",
+          "1%"
+        ],
+        [
+          "55+",
+          "1%"
+        ],
+        [
+          "Indonesia",
+          "80,4%"
+        ],
+        [
+          "Amerika Serikat",
+          "5,2%"
+        ],
+        [
+          "Belarus",
+          "2,0%"
+        ],
+        [
+          "Malaysia",
+          "2,0%"
+        ],
+        [
+          "Kazakhstan",
+          "1,6%"
+        ],
+        [
+          "Thailand",
+          "1,2%"
+        ],
+        [
+          "Ukraina",
+          "1,2%"
+        ]
+      ],
+      "catatan_angka": "Kartu Key metrics-nya berbunyi 'Updated in real time' dan TIDAK punya tombol Overall/Promote → video ini tidak pernah di-Promote.",
+      "temuan": [
+        "Retensi 51% dan tuntas 13,2% — DUA-DUANYA lebih tinggi dari video juara (41% / 12,32%).",
+        "Like 15,4% dan share 3,1% dari views — jauh di atas video juara (8,2% / 0,6%).",
+        "Tapi jangkauannya hanya 228 views dan 0 follower baru → kualitas bukan penyebab jangkauan mentok.",
+        "Permintaan simpan 4,8% (11 simpan) setara video juara (4,3%) pada basis penonton 200× lebih kecil.",
+        "Audiens: 18–24 tahun (50%) + 25–34 (46%), 80,4% Indonesia → segmen muda Indonesia."
+      ]
     }
   ],
-  "ringkasan_promote": "Dua video terbaik akun ini sebagian besar berbayar: Promote menyumbang ≈73% views video juara dan ≈62% views video 12 Nov, serta ≈94% dan ≈92% dari follower barunya. Artinya angka 'juara' bukan cerminan performa organik, dan follower yang didapat hampir seluruhnya hasil bayar — sementara 99–100% penonton kedua video itu bukan follower (follower sendiri tidak menonton)."
+  "ringkasan_promote": "Dua video terbaik akun ini sebagian besar berbayar: Promote menyumbang ≈73% views video juara dan ≈62% views video 12 Nov, serta ≈94% dan ≈92% dari follower barunya. Artinya angka 'juara' bukan cerminan performa organik, dan follower yang didapat hampir seluruhnya hasil bayar — sementara 99–100% penonton kedua video itu bukan follower (follower sendiri tidak menonton).",
+  "perbandingan": [
+    [
+      "27 Sep (juara)",
+      "49,2K",
+      "41%",
+      "12,32%",
+      "8,2%",
+      "0,6%",
+      "4,3%",
+      "32,5",
+      "≈73% views"
+    ],
+    [
+      "12 Nov",
+      "21,2K",
+      "38%",
+      "3,94%",
+      "0,6%",
+      "0,05%",
+      "0,2%",
+      "4,2",
+      "≈62% views"
+    ],
+    [
+      "13 Nov (organik)",
+      "228",
+      "51%",
+      "13,2%",
+      "15,4%",
+      "3,1%",
+      "4,8%",
+      "0",
+      "tidak ada"
+    ]
+  ],
+  "kesimpulan_utama": "Urutan kualitas ≠ urutan jangkauan. Video dengan retensi, ketuntasan, like, dan share TERBAIK (13 Nov) justru dapat jangkauan TERKECIL (228 views) — dan itu satu-satunya sampel organik murni. Dua video berjangkauan besar (27 Sep, 12 Nov) sebagian besar dibayar lewat Promote. Jadi yang menghambat bukan isi video, tapi distribusi organik/kelaikan."
 }

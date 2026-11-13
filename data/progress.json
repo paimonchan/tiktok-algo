@@ -119,11 +119,26 @@
       "result": "27 Sep: 49,2K total vs 36K Promote (73%) — organik ≈13,2K, follower organik ≈100 dari 1,6K. 12 Nov: 21,2K vs 13,2K Promote (62%) — organik ≈8K, follower organik ≈7 dari 90. Retensi hampir sama (41% vs 38%), pembedanya ketuntasan (12,32% vs 3,94%).",
       "decision": "Sebelum menyimpulkan apa pun: matikan Promote saat menguji, karena angka organik tidak terbaca selama promo jalan. Prioritas: ketuntasan (menonton sampai habis) dan konversi follower organik.",
       "status": "selesai"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "data",
+      "title": "Sampel organik murni (13 Nov): kualitas tertinggi, jangkauan terkecil",
+      "followers": 4414,
+      "likes": 15000,
+      "videos": 125,
+      "median_views": 107,
+      "actions": [
+        "Pemilik akun kirim 3 screenshot video 13 Nov (Overview, Engagement, Viewers)"
+      ],
+      "result": "228 views · rata-rata 6,5 detik dari 12,7 detik (51%, terbaik) · tuntas 13,2% (terbaik) · like 15,4% · share 3,1% · 0 follower baru · tidak ada tab Promote = organik murni.",
+      "decision": "Hipotesis 'kualitas/hook yang menahan' GUGUR untuk jangkauan. Prioritas pindah ke: (1) cek status kelayakan tiap video, (2) uji tanpa Promote sebagai kontrol, (3) telusuri pembatasan AI-generated/unoriginal.",
+      "status": "berjalan"
     }
   ],
   "next_checkpoint": {
     "date": "2026-11-15",
-    "ask": "(1) Overview video 13 Nov & 10 Nov (dua video kecil, jalur organik) (2) konfirmasi: video kecil itu tidak pernah di-Promote",
-    "why": "Dua video kecil itu satu-satunya sampel organik murni; dari situ ketahuan apakah masalahnya hook atau distribusi"
+    "ask": "(1) Cek di Studio: ada peringatan kelayakan/konten tidak memenuhi syarat di video-video kecil? (2) Overview video 10 Nov sebagai pembanding ketiga",
+    "why": "Semua penjelasan berbasis kualitas sudah gugur; yang tersisa cuma kelayakan/distribusi akun"
   }
 }

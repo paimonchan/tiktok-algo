@@ -221,6 +221,11 @@
   ],
   "patterns": [
     {
+      "title": "Video dengan kualitas TERBAIK justru jangkauan TERKECIL",
+      "detail": "13 Nov (228 views, organik murni): retensi 51%, tuntas 13,2%, like 15,4%, share 3,1% — semuanya di atas video juara (41% / 12,32% / 8,2% / 0,6%).",
+      "meaning": "Kualitas dan retensi bukan penyebab jangkauan mentok. Urutan kualitas ≠ urutan jangkauan, jadi yang menghambat adalah distribusi organik/kelaikan."
+    },
+    {
       "title": "Sebagian besar jangkauan dan hampir semua follower baru datang dari PROMOTE",
       "detail": "Video juara: 36K dari 49,2K views (73%), 68 dari 77 jam play time, dan ~1,5K dari 1,6K follower baru ada di tab Promote. Video 12 Nov: 13,2K dari 21,2K views dan 83 dari 90 follower baru juga dari Promote.",
       "meaning": "Angka organik sesungguhnya jauh lebih kecil (juara ≈13K, 12 Nov ≈8K) dan follower organik ≈100 vs ≈7. Pertumbuhan akun ini dibeli, bukan didapat."
@@ -228,7 +233,7 @@
     {
       "title": "Retensi hampir sama — pembedanya KETUNTASAN dan konversi",
       "detail": "Juara: retensi 41% (5,8 detik), tuntas 12,32%, 32,5 follower/1.000 views. 12 Nov: retensi 38% (4,2 detik), tuntas 3,94%, 4,2 follower/1.000 views. Drop: 0:01 vs 0:02.",
-      "meaning": "Dua-duanya kehilangan orang di detik pertama, tapi video juara 3× lebih banyak yang menonton sampai habis dan 8× lebih banyak yang jadi follower. Perbaiki bagian tengah-akhir video, bukan cuma hook."
+      "meaning": "Dua-duanya kehilangan orang di detik pertama, tapi video juara 3× lebih banyak yang menonton sampai habis dan 8× lebih banyak yang jadi follower. Perbaiki bagian tengah-akhir video, bukan cuma hook. Catatan penting: pola ini berlaku antar-video BERJANGKAUAN, tapi tidak menjelaskan jangkauan — video 13 Nov dengan ketuntasan 13,2% tetap cuma dapat 228 views."
     },
     {
       "title": "Follower sendiri tidak menonton",
