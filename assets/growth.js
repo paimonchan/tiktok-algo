@@ -118,7 +118,8 @@
           if (v.comments != null) extra.push(num(v.comments) + ' komentar');
           if (v.shares != null) extra.push(num(v.shares) + ' share');
           var mode = v.mode ? ' <span class="badge badge-warn">' + esc(v.mode) + '</span>' : '';
-          return '<tr><td data-label="Tanggal">' + esc(tgl(v.date)) + ' <span class="ui-quiet">' + esc(v.time || '') + '</span></td>' +
+          var terbit = v.terbit_studio ? v.terbit_studio.slice(8, 10) + '.' + v.terbit_studio.slice(5, 7) + ' ' + v.terbit_studio.slice(11) : '';
+          return '<tr><td data-label="Tanggal">' + esc(tgl(v.date)) + ' <span class="ui-quiet">' + esc(v.time || '') + '</span>' + (terbit ? '<br><span class="ui-quiet">terbit ' + terbit + '</span>' : '') + '</td>' +
             '<td data-label="Views"><strong>' + compact(v.views) + '</strong></td>' +
             '<td data-label="Like rate">' + (lr == null ? '—' : '<strong>' + pctStr(lr) + '</strong>') + '</td>' +
             '<td data-label="Catatan">' + (v.durasi_detik ? '<span class="ui-quiet">' + v.durasi_detik + ' dtk</span> · ' : '') + esc(v.note || '') + mode + (extra.length ? '<br><span class="ui-quiet">' + extra.join(' · ') + '</span>' : '') + '</td></tr>';

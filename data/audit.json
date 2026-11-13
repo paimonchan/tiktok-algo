@@ -2,7 +2,7 @@
   "handle": "@elite.paimonchan",
   "url": "https://www.tiktok.com/@elite.paimonchan",
   "measured_at": "2026-11-13",
-  "method": "TikTok memblokir akses dari server (WAF), jadi angka diambil dari endpoint embed publik: /embed/@elite.paimonchan (followers, likes, 12 video terakhir + views) dan /embed/v2/<id> (durasi, suka, komentar, share per video). Tanggal unggahan dihitung dari 32 bit teratas ID video (Unix time), ditampilkan WIB.",
+  "method": "TikTok memblokir akses dari server (WAF), jadi angka publik diambil dari endpoint embed: /embed/@elite.paimonchan (followers, 12 video terakhir + views) dan /embed/v2/<id> (durasi, suka, komentar, share). Tanggal/jam di ID video = waktu unggah (creation), BUKAN waktu terbit — waktu terbit hanya ada di TikTok Studio dan sudah dimasukkan untuk 3 video (lihat kolom waktu terbit).",
   "totals": {
     "followers": 4414,
     "following": 11,
@@ -58,7 +58,9 @@
       "comments": 0,
       "shares": 0,
       "note": "Berjarak 64 detik dari video berikutnya",
-      "mode": ""
+      "mode": "",
+      "terbit_studio": "2026-11-08 12:00",
+      "terbit_studio_catatan": "77 views · 6 suka"
     },
     {
       "id": "7705621158854479124",
@@ -70,7 +72,9 @@
       "comments": 1,
       "shares": 0,
       "note": "Berjarak 64 detik dari video sebelumnya",
-      "mode": ""
+      "mode": "",
+      "terbit_studio": "2026-11-08 18:00",
+      "terbit_studio_catatan": "93 views · 6 suka · 1 komentar"
     },
     {
       "id": "7706032424349748487",
@@ -82,7 +86,9 @@
       "comments": 2,
       "shares": 1,
       "note": "Dua video di hari yang sama",
-      "mode": ""
+      "mode": "",
+      "terbit_studio": "2026-11-09 12:01",
+      "terbit_studio_catatan": "145 views · 17 suka · 2 komentar (cocok dengan timestamp ID)"
     },
     {
       "id": "7706130759555239176",
@@ -200,11 +206,6 @@
       "meaning": "Follower lama sudah tidak menonton (audiens inert) dan For You tidak melempar video baru."
     },
     {
-      "title": "Dua video berjarak 64 detik (8 Nov 09:24:30 & 09:25:34 WIB)",
-      "detail": "Juga 9 Nov dan 12 Nov: dua unggahan di hari sama, set hashtag sama.",
-      "meaning": "Video saling berebut slot. Skor ranking punya suku negatif untuk kreator/tag yang berulang di hari yang sama."
-    },
-    {
       "title": "Durasi 9–15 detik (satu video 60 detik)",
       "detail": "Video 1 menit (18 Okt) dapat 8,4K views dan 341 suka (4,1%).",
       "meaning": "Durasi pendek bukan jaminan; 15 detik juga sempit untuk hook + konteks."
@@ -213,6 +214,16 @@
       "title": "Gurun komentar",
       "detail": "0–2 komentar per video, bahkan di video 21,1K views cuma 1.",
       "meaning": "Tidak ada percakapan yang terbentuk meski follower 4.414 — sinyal komentar (target prediksi resmi) tidak pernah didapat."
+    },
+    {
+      "title": "Timestamp ID = waktu unggah, bukan waktu terbit",
+      "detail": "Video 93 views: ID menunjukkan 8 Nov 09:25 WIB, Studio menampilkan terbit 8 Nov 18:00. Video 145 views: ID 09 Nov 12:01:29, Studio 09 Nov 12:01 — cocok karena upload dan terbit bersamaan.",
+      "meaning": "Untuk pertanyaan 'berdekatan atau tidak', hanya waktu terbit dari Studio yang sah dipakai. Semua klaim jeda unggahan di halaman ini yang berbasis ID sudah dicabut."
+    },
+    {
+      "title": "Sudah tidak ada bukti 'unggahan berdekatan'",
+      "detail": "8 Nov: terbit 12:00 lalu 18:00 (6 jam). 9 Nov: video 145 views terbit 12:01 — pasangan harinya belum terkonfirmasi.",
+      "meaning": "Saran 'jeda ≥8 jam' diturunkan prioritasnya. P0 sekarang murni soal kelayakan dan jangkauan."
     }
   ],
   "experiments": [
@@ -232,14 +243,14 @@
       "metric": "views per video"
     },
     {
-      "id": "E4",
-      "change": "Jeda ≥8 jam antar unggahan, maksimal 1 video/hari",
-      "metric": "views per video tidak lagi 77–93"
-    },
-    {
       "id": "E5",
       "change": "Seri bernomor (Sirin Part 1/2/3) + playlist + bio berjadwal",
       "metric": "follow baru per 1.000 views"
+    },
+    {
+      "id": "E4",
+      "change": "Catat waktu terbit asli 12 video terakhir dari Studio (timestamp ID tidak bisa dipakai untuk ini)",
+      "metric": "daftar waktu terbit + jarak antar terbit"
     }
   ],
   "owner_numbers_wanted": [
@@ -260,5 +271,19 @@
       "resolves": "Apakah masalahnya konversi follow atau jangkauan"
     }
   ],
-  "verified_at": "2026-11-13 (cek ulang dari akun)"
+  "verified_at": "2026-11-13 (cek ulang dari akun)",
+  "koreksi": [
+    {
+      "tanggal": "2026-11-13",
+      "apa": "Klaim 'dua unggahan 8 Nov berjarak 64 detik' dicabut.",
+      "kenapa": "Angka 64 detik itu selisih pada timestamp ID video = waktu file diunggah/dibuat, BUKAN waktu terbit. TikTok Studio (Manage → Posts) menunjukkan video 77 views terbit 8 Nov 12:00 dan video 93 views terbit 8 Nov 18:00 — jarak 6 jam, bukan 1 menit.",
+      "sumber": "Screenshot TikTok Studio dari pemilik akun + timestamp ID"
+    },
+    {
+      "tanggal": "2026-11-13",
+      "apa": "Ditemukan video yang tidak terlihat dari luar: 'Siri Daily 05' (label Only you) — 79 views, 8 suka, terbit 8 Nov 08:24.",
+      "kenapa": "Daftar 12 video publik bukan seluruh isi akun; video private/draft tidak muncul di grid publik.",
+      "sumber": "TikTok Studio"
+    }
+  ]
 }

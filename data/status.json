@@ -70,7 +70,7 @@
       "status": "berjalan",
       "goals": [
         "Cek status kelayakan tiap video di TikTok Studio — ini P0",
-        "Stop unggah berdekatan (8 Nov: dua video berjarak 64 detik)",
+        "Catat waktu terbit asli tiap video dari Studio (timestamp ID = waktu unggah, bukan terbit)",
         "Maksimal 1 unggahan/hari, 3–4 video per minggu"
       ],
       "done_when": "Semua video baru bebas catatan \"tidak layak untuk For You\" dan tidak ada lagi posting berdekatan"

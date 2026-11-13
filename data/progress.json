@@ -25,11 +25,27 @@
       "result": "Follower 4.414 vs median view ±100; dua video berjarak 1 menit (8 Nov); like rate turun dari 8,2% (27 Sep) ke 0,63% (12 Nov)",
       "decision": "Fase 1 dimulai: hentikan unggahan berdekatan, cek status kelayakan tiap video, turunkan volume ke 3–4 video per minggu",
       "status": "berjalan"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "koreksi",
+      "title": "Koreksi: timestamp ID = waktu unggah, bukan waktu terbit",
+      "followers": 4414,
+      "likes": 15000,
+      "videos": 125,
+      "median_views": 107,
+      "actions": [
+        "Bandingkan timestamp ID dengan waktu terbit di TikTok Studio (dikirim pemilik akun)",
+        "Cek 3 video: 145 views, 93 views, 77 views"
+      ],
+      "result": "Video 77 views terbit 8 Nov 12:00 dan video 93 views terbit 8 Nov 18:00 → terpisah 6 jam, bukan 1 menit. Klaim 'unggahan berdekatan' dicabut.",
+      "decision": "P0 tetap cek kelayakan; jeda unggahan turun prioritas sampai waktu terbit sebenarnya terkumpul. Data waktu terbit Studio jadi sumber resmi untuk jeda posting.",
+      "status": "selesai"
     }
   ],
   "next_checkpoint": {
-    "date": "2026-11-20",
-    "ask": "Kirim 4 angka: rata-rata durasi tonton, % selesai nonton, % traffic For You, follower baru per 1.000 views + followers terbaru",
-    "why": "Empat angka ini memisahkan hipotesis 'masalah hook' dari 'masalah kelayakan/jangkauan'"
+    "date": "2026-11-14",
+    "ask": "Screenshot sisa daftar Posts di Studio (scroll ke bawah) supaya waktu terbit 12 video terakhir terkumpul",
+    "why": "Supaya jeda antar posting dihitung dari waktu terbit asli, bukan dari timestamp ID"
   }
 }
