@@ -280,6 +280,7 @@
     if (!box) return;
     box.innerHTML = st.videos.map(function (v) {
       function baris(judul, arr) {
+        if (!arr || !arr.length) return '';
         return '<h4>' + esc(judul) + '</h4><ul class="ui-list">' + arr.map(function (x) {
           return '<li><span class="ui-quiet">' + esc(x[0]) + ':</span> <strong>' + esc(x[1]) + '</strong></li>';
         }).join('') + '</ul>';
