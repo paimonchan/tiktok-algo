@@ -494,6 +494,43 @@ details summary:hover { color: var(--accent); }
 .side-block:not([open]) { padding: .55rem .9rem; }
 .side-block:not([open]) > summary { margin-bottom: 0; }
 
+/* ---------- menu samping (drawer) ---------- */
+.menu-btn {
+  flex: 0 0 auto; display: grid; place-items: center;
+  width: 2.1rem; height: 2.1rem; font-size: 1.05rem; line-height: 1;
+  background: transparent; color: var(--fg-muted);
+  border: 1px solid var(--border); border-radius: 8px; cursor: pointer;
+}
+.menu-btn:hover { color: var(--fg); border-color: var(--border-strong); }
+.drawer-backdrop {
+  position: fixed; inset: 0; z-index: 55; background: rgba(8, 12, 11, .45);
+  opacity: 0; pointer-events: none; transition: opacity .18s ease;
+}
+.drawer {
+  position: fixed; top: 0; left: 0; bottom: 0; z-index: 60;
+  width: min(82vw, 18rem); overflow-y: auto;
+  background: var(--bg-elev); border-right: 1px solid var(--border); box-shadow: var(--shadow);
+  padding: 1rem .85rem; visibility: hidden; transform: translateX(-102%);
+  transition: transform .22s ease, visibility .22s;
+}
+body.drawer-open { overflow: hidden; }
+body.drawer-open .drawer-backdrop { opacity: 1; pointer-events: auto; }
+body.drawer-open .drawer { transform: none; visibility: visible; }
+.drawer-head { display: flex; align-items: center; justify-content: space-between; gap: .5rem; margin-bottom: .7rem; }
+.drawer-title { font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--fg-faint); font-weight: 700; }
+.drawer-close {
+  background: transparent; color: var(--fg-muted); border: 1px solid var(--border);
+  border-radius: 8px; width: 2rem; height: 2rem; font-size: 1.15rem; line-height: 1; cursor: pointer;
+}
+.drawer-close:hover { color: var(--fg); border-color: var(--border-strong); }
+.drawer-list { list-style: none; margin: 0; padding: 0; display: grid; gap: .15rem; }
+.drawer-list a { display: block; padding: .7rem .8rem; border-radius: 9px; color: var(--fg); text-decoration: none; }
+.drawer-list a:hover { background: var(--bg-sunken); }
+.drawer-list a[aria-current="page"] { color: var(--accent); font-weight: 660; background: var(--accent-soft); }
+@media (max-width: 979px) { .nav { display: none; } }
+@media (min-width: 980px) { .menu-btn, .drawer, .drawer-backdrop { display: none; } }
+@media (prefers-reduced-motion: reduce) { .drawer, .drawer-backdrop { transition: none; } }
+
 @media print {
   .site-header, .theme-btn, footer.site-footer { display: none; }
   body { background: #fff; color: #000; font-size: 12pt; }

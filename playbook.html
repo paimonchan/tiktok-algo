@@ -8,7 +8,7 @@
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#0f6f63">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/style.css?v=10">
+<link rel="stylesheet" href="assets/style.css?v=11">
 <script>
   try {
     var t = localStorage.getItem('theme');
@@ -32,8 +32,25 @@
       <a href="sumber.html">Sumber</a>
     </nav>
     <button class="theme-btn" id="themeBtn" type="button" aria-label="Ganti tema terang/gelap" title="Ganti tema">◐</button>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="drawer"><span aria-hidden="true">☰</span></button>
   </div>
 </header>
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<nav class="drawer" id="drawer" aria-label="Menu halaman" aria-hidden="true">
+  <div class="drawer-head">
+    <span class="drawer-title">Menu</span>
+    <button class="drawer-close" id="drawerClose" type="button" aria-label="Tutup menu">&times;</button>
+  </div>
+  <ul class="drawer-list">
+        <li><a href="mudah.html">Mulai cepat</a></li>
+        <li><a href="index.html">Status</a></li>
+        <li><a href="audit.html">Review akun</a></li>
+        <li><a href="progress.html">Progress</a></li>
+        <li><a href="playbook.html" aria-current="page">Playbook</a></li>
+        <li><a href="bedah.html">Riset</a></li>
+        <li><a href="sumber.html">Sumber</a></li>
+  </ul>
+</nav>
 
 <main id="main">
   <div class="wrap">
@@ -373,6 +390,6 @@
   </div>
 </footer>
 
-<script src="assets/app.js?v=10" defer></script>
+<script src="assets/app.js?v=11" defer></script>
 </body>
 </html>
