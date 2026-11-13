@@ -316,4 +316,27 @@
       }).join('') + '</tbody></table>';
   }).catch(function (e) { fail('studioBanding', e); });
 
+
+  // ---- tersangka, cara cek, dan sumber kebijakan ----
+  fetchJson('data/studio.json').then(function (st) {
+    var box = el('studioCek');
+    if (!box) return;
+    var h = '';
+    if (st.penyelidikan) {
+      h += '<h2>Kenapa jangkauannya seret: tersangka &amp; buktinya</h2><ul class="ui-list">' +
+        st.penyelidikan.map(function (x) {
+          return '<li><strong>' + esc(x.tersangka) + '</strong> — <em>' + esc(x.status) + '</em><br><span class="ui-quiet">' + esc(x.bukti) + '</span></li>';
+        }).join('') + '</ul>';
+    }
+    if (st.cara_cek) {
+      h += '<h2>5 langkah cek (dari sisi akun)</h2><ol>' +
+        st.cara_cek.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ol>';
+    }
+    if (st.sumber_kebijakan) {
+      h += '<h2>Sumber resmi</h2><ul class="ui-list">' +
+        st.sumber_kebijakan.map(function (x) { return '<li><span class="ui-quiet">' + esc(x) + '</span></li>'; }).join('') + '</ul>';
+    }
+    box.innerHTML = h;
+  }).catch(function (e) { fail('studioCek', e); });
+
 })();
