@@ -273,7 +273,6 @@
       }).catch(function (e) { fail('auditVideos', e); });
     }
   });
-})();
 
   // ---- Analitik dari sisi pemilik (Studio) ----
   fetch(ROOT + 'data/studio.json?t=' + Date.now()).then(function (r) { return r.json(); }).then(function (st) {
@@ -298,3 +297,5 @@
     var box = document.getElementById('studioCards');
     if (box) box.innerHTML = '<p class="ui-quiet">Data Studio belum bisa dimuat.</p>';
   });
+
+})();
