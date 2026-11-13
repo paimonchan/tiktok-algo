@@ -150,6 +150,21 @@
       "result": "Video organik 13 Nov: For You 83,3% (bukan gagal sumber traffic) tapi cuma 228 views dalam 18 jam, puncak 31/jam; 16% penonton follower. Tersangka kualitas & label AI gugur; tersangka kuat: penandaan tidak layak For You per video atau level akun.",
       "decision": "Semua hipotesis isi video ditutup. Langkah berikutnya wajib dari sisi akun: Account check, peringatan kelayakan di analytics, status akun, uji pencarian, Content Check Lite.",
       "status": "berjalan"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "data",
+      "title": "10 Nov masuk: retensi 21%, 90 views — baseline organik bahkan di bawah ambang data TikTok",
+      "followers": 4414,
+      "likes": 15000,
+      "videos": 125,
+      "median_views": 98,
+      "actions": [
+        "Pemilik akun kirim 6 screenshot video 10 Nov (Overview, Engagement, Viewers)"
+      ],
+      "result": "90 views · rata-rata 3,2 detik (21%, terendah) · tuntas 2,42% · 6 suka · 1 share · 0 simpan · 0 follower · 82 penonton unik (61% kembali menonton, ≈19% follower). Traffic sources & demografi terkunci karena <100 views.",
+      "decision": "Kualitas tetap berpengaruh lemah di jalur organik (228 vs 90), tapi plafon organik akun ini di ratusan views sementara jalur berbayar ribuan. Cek kelayakan/status akun jadi wajib.",
+      "status": "berjalan"
     }
   ],
   "next_checkpoint": {

@@ -570,12 +570,133 @@
         "Audiens: 18–24 (50%) + 25–34 (46%), 83% laki-laki, 80,4% Indonesia → segmen muda Indonesia."
       ],
       "cari": []
+    },
+    {
+      "id": "7706404381922577672",
+      "label": "Ernan Ichi Ni San",
+      "terbit": "10 Nov 2026 12:05 WIB",
+      "terbit_konfirmasi": "Waktu terbit dari data publik (createTime) 12:05:07 WIB",
+      "durasi_detik": 15,
+      "peran": "Sampel organik — kualitas paling lemah (retensi 21%)",
+      "metrik": [
+        [
+          "Views",
+          "90"
+        ],
+        [
+          "Total play time",
+          "6 menit 34 detik"
+        ],
+        [
+          "Rata-rata ditonton (average watch time)",
+          "3,2 detik dari 15,1 detik"
+        ],
+        [
+          "Menonton sampai habis (watched full video)",
+          "2,42%"
+        ],
+        [
+          "Follower baru dari video ini",
+          "0"
+        ],
+        [
+          "Suka",
+          "6"
+        ],
+        [
+          "Komentar",
+          "0"
+        ],
+        [
+          "Share",
+          "1"
+        ],
+        [
+          "Simpan",
+          "0"
+        ]
+      ],
+      "promote": [
+        [
+          "Promote",
+          "tidak ada data Promote untuk video ini"
+        ]
+      ],
+      "organik": [
+        [
+          "Views organik",
+          "90"
+        ],
+        [
+          "Follower baru organik",
+          "0"
+        ]
+      ],
+      "retention": [
+        [
+          "Rata-rata ditonton",
+          "21% dari 15,1 detik (= 3,2 detik) — TERENDAH dari 4 video"
+        ],
+        [
+          "Menonton sampai habis",
+          "2,42%"
+        ],
+        [
+          "Titik paling banyak ditinggalkan",
+          "0:02"
+        ],
+        [
+          "Titik paling banyak disukai",
+          "0:01"
+        ],
+        [
+          "Penonton unik",
+          "82 (≈1,1 views per penonton → hampir tidak ada yang mengulang)"
+        ]
+      ],
+      "traffic": [
+        [
+          "Terkunci",
+          "Studio: 'Data will be shown when this video reaches 100 views'"
+        ]
+      ],
+      "viewers": [
+        [
+          "Total penonton",
+          "82 (+3 vs 1 hari lalu)"
+        ],
+        [
+          "Kembali menonton",
+          "61%"
+        ],
+        [
+          "Bukan follower",
+          "81%"
+        ],
+        [
+          "Follower",
+          "≈19%"
+        ],
+        [
+          "Gender & usia",
+          "terkunci — video belum mencapai 100 views"
+        ]
+      ],
+      "cari": [],
+      "catatan_angka": "Traffic sources dan demografi belum terbuka karena videonya cuma 90 views (ambangnya 100 views).",
+      "temuan": [
+        "Retensi 21% dan tuntas 2,42% — kualitas terendah dari 4 video, dan jangkauannya juga terkecil (90 views).",
+        "Ada korelasi lemah antara kualitas dan jangkauan organik: 51% retensi → 228 views, 21% retensi → 90 views. Tapi keduanya tetap jauh di bawah video yang dibayar (21,2K & 49,2K).",
+        "61% penonton adalah 'kembali menonton' dan ≈19% follower → yang dilempar adalah kolam HANGAT (orang yang sudah pernah lihat kontenmu), bukan audiens dingin For You.",
+        "82 penonton unik untuk 90 views → hampir tidak ada yang menonton ulang (bandingkan video juara: 1,8 views per penonton).",
+        "Baseline organik akun ini bahkan di bawah ambang data TikTok (100 views) → tidak bisa lagi disebut 'kebetulan kurang beruntung'."
+      ]
     }
   ],
   "ringkasan_promote": "Dua video terbaik akun ini sebagian besar berbayar: Promote menyumbang ≈73% views video juara dan ≈62% views video 12 Nov, serta ≈94% dan ≈92% dari follower barunya. Artinya angka 'juara' bukan cerminan performa organik, dan follower yang didapat hampir seluruhnya hasil bayar — sementara 99–100% penonton kedua video itu bukan follower (follower sendiri tidak menonton).",
   "perbandingan": [
     [
-      "27 Sep (juara)",
+      "27 Sep (dibayar)",
       "49,2K",
       "41%",
       "12,32%",
@@ -586,7 +707,7 @@
       "≈73% views"
     ],
     [
-      "12 Nov",
+      "12 Nov (dibayar)",
       "21,2K",
       "38%",
       "3,94%",
@@ -606,9 +727,20 @@
       "4,8%",
       "0",
       "tidak ada"
+    ],
+    [
+      "10 Nov (organik)",
+      "90",
+      "21%",
+      "2,42%",
+      "6,7%",
+      "1,1%",
+      "0%",
+      "0",
+      "tidak ada"
     ]
   ],
-  "kesimpulan_utama": "Urutan kualitas ≠ urutan jangkauan. Video dengan retensi, ketuntasan, like, dan share TERBAIK (13 Nov) justru dapat jangkauan TERKECIL (228 views) — dan itu satu-satunya sampel organik murni. Dua video berjangkauan besar (27 Sep, 12 Nov) sebagian besar dibayar lewat Promote. Jadi yang menghambat bukan isi video, tapi distribusi organik/kelaikan.",
+  "kesimpulan_utama": "Urutan kualitas ≠ urutan jangkauan. Empat video: yang dibayar (49,2K dan 21,2K) tetap yang berjangkauan besar apa pun kualitasnya, sementara dua video organik mentok di 228 dan 90 views — dan videonya sendiri cuma 90 views, di bawah ambang data TikTok (100). Kualitas berpengaruh lemah pada jalur organik (51% retensi → 228 views vs 21% → 90 views), tapi tidak menjelaskan selisih ratusan kali dibanding jalur berbayar.",
   "penyelidikan": [
     {
       "tersangka": "Label AI-generated menekan jangkauan",
