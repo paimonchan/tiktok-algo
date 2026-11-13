@@ -57,11 +57,27 @@
       "result": "Ketemu: 12/12 video punya createTime. Pasangan hari sama terpisah 6,0 j (8 Nov), 6,4 j (9 Nov), 8,2 j (12 Nov) → tidak ada unggahan berdekatan. Data baru: jumlah simpan per video (2.095 di video 49,2K).",
       "decision": "Klaim 'unggahan berdekatan' dicabut total. Fokus pindah 100% ke kelayakan & jangkauan. Tidak perlu kirim screenshot Studio lagi untuk waktu terbit.",
       "status": "selesai"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "data",
+      "title": "Data Studio pertama masuk: video juara 27 Sep",
+      "followers": 4414,
+      "likes": 15000,
+      "videos": 125,
+      "median_views": 107,
+      "actions": [
+        "Pemilik akun mengirim 5 screenshot TikTok Studio untuk video 27 Sep (49,2K views)",
+        "Cocokkan waktu terbit Studio dengan data publik (cocok: 10:59 AM)"
+      ],
+      "result": "For You 70,9% · retensi 41% dari 14 detik dengan drop terbesar di 0:01 · 99% penonton non-follower · 2.095 simpan · 1,5K follower baru dari video ini.",
+      "decision": "Hipotesis 'tidak pernah masuk For You' gugur. Fokus pindah ke retensi detik pertama + perbandingan antar-video (minta 3 layar: 12 Nov, 13 Nov, 10 Nov).",
+      "status": "berjalan"
     }
   ],
   "next_checkpoint": {
-    "date": "2026-11-20",
-    "ask": "Kirim 4 angka dari Studio: % traffic For You, % selesai nonton, rata-rata durasi tonton, follower baru per 1.000 views",
-    "why": "Tanpa ini, 'kenapa jangkauan mentok' tetap hipotesis"
+    "date": "2026-11-15",
+    "ask": "Kirim layar Overview (retensi + traffic sources) untuk 3 video: 12 Nov (21,2K), 13 Nov (223), 10 Nov (88)",
+    "why": "Perbandingan inilah yang memisahkan retensi vs kelayakan vs distribusi"
   }
 }

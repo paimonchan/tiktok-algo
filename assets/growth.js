@@ -274,3 +274,27 @@
     }
   });
 })();
+
+  // ---- Analitik dari sisi pemilik (Studio) ----
+  fetch(ROOT + 'data/studio.json?t=' + Date.now()).then(function (r) { return r.json(); }).then(function (st) {
+    var box = document.getElementById('studioCards');
+    if (!box) return;
+    box.innerHTML = st.videos.map(function (v) {
+      function baris(judul, arr) {
+        return '<h4>' + esc(judul) + '</h4><ul class="ui-list">' + arr.map(function (x) {
+          return '<li><span class="ui-quiet">' + esc(x[0]) + ':</span> <strong>' + esc(x[1]) + '</strong></li>';
+        }).join('') + '</ul>';
+      }
+      return '<article class="side-block" style="padding:1rem;margin-bottom:.9rem">' +
+        '<h3 style="margin:0 0 .2rem">' + esc(v.label) + '</h3>' +
+        '<p class="ui-quiet" style="margin:0 0 .8rem">Terbit ' + esc(v.terbit) + ' · ' + esc(v.durasi_detik) + ' detik · ' + esc(v.peran) + '</p>' +
+        baris('Metrik', v.metrik) + baris('Retensi', v.retention) + baris('Sumber traffic', v.traffic) +
+        baris('Penonton', v.viewers) + baris('Kata yang dicari', v.cari) +
+        '<h4>Yang penting dari video ini</h4><ul class="ui-list">' + v.temuan.map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('') + '</ul>' +
+        '<p class="ui-quiet" style="margin:.6rem 0 0">' + esc(v.terbit_konfirmasi) + '</p>' +
+        '</article>';
+    }).join('');
+  }).catch(function () {
+    var box = document.getElementById('studioCards');
+    if (box) box.innerHTML = '<p class="ui-quiet">Data Studio belum bisa dimuat.</p>';
+  });

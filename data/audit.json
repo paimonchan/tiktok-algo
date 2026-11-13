@@ -221,39 +221,34 @@
   ],
   "patterns": [
     {
-      "title": "Semua pasangan hari sama terpisah 6 jam atau lebih",
-      "detail": "8 Nov: 12:00 & 18:00 (6,0 j) · 9 Nov: 12:01 & 18:23 (6,4 j) · 12 Nov: 12:46 & 20:59 (8,2 j).",
-      "meaning": "Klaim lama 'unggahan berdekatan' salah dan sudah dicabut. Frekuensi posting bukan masalahnya."
+      "title": "For You bekerja — akun tidak sedang ditekan",
+      "detail": "Video juara (27 Sep): traffic For You 70,9%, Other 16,5%, Profil 11,5%, Following 0,7%, Search 0,4% (Studio).",
+      "meaning": "Jadi 'tidak pernah masuk For You' bukan penjelasan untuk videos yang mandek. Hipotesisnya menyempit ke retensi atau perbedaan antar-video."
+    },
+    {
+      "title": "Detik pertama adalah segalanya",
+      "detail": "Video juara: rata-rata ditonton 41% dari 14 detik, penonton paling banyak berhenti di 0:01 — dan paling banyak menyukai juga di 0:01 (Studio).",
+      "meaning": "Frame pembuka menentukan dua-duanya: yang bertahan dan yang suka. Ini juga kandidat penyebab video ±100 views."
+    },
+    {
+      "title": "99% penonton bukan follower — mesin tumbuhnya For You",
+      "detail": "Video juara: 27,4K penonton unik, 53% baru / 47% kembali, 99% non-follower vs 1% follower, dan menghasilkan 1,5K follower baru (Studio).",
+      "meaning": "Follower lama bukan penggerak; tiap video harus merebut penonton baru dari For You. Konversi follow dari penonton ≈ 3%."
+    },
+    {
+      "title": "Yang kuat itu 'disimpan', bukan 'dibicarakan'",
+      "detail": "Video juara: 2.095 simpan (4,3% views), 290 share (0,6%), 88 komentar (0,2%) (Studio + publik).",
+      "meaning": "Topik kata di komentar isinya sampah platform ('via tiktok', 'tiktok lite') → tidak ada percakapan nyata. Optimasi ke simpan/share, bukan ke komentar."
     },
     {
       "title": "Jangkauan mentok di ±100 views padahal like rate sehat",
-      "detail": "9 dari 12 video: 77–223 views dengan like rate 6,5%–14,8% (median 8,4%).",
-      "meaning": "Yang menonton menyukainya, tapi For You tidak melempar. Ini masalah distribusi/kelayakan, bukan isi."
+      "detail": "9 dari 12 video: 77–223 views, like rate 6,5%–14,8% (median 8,4%).",
+      "meaning": "Kontennya resonan; yang gagal adalah distribusinya."
     },
     {
-      "title": "Simpan (saves) mengikuti pola yang sama",
-      "detail": "Video 49,2K: 2.095 simpan (4,3%). Video 13 Nov: 11 simpan dari 223 views (4,9%). Video 21,2K: cuma 45 simpan (0,2%).",
-      "meaning": "Audiens kecil tapi niat (menyimpan) ada; video yang dilempar jauh justru tidak disimpan."
-    },
-    {
-      "title": "Follower jauh di atas jangkauan",
-      "detail": "4.414 follower, tapi 10 dari 12 video terakhir di bawah 230 views.",
-      "meaning": "Follower lama sudah tidak menonton (audiens inert) dan For You tidak melempar video baru."
-    },
-    {
-      "title": "Dua mode kegagalan, obat beda",
-      "detail": "Resonansi tanpa reach (mayoritas: like 6,5–14,8% tapi ~100 views) vs reach tanpa resonansi (12 Nov: 21,2K views tapi like 0,6%).",
-      "meaning": "Yang pertama soal kelayakan/prediksi jangkauan; yang kedua soal audiens yang datang bukan penggemar kontennya."
-    },
-    {
-      "title": "Gurun komentar",
-      "detail": "0–2 komentar per video, bahkan di video 21,2K views cuma 1.",
-      "meaning": "Tidak ada percakapan yang terbentuk meski follower 4.414 — sinyal komentar tidak pernah didapat."
-    },
-    {
-      "title": "Durasi 9–15 detik (satu video 60 detik)",
-      "detail": "Video 60 detik (18 Okt) dapat 8,4K views, 341 suka, 132 simpan.",
-      "meaning": "Durasi bukan penentu tunggal, tapi 15 detik sempit untuk hook + konteks + alasan follow."
+      "title": "Semua pasangan hari sama terpisah 6 jam atau lebih",
+      "detail": "8 Nov: 12:00 & 18:00 (6,0 j) · 9 Nov: 12:01 & 18:23 (6,4 j) · 12 Nov: 12:46 & 20:59 (8,2 j).",
+      "meaning": "Klaim lama 'unggahan berdekatan' salah dan sudah dicabut."
     }
   ],
   "experiments": [

@@ -1,0 +1,140 @@
+{
+  "updated": "2026-11-14",
+  "sumber": "Screenshot TikTok Studio dari pemilik akun (@elite.paimonchan)",
+  "catatan": "Ini satu-satunya sumber untuk retensi, sumber traffic, dan data follower. Data publik tidak punya angka-angka ini.",
+  "videos": [
+    {
+      "id": "7690059710254288134",
+      "label": "Yoo nari - face check",
+      "terbit": "27 Sep 2026 10:59 WIB",
+      "terbit_konfirmasi": "Studio menulis 'Posted on Sep 27, 2026, 10:59 AM' — cocok dengan waktu terbit dari data publik",
+      "durasi_detik": 14,
+      "peran": "Juara — patokan 'apa yang berhasil'",
+      "metrik": [
+        [
+          "Views (jendela kartu Key metrics)",
+          "36K"
+        ],
+        [
+          "Views seumur hidup (publik)",
+          "49,2K"
+        ],
+        [
+          "Total play time",
+          "68 jam 17 menit"
+        ],
+        [
+          "Suka",
+          "4.059"
+        ],
+        [
+          "Komentar",
+          "88"
+        ],
+        [
+          "Share",
+          "290"
+        ],
+        [
+          "Simpan",
+          "2.095"
+        ],
+        [
+          "Follower baru dari video ini",
+          "1.5K"
+        ]
+      ],
+      "retention": [
+        [
+          "Rata-rata ditonton",
+          "41% dari 14 detik"
+        ],
+        [
+          "Titik paling banyak ditinggalkan",
+          "0:01 (detik pertama)"
+        ],
+        [
+          "Titik paling banyak disukai",
+          "0:01"
+        ]
+      ],
+      "traffic": [
+        [
+          "For You",
+          "70,9%"
+        ],
+        [
+          "Other",
+          "16,5%"
+        ],
+        [
+          "Personal profile",
+          "11,5%"
+        ],
+        [
+          "Following",
+          "0,7%"
+        ],
+        [
+          "Search",
+          "0,4%"
+        ],
+        [
+          "Sound",
+          "0,0%"
+        ]
+      ],
+      "viewers": [
+        [
+          "Total penonton unik",
+          "27,4K (≈1,8 views per orang)"
+        ],
+        [
+          "Penonton baru",
+          "53%"
+        ],
+        [
+          "Kembali menonton",
+          "47%"
+        ],
+        [
+          "Bukan follower",
+          "99%"
+        ],
+        [
+          "Follower",
+          "1%"
+        ]
+      ],
+      "cari": [
+        [
+          "yoo nari",
+          "14,1%"
+        ],
+        [
+          "manhwa",
+          "13,6%"
+        ],
+        [
+          "nari next door webtoon",
+          "6,1%"
+        ],
+        [
+          "Yoo N…",
+          "4,2%"
+        ],
+        [
+          "manhwas",
+          "3,8%"
+        ]
+      ],
+      "temuan": [
+        "For You 70,9% → akun TIDAK sedang ditekan platform; kalau retensinya cukup, kontenmu memang dilempar.",
+        "Retensi 41% dengan drop terbesar di detik ke-1: detik pertama kehilangan paling banyak penonton, dan di detik itu juga paling banyak yang menyukai — jadi frame pembuka menentukan dua-duanya.",
+        "99% penonton bukan follower, dan video ini menghasilkan 1,5K follower baru → mesin pertumbuhanmu adalah For You, bukan follower lama.",
+        "Simpan 2.095 (4,3% dari views) jauh di atas share (290) dan komentar (88) → kekuatan videomu ada di 'disimpan', bukan 'dibicarakan'.",
+        "Yang dicari orang: 'yoo nari' + 'manhwa' + 'nari next door webtoon' → nama karakter dan kata 'manhwa' bekerja di pencarian."
+      ]
+    }
+  ]
+}
