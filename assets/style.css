@@ -463,24 +463,6 @@ details summary:hover { color: var(--accent); }
 .stat-v { font-size: 1.6rem; }
 .linklist a { font-weight: 620; }
 
-/* ---------- alat harian di sidebar ---------- */
-.check.tap { padding-left: 0; }
-.check.tap li { padding-left: 0; margin-bottom: .5rem; }
-.check.tap li::before { content: none; }
-.check.tap label { display: flex; gap: .55rem; align-items: flex-start; cursor: pointer; }
-.check.tap input { width: 1.15rem; height: 1.15rem; margin: .22rem 0 0; accent-color: var(--accent); flex: 0 0 auto; }
-.check.tap li.done span { color: var(--fg-faint); text-decoration: line-through; }
-button.mini {
-  font: inherit; font-size: .78rem; color: var(--fg-muted); background: transparent;
-  border: 1px solid var(--border); border-radius: 8px; padding: .25em .6em; cursor: pointer; margin-top: .6rem;
-}
-button.mini:hover { color: var(--fg); border-color: var(--border-strong); }
-button.btn-primary {
-  font: inherit; font-weight: 620; width: 100%; margin-top: .75rem;
-  background: var(--accent); color: var(--accent-fg); border: 0; border-radius: 9px; padding: .55em .8em; cursor: pointer;
-}
-button.btn-primary:hover { filter: brightness(1.07); }
-
 /* ---------- grafik momentum ---------- */
 .spark { margin-top: 1.6rem; }
 .spark h2 { margin-top: 0; }
