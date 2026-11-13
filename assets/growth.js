@@ -110,7 +110,7 @@
     var tbl = el('auditVideos');
     if (tbl) {
       var rows = a.videos.slice().sort(function (x, y) { return (y.terbit || (y.date + y.time)).localeCompare(x.terbit || (x.date + x.time)); });
-      tbl.innerHTML = '<table class="stack"><thead><tr><th>Tanggal</th><th>Views</th><th>Like rate</th><th>Catatan</th></tr></thead><tbody>' +
+      tbl.innerHTML = '<table class="stack"><thead><tr><th>Terbit</th><th>Views</th><th>Like rate</th><th>Catatan</th></tr></thead><tbody>' +
         rows.map(function (v) {
           var lr = pct(v.likes, v.views);
           var extra = [];
