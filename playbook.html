@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Playbook — bikin video rame &amp; follower naik, dari mekanisme yang terbukti</title>
+<meta name="description" content="Playbook TikTok berbasis bukti: gerbang kelayakan, taktik memenangkan watch time dan sinyal yang benar-benar dimodelkan, strategi follower dari target prediksi resmi, plus protokol eksperimen yang bisa dijalankan sendiri.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="assets/style.css">
+<script>
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Lewati ke konten</a>
+
+<header class="site-header">
+  <div class="wrap inner">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Bedah Algoritma TikTok</a>
+    <nav class="nav" aria-label="Navigasi utama">
+      <a href="index.html">Ringkasan</a>
+      <a href="bedah.html">Bedah + bukti</a>
+      <a href="playbook.html" aria-current="page">Playbook</a>
+      <a href="sumber.html">Sumber</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Ganti tema terang/gelap" title="Ganti tema">◐</button>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <section class="hero">
+      <p class="eyebrow">Halaman 2 dari 3 · eksekusi</p>
+      <h1>Playbook: dari mekanisme ke video yang rame</h1>
+      <p class="lede">
+        Setiap taktik di bawah diturunkan dari mekanisme yang punya sumber, bukan dari kebiasaan. Tiap butir diberi
+        <strong>mekanisme</strong> (kenapa masuk akal), <strong>tier bukti</strong>, dan <strong>cara mengukurnya</strong>.
+        Taktiknya hipotesis yang bisa diuji di akun kita — bukan jaminan.
+      </p>
+    </section>
+
+    <section class="prose" style="padding-top:2rem">
+      <h2 id="tiga-level">Kerangkanya: tiga level, berurutan</h2>
+      <p>
+        Kesalahan paling umum: melompat ke "cara bikin video bagus" padahal video belum lolos level 1.
+        Urutannya tidak bisa dibalik.
+      </p>
+      <div class="grid cols-3" style="margin:1.4em 0">
+        <article class="card"><h3>Level 1 — Eligible</h3><p style="margin-bottom:0">Video harus lolos gerbang moderasi &amp; kategori FYF-ineligible. Kalau tidak, sinyal apa pun tidak dihitung.</p></article>
+        <article class="card"><h3>Level 2 — Menang sinyal</h3><p style="margin-bottom:0">Menang prediksi aksi: tonton selesai, ulang, simpan, bagikan, komentar, tap sound.</p></article>
+        <article class="card"><h3>Level 3 — Konversi follow</h3><p style="margin-bottom:0">Follow dan kunjungan profil adalah target prediksi resmi — di sini follower tumbuh. Feed rame belum tentu follower naik.</p></article>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="prose-wide">
+      <h2 id="level1">Level 1 — Jangan kalah sebelum bertanding</h2>
+      <p class="prose">
+        Kelayakan bersifat biner: konten yang tidak eligible untuk For You tidak akan muncul di sana, sekencang apa pun retensinya
+        <span class="tier t1">T1</span>. Cek list ini sebelum mengurus hal lain.
+      </p>
+      <div class="do-dont">
+        <div class="card">
+          <h3>✓ Lakukan</h3>
+          <ul style="margin-bottom:0">
+            <li>Buka <em>Account status / analytics</em> tiap minggu: pastikan tidak ada video berstatus <strong>ineligible untuk For You</strong>. Itu penyebab paling sering dari "views mentok".</li>
+            <li>Kalau ada flag: perbaiki kontennya, ajukan <em>appeal</em>. Jangan posting ulang (bisa masuk "circumvention").</li>
+            <li>Pastikan orisinalitas: tanpa watermark platform lain, ada nilai tambah dari edit/narasi sendiri (aturan <em>unoriginal/low-quality</em>: potongan yang dipakai ulang, slideshow murni, GIF-only).</li>
+            <li>Rekam vertikal 9:16, 1080p+, audio bersih (ini juga standar "high quality" versi Creator Academy).</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>✗ Hindari</h3>
+          <ul style="margin-bottom:0">
+            <li>Konten "berusaha menaikkan trafik artifisial" (beli view/like, follow-for-follow) — eksplisit ineligible.</li>
+            <li>Video yang meng-copy utuh milik kreator lain, repost dengan logo orang.</li>
+            <li>Klaim kesehatan/berat badan tanpa konteks (kategori FYF-ineligible yang luas).</li>
+            <li>Menumpuk 5 video identik dalam sejam: selain masuk kategori spam/minim edit, sistem juga punya suku penalti kebosanan (lihat Level 2 poin 7).</li>
+          </ul>
+        </div>
+      </div>
+      <p class="ui-quiet">Catatan penting: pelanggaran berulang bisa membuat akun kehilangan For You/Following selama 90 hari <span class="tier t1">T1</span>. Ini risiko yang tidak sebanding dengan eksperimen murah.</p>
+    </section>
+
+    <hr>
+
+    <section class="prose-wide">
+      <h2 id="level2">Level 2 — Memenangkan prediksi aksi</h2>
+      <p class="prose">
+        Inilah daftar taktik. Skor akhir ≈ jumlah dari <em>prediksi</em> × <em>nilai</em> tiap aksi (lihat
+        <a href="bedah.html#objektif">fungsi objektif</a>), jadi kita mengurus dua hal sekaligus:
+        <strong>membuat aksinya terjadi</strong> dan <strong>membuat prediksi sistem percaya aksi itu akan terjadi</strong>.
+      </p>
+
+      <div class="step">
+        <span class="snum" aria-hidden="true">1</span>
+        <h3>Tiga detik pertama menentukan seluruh nilainya</h3>
+        <p class="why">Watch time adalah sinyal dominan; regulator EU bahkan menyimpulkan algoritma memprioritaskan viewing time di atas pilihan user <span class="tier t1">T1</span>.</p>
+        <p>
+          Karena skor memakai <code>E<sub>playtime</sub>×V<sub>playtime</sub></code>, detik yang hilang di awal memotong nilai
+          sepanjang video. Data 347 pengguna (9,2 juta rekomendasi) menunjukkan <strong>55% video tidak ditonton sampai habis</strong>,
+          mayoritas di-skip sebelum setengah durasi <span class="tier t4">T4</span>. Artinya melewati titik tengah sudah mengalahkan
+          mayoritas. Formula resmi "qualified view" TikTok juga memakai ambang <strong>≥5 detik</strong> menonton <span class="tier t1">T1</span>.
+        </p>
+        <p class="ui-quiet"><strong>Cara uji:</strong> rekam 5 varian pembuka untuk 1 ide, tonton balik versi <em>mute</em>, tanya "saya berhenti geser atau tidak?" — lalu uji 1 varian per video dalam batch 5, bandingkan <em>average watch time</em>.</p>
+      </div>
+
+      <div class="step">
+        <span class="snum" aria-hidden="true">2</span>
+        <h3>Bikin video yang enak diulang (loop)</h3>
+        <p class="why">Rewatch mengalikan playtime tanpa menambah tontonan baru — nilai per penonton naik.</p>
+        <p>
+          Trik klasiknya struktural, bukan sulit: teks di akhir yang menyambung ke kalimat pembuka, akhir yang tidak tuntas,
+          animasi yang bersambung mulus. WSJ menemukan "setiap kali kamu ragu atau menonton ulang, aplikasi menghitungnya" <span class="tier t4">T4</span>.
+        </p>
+        <p class="ui-quiet"><strong>Cara uji:</strong> bandingkan video dengan ending loop vs ending datar pada tema sama; lihat <em>average watch time</em> &gt; durasi video = tanda loop.</p>
+      </div>
+
+      <div class="step">
+        <span class="snum" aria-hidden="true">3</span>
+        <h3>Durasi: keputusan yang harus punya alasan</h3>
+        <p class="why">"Menyelesaikan video yang lebih panjang" disebut TikTok sebagai sinyal kuat, tetapi hanya jika benar-benar ditonton <span class="tier t1">T1</span>.</p>
+        <p>
+          Video pendek menaikkan peluang completion; video &gt;1 menit membuka Creator Rewards (yang juga memakai ambang 5 detik dan
+          mengecualikan view dengan "not interested") <span class="tier t1">T1</span>. Jadi: gunakan pendek untuk membangun sinyal &amp;
+          jangkauan, gunakan panjang hanya kalau materinya punya alasan untuk ditahan (cerita berseri, tutorial bertahap).
+        </p>
+        <p class="ui-quiet"><strong>Cara uji:</strong> satu ide, dua durasi (mis. 18s vs 45s), 3 pasang. Bandingkan completion % <em>dan</em> total playtime.</p>
+      </div>
+
+      <div class="step">
+        <span class="snum" aria-hidden="true">4</span>
+        <h3>Kejar sinyal yang benar-benar ada di daftar prediksi</h3>
+        <p class="why">Daftar resmi TikTok: like, share, comment, "not interested", follow author / kunjungan profil, finish, skip, favorite, durasi menonton, dan tap soundtrack <span class="tier t1">T1</span>.</p>
+        <p>
+          Ini daftar belanja kita. <strong>Save/favorite</strong> dan <strong>share</strong> biasanya paling mudah dipicu dengan konten
+          yang berguna (checklist, ringkasan, "simpan dulu nanti dipakai"), sedangkan <strong>komentar</strong> dipicu pertanyaan yang
+          tidak bisa dijawab satu kata. Perhatikan: tidak ada "like" gratisan yang lebih murah dari yang lain — sistem memprediksi
+          semuanya, jadi permintaan eksplisit yang terasa seperti iklan justru menurunkan prediksi.
+        </p>
+        <p class="ui-quiet"><strong>Cara uji:</strong> tambahkan satu elemen pemicu (mis. daftar 5 poin) dan ukur saves/1.000 views serta shares/1.000 views, bukan likes.</p>
+      </div>
+
+      <div class="step">
+        <span class="snum" aria-hidden="true">5</span>
+        <h3>Konsistensi niche di fase dingin (≈200 video pertama)</h3>
+        <p class="why">Amplifikasi minat terbentuk cepat: ±200 video pertama yang ditonton sudah cukup membentuk bias topik <span class="tier t4">T4</span>.</p>
+        <p>
+          Untuk akun baru, vektor minatmu masih ambigu. Kalau 10 video pertama berpindah-pindah topik, sistem tidak punya dasar untuk
+          mengamplifikasi apa pun — hasilnya views rata-rata kecil. Pilih satu niche sempit, kunci 8–10 video, baru ekspansi.
+          Ingat juga bahwa tahap <em>retrieval</em> bekerja pada representasi konten, bukan tag <span class="tier t1">T1</span><span class="tier t3">T3</span> —
+          jadi keseragaman bahasa visual &amp; tema lebih penting daripada hashtag.
+        </p>
+        <p class="ui-quiet"><strong>Cara uji:</strong> batch 6 video satu tema vs 6 video tema campur; bandingkan median views dan persentase traffic dari For You.</p>
+      </div>
+
+      <div class="step">
+        <span class="snum" aria-hidden="true">6</span>
+        <h3>Sound bukan hiasan — ia sinyal eksplisit</h3>
+        <p class="why">"Tap the video's soundtrack" ada di daftar prediksi resmi, dan TikTok menyatakan sound membantu discoverability <span class="tier t1">T1</span>.</p>
+        <p>
+          Dua arah pemakaian: (a) ikut sound yang sedang naik — studi virality menemukan pemakaian hashtag/sound yang sedang tren
+          berkorelasi dengan viralitas <span class="tier t4">T4</span>; (b) bikin <em>original sound</em> milikmu yang orang lain pakai —
+          itu membangun jalur distribusi sekunder ke halaman Sounds. Perlu dicatat: satu studi kecil (N=100) menemukan hanya elemen
+          <em>musik</em> yang signifikan terhadap engagement, sementara panjang/pacing/teks/format tidak <span class="tier t4">T4</span> —
+          jangan jadikan satu studi kecil sebagai hukum.
+        </p>
+      </div>
+
+      <div class="step">
+        <span class="snum" aria-hidden="true">7</span>
+        <h3>Hormati penalti kebosanan: sebar, jangan tumpuk</h3>
+        <p class="why">Dokumen internal menyebut suku negatif <code>same_author_seen</code> dan <code>same_tag_today</code>: pengulangan menurunkan nilai total <span class="tier t2">T2</span>. TikTok juga menyatakan feed tidak menampilkan dua video berturut-turut dari kreator/sound yang sama.</p>
+        <p>
+          Implikasinya bertentangan dengan kebiasaan "spam 5 video sekaligus": video-videomu sendiri akan saling berebut slot
+          yang sama, dan tag yang diulang di hari yang sama mendapat penalti. Jeda antar-post lebih baik daripada tumpukan.
+        </p>
+        <p class="ui-quiet"><strong>Cara uji:</strong> satu minggu: 3 video tag sama di hari sama. Minggu berikutnya: 3 video tag sama dengan jeda 1 hari. Bandingkan median views.</p>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="prose-wide">
+      <h2 id="level3">Level 3 — Follower naik: ini masalah konversi, bukan jangkauan</h2>
+      <p class="prose">
+        Fakta pentingnya: <strong>follow ke kreator dan kunjungan profil adalah target prediksi resmi</strong> TikTok, dan Douyin menaruh
+        "konsumsi jangka panjang terhadap penulis" sebagai salah satu targetnya <span class="tier t1">T1</span>. Sementara tujuan tertinggi
+        yang tertulis di dokumen internal adalah <strong>retention</strong> dan <strong>long-term user value</strong> <span class="tier t2">T2</span>.
+      </p>
+      <p class="prose">
+        Terjemahannya: sistem menghargai konten yang membuat orang <em>kembali</em>, dan konten yang membuat orang mengikuti
+        kamu lebih jauh. Video yang meledak sekali lalu ditinggalkan penontonnya bernilai lebih rendah daripada seri yang
+        menarik orang balik ke profilmu.
+      </p>
+      <div class="grid cols-2" style="margin:1.4em 0">
+        <article class="card">
+          <h3>Pola yang bekerja untuk konversi</h3>
+          <ul style="margin-bottom:0">
+            <li><strong>Seri berlanjut</strong>: part 1/2/3 dengan payoff yang jelas.</li>
+            <li><strong>Alasan kembali</strong>: "part berikutnya besok", "daftar lengkapnya di profil", episode terjadwal.</li>
+            <li><strong>Identitas akun yang jelas</strong> — kalau orang tidak tahu kamu akan memberi apa lagi, tidak ada alasan follow.</li>
+            <li><strong>Profil yang siap</strong>: bio satu baris + 3 pinned video terbaik; kunjungan profil yang gagal konversi itu rugi ganda.</li>
+            <li><strong>Balas komentar dengan video</strong> — memicu penonton yang sama kembali.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Ukur ini, bukan view</h3>
+          <ul style="margin-bottom:0">
+            <li><strong>Follows / 1.000 views</strong> — efisiensi konversi, bukan besarnya jangkauan.</li>
+            <li><strong>Profile views / 1.000 views</strong> — seberapa kuat hook sosialmu.</li>
+            <li><strong>Returning viewers</strong> (kalau tersedia di analytics).</li>
+            <li><strong>Saves &amp; shares / 1.000 views</strong> — sinyal tertinggi per penonton.</li>
+          </ul>
+        </article>
+      </div>
+      <div class="callout">
+        <span class="label">Kenyataan pahit</span>
+        <p style="margin-bottom:0">
+          Satu video viral biasanya memberi follower jauh lebih sedikit per view daripada seri yang konsisten. Sistem
+          mengamplifikasi apa yang paling populer lintas audiens (sifat "majoritarian" <span class="tier t4">T4</span>),
+          sehingga lonjakan besar sering datang dari penonton yang bukan targetmu. Follower tumbuh dari <em>pengulangan</em>.
+        </p>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="prose-wide">
+      <h2 id="ritme">Ritme produksi &amp; checklist pra-post</h2>
+      <div class="grid cols-2" style="margin:1.4em 0">
+        <article class="card">
+          <h3>Ritme</h3>
+          <ul style="margin-bottom:0">
+            <li>Panduan resmi TikTok (posting cadence) menyatakan kreator yang memposting <strong>harian</strong> melihat views &amp; eksposur For You lebih tinggi; volume tidak menurunkan peluang rekomendasi <span class="tier t1">T1</span> — tapi lihat penalti pengulangan di poin 7.</li>
+            <li>Praktisnya: produksi batch (1 sesi = 4–6 video), publikasi tersebar.</li>
+            <li>Set target yang bisa dipegang tiap hari, bukan target heroik sekali sebulan.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Checklist pra-post</h3>
+          <ul style="margin-bottom:0">
+            <li>Hook 3 detik pertama — sudah dites dalam versi mute.</li>
+            <li>Pace cepat, tanpa dead air ("um", jeda, bagian lambat).</li>
+            <li>Teks/overlay dipakai dengan sengaja (bukan dekorasi).</li>
+            <li>Audio bersih, 1080p+, vertikal 9:16.</li>
+            <li>Orisinal — ada nilai tambah dari dirimu (anti <em>unoriginal</em>).</li>
+            <li>Teks di layar &amp; caption memuat kata kunci yang munatural (untuk Search; view Search ≥30s dihitung sebagai qualified view) <span class="tier t1">T1</span>.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="prose-wide">
+      <h2 id="protokol">Protokol eksperimen: cara tahu taktik mana yang jalan untuk akunmu</h2>
+      <p class="prose">
+        Karena bobot tiap sinyal diatur lewat A/B test internal yang tidak dipublikasikan, satu-satunya cara tahu
+        apa yang berlaku di niche-mu adalah mengukurnya sendiri. Aturannya sederhana dan tidak bisa dinegosiasi.
+      </p>
+      <div class="step">
+        <span class="snum" aria-hidden="true">A</span>
+        <h3>Kumpulkan baseline 10 video lebih dulu</h3>
+        <p class="why">Tanpa baseline, semua lonjakan terlihat seperti hasil taktik.</p>
+        <p>Catat per video: views, average watch time, completion %, sumber traffic (For You %), saves, shares, komentar, follows baru, profile views.</p>
+      </div>
+      <div class="step">
+        <span class="snum" aria-hidden="true">B</span>
+        <h3>Ubah SATU variabel per batch</h3>
+        <p class="why">Kalau hook, durasi, dan jam posting berubah bersamaan, tidak ada yang bisa disimpulkan.</p>
+        <p>Batch = 3–5 video. Bandingkan median, bukan rata-rata (satu outlier bisa menyesatkan seluruh kesimpulan).</p>
+      </div>
+      <div class="step">
+        <span class="snum" aria-hidden="true">C</span>
+        <h3>Jangan menilai sebelum 72 jam</h3>
+        <p class="why">Ada fenomena "delayed exposure": video bisa naik lagi beberapa hari kemudian, dan traffic For You bergerak bertahap.</p>
+        <p>Tetapkan tanggal tinjauan tetap, lalu lihat apakah kesimpulan berubah setelahnya.</p>
+      </div>
+      <div class="step">
+        <span class="snum" aria-hidden="true">D</span>
+        <h3>Pakai satu metrik utama per eksperimen</h3>
+        <p class="why">Terlalu banyak metrik = tidak ada keputusan.</p>
+        <p>Contoh: eksperimen hook → metrik utama <em>average watch time</em>; eksperimen seri → metrik utama <em>follows/1.000 views</em>.</p>
+      </div>
+      <div class="step">
+        <span class="snum" aria-hidden="true">E</span>
+        <h3>Tulis hasilnya, termasuk yang gagal</h3>
+        <p class="why">Ini yang membedakan belajar dari menebak. Setelah 30–40 video, kamu punya model kecil milikmu sendiri.</p>
+      </div>
+
+      <div class="table-wrap" style="margin-top:1.8em">
+        <table class="stack">
+          <thead><tr><th>Taktik</th><th>Mekanisme (kenapa)</th><th>Tier</th><th>Metrik uji</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Taktik">Hook 3 detik</td><td data-label="Mekanisme">Playtime dominan; 55% video sudah di-skip sebelum setengah</td><td data-label="Tier"><span class="tier t4">T4</span> <span class="tier t1">T1</span></td><td data-label="Metrik">Avg watch time</td></tr>
+            <tr><td data-label="Taktik">Loop/rewatch</td><td data-label="Mekanisme">Playtime berlipat per penonton</td><td data-label="Tier"><span class="tier t2">T2</span></td><td data-label="Metrik">Watch time ÷ durasi</td></tr>
+            <tr><td data-label="Taktik">Save &amp; share trigger</td><td data-label="Mekanisme">Keduanya ada di daftar prediksi resmi</td><td data-label="Tier"><span class="tier t1">T1</span></td><td data-label="Metrik">Saves &amp; shares per 1.000 views</td></tr>
+            <tr><td data-label="Taktik">Niche konsisten</td><td data-label="Mekanisme">Bias minat terbentuk di ±200 video pertama</td><td data-label="Tier"><span class="tier t4">T4</span></td><td data-label="Metrik">Median views, % traffic For You</td></tr>
+            <tr><td data-label="Taktik">Sound strategis</td><td data-label="Mekanisme">"Tap soundtrack" adalah target prediksi</td><td data-label="Tier"><span class="tier t1">T1</span> <span class="tier t4">T4</span></td><td data-label="Metrik">Views, uses of original sound</td></tr>
+            <tr><td data-label="Taktik">Sebar posting (anti-tumpuk)</td><td data-label="Mekanisme">Penalti <code>same_tag_today</code> &amp; <code>same_author_seen</code></td><td data-label="Tier"><span class="tier t2">T2</span></td><td data-label="Metrik">Median views per hari</td></tr>
+            <tr><td data-label="Taktik">Seri berlanjut</td><td data-label="Mekanisme">Follow &amp; long-term consumption adalah target resmi</td><td data-label="Tier"><span class="tier t1">T1</span></td><td data-label="Metrik">Follows per 1.000 views</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="prose-wide">
+      <h2 id="buang-waktu">Yang tidak perlu dilakukan</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <ul style="margin:0">
+            <li><strong>#fyp, #viral, #foryou</strong> — TikTok sendiri menyatakan ini bekerja seperti hashtag biasa <span class="tier t1">T1</span>.</li>
+            <li><strong>Hashtag stuffing.</strong> Video information hanya berbobot kecil dalam pernyataan resmi; retrieval bekerja pada representasi konten, bukan tag <span class="tier t1">T1</span>.</li>
+            <li><strong>Mengejar "kolam" dan ambang batasnya.</strong> Angkanya tidak punya sumber; yang nyata cuma mekanisme retensi &amp; dispersi.</li>
+            <li><strong>Menonton/like video sendiri, beli view.</strong> Kategori manipulasi engagement = ineligible <span class="tier t1">T1</span>.</li>
+            <li><strong>Mitos jam posting universal.</strong> Yang benar: jam ketika <em>audiensmu</em> aktif, dan itu data analytics milikmu.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Catatan etis &amp; keterbatasan</h3>
+          <p>
+            Dokumen gugatan (Kentucky) menunjukkan sistem pernah diubah setelah temuan internal soal subjektivitas penampilan
+            ("not attractive subjects" → mengamplifikasi kreator yang dianggap "beautiful"), dan ada keputusan manusia
+            di balik promosi konten (<em>heating</em>) — itu temuan tentang sistem, <strong>bukan</strong> anjuran strategi.
+          </p>
+          <p style="margin-bottom:0">
+            Batas riset ini: bobot pasti tiap sinyal tidak dipublikasikan, jadi playbook ini adalah kumpulan hipotesis terarah
+            + protokol untuk mengujinya di akun kita sendiri. Kalau ada taktik yang terbukti tidak berlaku di niche-mu,
+            buang — bukan akunnya yang salah, memang begitu cara menguji.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="prose" style="margin-top:2.5rem">
+      <p><a href="sumber.html" style="font-weight:640">Lihat semua sumber &amp; tingkat buktinya →</a></p>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="index.html">Ringkasan</a>
+      <a href="bedah.html">Bedah + bukti</a>
+      <a href="playbook.html">Playbook</a>
+      <a href="sumber.html">Sumber</a>
+      <a href="riset-lengkap.md">riset-lengkap.md</a>
+    </div>
+    <p style="margin:0">Riset &amp; penulisan: Paimon Chan · 13 Nov 2026. Tidak berafiliasi dengan TikTok atau ByteDance.</p>
+  </div>
+</footer>
+
+<script src="assets/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bedah + bukti — arsitektur, objektif, dan mitos algoritma TikTok</title>
+<meta name="description" content="Arsitektur funnel algoritma TikTok, model dan infrastruktur (Monolith, Deep Retrieval, HLLM, LONGER, Interest Clock, X-Rec), fungsi objektif dari dokumen internal, gerbang kelayakan, dan tabel mitos vs fakta.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="assets/style.css">
+<script>
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Lewati ke konten</a>
+
+<header class="site-header">
+  <div class="wrap inner">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Bedah Algoritma TikTok</a>
+    <nav class="nav" aria-label="Navigasi utama">
+      <a href="index.html">Ringkasan</a>
+      <a href="bedah.html" aria-current="page">Bedah + bukti</a>
+      <a href="playbook.html">Playbook</a>
+      <a href="sumber.html">Sumber</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Ganti tema terang/gelap" title="Ganti tema">◐</button>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <section class="hero">
+      <p class="eyebrow">Halaman 1 dari 3 · bedah teknis</p>
+      <h1>Bedah: apa yang benar-benar terverifikasi</h1>
+      <p class="lede">Arsitektur, objektif, infrastruktur, gerbang kelayakan, dan daftar klaim populer yang tidak punya sumber primer.</p>
+    </section>
+
+    <section class="prose" style="padding-top:2rem">
+      <h2 id="tier">0. Tingkat bukti yang dipakai di seluruh situs</h2>
+      <p>Tanpa ini, semua tulisan tentang algoritma TikTok terlihat sama kuatnya. Padahal tidak.</p>
+      <div class="table-wrap">
+        <table class="stack">
+          <thead><tr><th>Tier</th><th>Jenis sumber</th><th>Bobot</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Tier"><span class="tier t1">T1</span></td>
+              <td data-label="Sumber">Dokumen resmi TikTok/Douyin, regulator (Komisi Eropa), putusan pengadilan</td>
+              <td data-label="Bobot">Fakta, tapi bisa normatif — apa yang <em>diklaim</em> berjalan</td>
+            </tr>
+            <tr>
+              <td data-label="Tier"><span class="tier t2">T2</span></td>
+              <td data-label="Sumber">Dokumen internal bocor yang keasliannya dikonfirmasi (TikTok Algo 101, gugatan Kentucky, manual sensor Douyin)</td>
+              <td data-label="Bobot">Fakta kuat soal desain &amp; tujuan internal</td>
+            </tr>
+            <tr>
+              <td data-label="Tier"><span class="tier t3">T3</span></td>
+              <td data-label="Sumber">Paper engineering ByteDance (Monolith, Deep Retrieval, Interest Clock, HLLM, LONGER, Trinity, X-Rec)</td>
+              <td data-label="Bobot">Fakta komponen &amp; hasil A/B online — bukan spesifikasi penuh For You</td>
+            </tr>
+            <tr>
+              <td data-label="Tier"><span class="tier t4">T4</span></td>
+              <td data-label="Sumber">Studi audit eksternal (sock puppet / bot)</td>
+              <td data-label="Bobot">Mengukur <em>perilaku</em> sistem, bukan mekanismenya</td>
+            </tr>
+            <tr>
+              <td data-label="Tier"><span class="tier t5">T5</span></td>
+              <td data-label="Sumber">Folklore operator, blog "system design", riset sekuritas, self-media Tiongkok</td>
+              <td data-label="Bobot">Hipotesis. Angkanya hampir selalu tanpa sumber</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="prose-wide">
+      <h2 id="arsitektur">1. Arsitektur: funnel, bukan satu model</h2>
+      <p class="prose">
+        TikTok sendiri merangkumnya dalam lima tahap <span class="tier t1">T1</span>: <strong>selecting videos → prediction → ranking →
+        similarity check → recommendation rules</strong>. Douyin menyebut 召回 (recall) → 过滤 → 排序. Pengadilan banding
+        D.C. Circuit mendeskripsikan hal yang sama sebagai temuan fakta: engine <em>"identifies a pool of candidate videos for a user,
+        then scores and ranks those videos using machine-learning models"</em> <span class="tier t1">T1</span>.
+      </p>
+
+      <div class="grid cols-2" style="margin:1.6em 0">
+        <article class="card">
+          <h3>① Recall / kandidat</h3>
+          <p>Menyaring ratusan juta video jadi ribuan kandidat. Model utama yang diakui Douyin: <strong>dua-tower</strong> (user vector × item vector). Ada juga <strong>Deep Retrieval</strong> — retrieval berbasis path diskret + beam search tanpa asumsi ruang Euclidean <span class="tier t3">T3</span>.</p>
+          <p class="ui-quiet" style="margin-bottom:0">Trinity (2024) menyatukan multi-interest, long-tail, dan long-term interest di tahap retrieval, dan "telah di-deploy di recommender Douyin".</p>
+        </article>
+        <article class="card">
+          <h3>② Prediksi &amp; ③ Ranking</h3>
+          <p>Skor akhir = kombinasi berbobot banyak prediksi aksi (multi-objective). Model ranking yang disebut resmi Douyin: <strong>Wide&amp;Deep</strong> — Wide untuk "hafalan" kombinasi fitur historis, Deep untuk generalisasi ke fitur jarang <span class="tier t1">T1</span>.</p>
+          <p class="ui-quiet" style="margin-bottom:0">Generasi berikutnya: ranker jauh lebih besar dan berbasis transformer/LLM (LONGER, HLLM) <span class="tier t3">T3</span>.</p>
+        </article>
+        <article class="card">
+          <h3>④ Similarity check / 打散 (dispersion)</h3>
+          <p>Video teratas bisa <em>diganti</em> kalau terlalu mirip dengan video sebelumnya (mis. sound sama), untuk menjaga variasi. Dokumen internal menyebut solusi "dispersion" untuk masalah kebosanan <span class="tier t1">T1</span><span class="tier t2">T2</span>.</p>
+        </article>
+        <article class="card">
+          <h3>⑤ Recommendation rules</h3>
+          <p>Aturan yang dipasang di beberapa titik: konten dari kreator di region yang sama, akun di bawah 16 tahun tidak eligible untuk For You, kategori konten tertentu tidak boleh direkomendasikan <span class="tier t1">T1</span>.</p>
+        </article>
+      </div>
+
+      <h3>Infrastruktur real-time: kenapa feed terasa pintar dalam hitungan menit</h3>
+      <p class="prose">
+        <strong>Monolith</strong> (paper ByteDance, 2022) menjelaskan mekanisme yang paling sering terasa pengguna:
+        <em>embedding table</em> tanpa tabrakan hash (Cuckoo hashing) plus <em>online training</em> dari stream aksi pengguna
+        (Kafka + Flink joiner) yang menyinkronkan parameter ke server serving tiap interval menit. Modelnya tidak menunggu retrain harian;
+        embedding-nya nyaris real-time, sementara layer dense diperbarui lebih lambat <span class="tier t3">T3</span>.
+      </p>
+      <div class="callout warn">
+        <span class="label">Kehati-hatian</span>
+        <p style="margin-bottom:0">Paper Monolith menyebut deployment di <em>BytePlus Recommend</em> (produk komersial ByteDance). Penggunaan komponen ini di TikTok = inferensi yang wajar, <strong>bukan</strong> pernyataan resmi paper. Jangan kutip sebagai "ini algoritma FYP TikTok".</p>
+      </div>
+
+      <h3>Garis waktu teknologi (yang punya paper)</h3>
+      <div class="table-wrap">
+        <table class="stack">
+          <thead><tr><th>Tahun</th><th>Komponen</th><th>Klaim deployment di paper</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Tahun">2020</td><td data-label="Komponen">Deep Retrieval</td><td data-label="Deployment">Retrieval berbasis struktur diskret, beam search</td></tr>
+            <tr><td data-label="Tahun">2022</td><td data-label="Komponen">Monolith</td><td data-label="Deployment">Landed in BytePlus Recommend; online training</td></tr>
+            <tr><td data-label="Tahun">2024</td><td data-label="Komponen">Trinity</td><td data-label="Deployment">Retriever di-deploy di recommender Douyin</td></tr>
+            <tr><td data-label="Tahun">2024</td><td data-label="Komponen">Interest Clock (SIGIR)</td><td data-label="Deployment">Deploy di Douyin Music App; +0,509% active days, +0,758% durasi app</td></tr>
+            <tr><td data-label="Tahun">2024</td><td data-label="Komponen">HLLM</td><td data-label="Deployment">LLM dua tingkat untuk item &amp; user modeling; ada A/B online</td></tr>
+            <tr><td data-label="Tahun">2025</td><td data-label="Komponen">LONGER</td><td data-label="Deployment">Deploy di 10+ skenario ByteDance, melayani miliaran user</td></tr>
+            <tr><td data-label="Tahun">2026</td><td data-label="Komponen">X-Rec</td><td data-label="Deployment">Retrieval generatif (flow matching), live sebagai sumber retrieval vertikal baru di TikTok; +4,1484% engagement vertikal</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="ui-quiet">Arah yang terbaca: ranker makin besar (transformer/LLM), retrieval bergeser dari ANN murni ke <em>generatif</em>. Artinya "membaca tren" makin bergantung pada representasi konten, bukan pada tag.</p>
+    </section>
+
+    <hr>
+
+    <section class="prose-wide">
+      <h2 id="objektif">2. Fungsi objektif: yang sebenarnya dimaksimalkan</h2>
+
+      <div class="grid cols-2" style="margin:1.4em 0">
+        <article class="card">
+          <h3>Dari dokumen internal (T2)</h3>
+          <p style="margin-bottom:.4em">"TikTok Algo 101" (tim engineering Beijing; keaslian dikonfirmasi jubir TikTok):</p>
+          <ul style="margin-bottom:0">
+            <li>4 tujuan: 用户价值, 用户价值(长期), 作者价值, 平台价值 — user value, long-term user value, creator value, platform value.</li>
+            <li>Ultimate goal: menambah DAU.</li>
+            <li>Dua metrik yang dioptimasi: <strong>retention</strong> (user kembali) dan <strong>time spent</strong>.</li>
+            <li>Termasuk suku negatif <code>same_author_seen</code>, <code>same_tag_today</code>; penindasan "like bait"; <em>creator monetization</em> sebagai salah satu goal.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Dari platform &amp; regulator (T1)</h3>
+          <ul style="margin-bottom:0">
+            <li>Douyin (Apr 2025): 北极星指标 = <strong>user long-term value</strong>; target multi-objektif: completion, komentar, like, konsumsi jangka panjang ke penulis, share, 跟拍, koleksi.</li>
+            <li>Douyin juga menyatakan algoritmanya "hampir tidak bergantung pada pelabelan konten/user" — ia memprediksi perilaku, bukan makna.</li>
+            <li>Komisi Eropa (5 Nov 2026): FYP melanggar DSA (efek rabbit hole) dan secara eksplisit menyatakan algoritma <strong>memprioritaskan viewing time di atas</strong> pilihan user untuk melihat lebih sedikit konten tertentu.</li>
+          </ul>
+        </article>
+      </div>
+
+      <p class="prose">
+        Gabungan dari keduanya menjelaskan perilaku yang sering dikeluhkan: tombol "Not interested" kalah bobot dari watch time.
+        Artinya audiens yang salah sasaran sulit "dibersihkan" lewat kontrol user — relevansi di level <em>hook, bahasa, dan konteks</em>
+        lebih menentukan daripada mengandalkan koreksi manual.
+      </p>
+    </section>
+
+    <hr>
+
+    <section class="prose-wide">
+      <h2 id="kelayakan">3. Gerbang kelayakan: banyak video "gagal" sebelum masuk ranking</h2>
+      <p class="prose">
+        Sebelum ranking, ada penyaringan. Ini bagian yang paling sering diabaikan kreator, padahal dampaknya biner:
+        konten yang tidak eligible <strong>tidak akan pernah</strong> muncul di For You, tidak peduli seberapa bagus retensinya.
+      </p>
+      <ul class="prose">
+        <li>Moderasi otomatis + manusia; konten yang lolos moderasi sajalah yang masuk pool kandidat <span class="tier t1">T1</span>.</li>
+        <li>Kategori <strong>FYF-ineligible</strong> yang tertulis di Community Guidelines: misinformasi berisiko sedang, materi yang dipakai ulang tanpa nilai baru (<em>unoriginal</em>), kualitas rendah/minim edit, manipulasi engagement, klaim berat badan/body ideal, konten akun di bawah 16 tahun, situs judi, dsb. <span class="tier t1">T1</span></li>
+        <li>Konten di bawah review, atau "video yang berusaha menaikkan trafik secara artifisial", juga tidak eligible <span class="tier t1">T1</span>.</li>
+        <li>TikTok menyatakan setiap video dapat ditinjau ulang <em>"if it gains popularity, or if it's reported"</em>. Douyin merumuskan hal serupa: makin tinggi trafik, makin sering dan makin ketat dievaluasi <span class="tier t1">T1</span>.</li>
+        <li>Pelanggaran berulang → akun dapat kehilangan akses ke For You/Following selama 90 hari <span class="tier t1">T1</span>.</li>
+      </ul>
+      <div class="callout">
+        <span class="label">Ini bagian yang benar dari mitos "kolam"</span>
+        <p style="margin-bottom:0">
+          Gagasan bahwa "makin tinggi trafik → makin ketat pengawasan" itu <strong>nyata dan resmi</strong>. Yang tidak punya dasar adalah
+          angka kolamnya (200–500 viewer, ambang completion 45%, 4–6 tingkat). Istilah "traffic pool" di bocoran manual sensor Douyin
+          justru berarti <em>eskalasi ke review manusia berlapis</em> — soal moderasi, bukan kelas distribusi <span class="tier t2">T2</span>.
+        </p>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="prose-wide">
+      <h2 id="perilaku">4. Perilaku terukur: apa yang studi audit temukan</h2>
+      <p class="prose">Ini bukan deskripsi desain, tapi hasil pengukuran. Berguna untuk menetapkan benchmark realistis.</p>
+      <div class="table-wrap">
+        <table class="stack">
+          <thead><tr><th>Studi</th><th>Temuan</th><th>Tier</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Studi">WSJ, ~100 akun bot (2021)</td>
+              <td data-label="Temuan">Minat tersimpulkan dalam 40 menit–2 jam; rata-rata view video awal 6,31 juta → turun ke 0,78 juta saat masuk niche. Hanya watch time yang tampak benar-benar menentukan.</td>
+              <td data-label="Tier"><span class="tier t4">T4</span></td>
+            </tr>
+            <tr>
+              <td data-label="Studi">CCDH (Des 2022)</td>
+              <td data-label="Temuan">Konten bunuh diri muncul dalam 2,6 menit di akun baru ber-username "loseweight"; akun "vulnerable" dapat 12× video self-harm. TikTok membantah metodologinya.</td>
+              <td data-label="Tier"><span class="tier t4">T4</span></td>
+            </tr>
+            <tr>
+              <td data-label="Studi">Amnesty + AI Forensics (2023)</td>
+              <td data-label="Temuan">Setelah 5–6 jam, hampir 1 dari 2 video terkait kesehatan mental (≈10× kontrol).</td>
+              <td data-label="Tier"><span class="tier t4">T4</span></td>
+            </tr>
+            <tr>
+              <td data-label="Studi">arXiv 2503.20231</td>
+              <td data-label="Temuan">Amplifikasi minat kuat terjadi dalam ±200 video pertama; semakin kuat amplifikasi, semakin turun eksplorasi (korelasi negatif dengan hashtag baru).</td>
+              <td data-label="Tier"><span class="tier t4">T4</span></td>
+            </tr>
+            <tr>
+              <td data-label="Studi">arXiv 2403.12410</td>
+              <td data-label="Temuan">Exploitation = 30–50% dari 1.000 video pertama; like dan follow adalah pendorong personalisasi utama.</td>
+              <td data-label="Tier"><span class="tier t4">T4</span></td>
+            </tr>
+            <tr>
+              <td data-label="Studi">arXiv 2301.04945 (data donation, 347 user, 9,2 juta rekomendasi)</td>
+              <td data-label="Temuan">Atensi user stabil di sekitar 45%; <strong>55% video yang direkomendasikan tidak ditonton sampai habis</strong>, mayoritas di-skip sebelum setengah durasi.</td>
+              <td data-label="Tier"><span class="tier t4">T4</span></td>
+            </tr>
+            <tr>
+              <td data-label="Studi">arXiv 2501.17831 (NYU Abu Dhabi)</td>
+              <td data-label="Temuan">323–381 sock puppet, ±394k video: akun yang di-seed konten Partai Republik menerima ±11,8% lebih banyak konten sepaham; didorong konten negative partisanship.</td>
+              <td data-label="Tier"><span class="tier t4">T4</span></td>
+            </tr>
+            <tr>
+              <td data-label="Studi">Edelson (Northeastern) + Politico</td>
+              <td data-label="Temuan">TikTok bersifat "majoritarian": mengamplifikasi yang sudah populer secara luas, dengan amplifikasi asimetris yang berubah menurut periode.</td>
+              <td data-label="Tier"><span class="tier t4">T4</span></td>
+            </tr>
+            <tr>
+              <td data-label="Studi">Dokumen gugatan Kentucky</td>
+              <td data-label="Temuan">Kebiasaan terbentuk setelah ±260 video / ±35 menit; alat limit waktu diukur dengan metrik "public trust" (A/B: 108,5 → 107 menit); algoritma diubah setelah temuan internal bahwa FYP penuh "not attractive subjects" → mengamplifikasi kreator yang dianggap "beautiful".</td>
+              <td data-label="Tier"><span class="tier t2">T2</span></td>
+            </tr>
+            <tr>
+              <td data-label="Studi">arXiv 2111.02452 (virality)</td>
+              <td data-label="Temuan">Prediktor terkuat viralitas = popularitas kreator (follower ≥10k), lalu skala shot (close-up/medium), adanya teks, POV orang kedua; fitur sisi "recommendation system" justru prediktor terlemah.</td>
+              <td data-label="Tier"><span class="tier t4">T4</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="ui-quiet">
+        Catatan: "popularitas kreator jadi prediktor terkuat" tidak bertentangan dengan pernyataan resmi bahwa jumlah follower bukan faktor langsung
+        dalam ranking. Follower memberi (a) audiens awal yang bisa dicapai lewat Following/search/profil, dan (b) kredibilitas historis yang mudah
+        ditangkap model — beda jalur, efek serupa.
+      </p>
+    </section>
+
+    <hr>
+
+    <section class="prose-wide">
+      <h2 id="konteks">5. Konteks 2024–2026 yang mengubah objek riset</h2>
+      <ul class="prose">
+        <li><strong>D.C. Circuit, 6 Des 2024</strong> <span class="tier t1">T1</span>: engine "originally developed by ByteDance"; 9 engineer Tiongkok terus mengembangkannya; di-deploy di cloud Oracle; ByteDance tetap "completely in control of developing the Source Code … including the Recommendation Engine". Putusan juga mencatat tuas manual: <em>heating</em> (promosi) dan <em>filtering</em> (demosi), tiap promosi ditinjau manusia.</li>
+        <li><strong>22 Jan 2026</strong> <span class="tier t1">T1</span>: JV TikTok USDS resmi — Oracle, Silver Lake, MGX masing-masing 15%, ByteDance 19,9%. JV akan <em>retrain, test, and update</em> algoritma rekomendasi di atas data pengguna AS, diamankan di cloud Oracle.</li>
+        <li><strong>Konsekuensi praktis</strong>: sekarang ada dua instans algoritma yang akan makin divergen. Eksperimen kecil yang kamu lakukan di akun AS tidak otomatis berlaku di Indonesia, dan sebaliknya — jadi pelajari pola di audiensmu sendiri, bukan di forum luar.</li>
+        <li><strong>DSA</strong>: TikTok wajib menyediakan feed non-personal, menjelaskan parameter utama (Art. 27), dan kini menghadapi temuan awal soal rabbit hole (Nov 2026).</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section class="prose-wide">
+      <h2 id="mitos">6. Mitos vs fakta</h2>
+      <div class="table-wrap">
+        <table class="stack">
+          <thead><tr><th>Klaim populer</th><th>Status</th><th>Dasar</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Klaim">Video baru diuji ke "kolam" 200–500 viewer, naik ke 1.000–5.000 kalau completion &gt;45%, 4–6 tingkat</td>
+              <td data-label="Status"><strong>Tidak terbukti.</strong> Bentuk kualitatifnya wajar (konten yang perform dapat lebih banyak eksposur), tapi angka, ukuran batch, dan ambang batas tidak punya sumber primer.</td>
+              <td data-label="Dasar">Tidak ada di materi resmi Douyin/TikTok maupun paper; tercatat sebagai "evidence gap" di analisis pihak ketiga <span class="tier t5">T5</span></td>
+            </tr>
+            <tr>
+              <td data-label="Klaim">Algoritma bekerja dengan memberi tag ke konten dan user, lalu mencocokkan tag</td>
+              <td data-label="Status"><strong>Dibantah resmi.</strong></td>
+              <td data-label="Dasar">Pernyataan Douyin: hampir tidak bergantung pada pelabelan; memprediksi perilaku lewat jaringan saraf <span class="tier t1">T1</span></td>
+            </tr>
+            <tr>
+              <td data-label="Klaim">Menambahkan #fyp / #viral menaikkan jangkauan</td>
+              <td data-label="Status"><strong>Dibantah resmi.</strong></td>
+              <td data-label="Dasar">TikTok Newsroom: hashtag #FYP/#ForYou "work just like all other hashtags" <span class="tier t1">T1</span></td>
+            </tr>
+            <tr>
+              <td data-label="Klaim">Jumlah follower bukan faktor sama sekali</td>
+              <td data-label="Status"><strong>Setengah benar.</strong> Bukan faktor langsung di ranking, tapi prediktor terkuat viralitas secara statistik.</td>
+              <td data-label="Dasar">Pernyataan resmi 2020 <span class="tier t1">T1</span> vs studi virality <span class="tier t4">T4</span></td>
+            </tr>
+            <tr>
+              <td data-label="Klaim">Posting lebih sering menurunkan performa</td>
+              <td data-label="Status"><strong>Dibantah resmi</strong> — tapi dokumen internal menunjukkan penalti "tag sama di hari yang sama", jadi <em>penyebaran</em> tetap penting.</td>
+              <td data-label="Dasar">TikTok: "the amount of videos you post won't impact how your content is recommended" <span class="tier t1">T1</span>; suku <code>same_tag_today</code> <span class="tier t2">T2</span></td>
+            </tr>
+            <tr>
+              <td data-label="Klaim">Menonton video sendiri / like sendiri bisa "memanaskan" video</td>
+              <td data-label="Status"><strong>Tidak ada dasar.</strong> Manipulasi engagement justru kategori ineligible.</td>
+              <td data-label="Dasar">FYF standards <span class="tier t1">T1</span></td>
+            </tr>
+            <tr>
+              <td data-label="Klaim">Waktu posting paling optimal: jam 19.00–21.00</td>
+              <td data-label="Status"><strong>Tidak universal.</strong> Jam terbaik = kapan audiensmu aktif, dan itu cuma bisa dibaca dari analytics sendiri.</td>
+              <td data-label="Dasar">Creator Academy + data donation: pola user sangat individual <span class="tier t4">T4</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="prose-wide">
+      <h2 id="jangan-dikutip">7. Sumber yang sebaiknya tidak dikutip</h2>
+      <p class="prose">
+        Sebagian besar artikel "reverse engineering algoritma TikTok" hari ini adalah <strong>konten hasil LLM tanpa sumber</strong>.
+        Angka-angka yang mereka tulis — ranker 500M parameter, "200+ fitur", 1.000 kandidat, 73k request/detik, 34 juta upload/hari —
+        tidak berasal dari ByteDance dan tidak ada rujukannya. Self-media Tiongkok juga memproduksi formula karangan
+        (mis. "R = Σ(P×C×E×S×L)"), "白皮书" yang tidak terverifikasi, dan ambang batas yang terdengar presisi.
+      </p>
+      <div class="callout danger">
+        <span class="label">Tes cepat</span>
+        <p style="margin-bottom:0">
+          Kalau sebuah tulisan memberi angka presisi tentang algoritma, tanyakan empat hal: sumber primer mana, sampel berapa,
+          tanggal berapa, cakupan wilayah apa. Kalau tidak bisa dijawab, itu hipotesis — bukan aturan platform.
+        </p>
+      </div>
+    </section>
+
+    <div class="prose" style="margin-top:2.5rem">
+      <p><a href="playbook.html" style="font-weight:640">Lanjut ke Playbook: cara memakai mekanisme ini untuk membuat video rame &amp; follower naik →</a></p>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="index.html">Ringkasan</a>
+      <a href="bedah.html">Bedah + bukti</a>
+      <a href="playbook.html">Playbook</a>
+      <a href="sumber.html">Sumber</a>
+      <a href="riset-lengkap.md">riset-lengkap.md</a>
+    </div>
+    <p style="margin:0">Riset &amp; penulisan: Paimon Chan · 13 Nov 2026. Tidak berafiliasi dengan TikTok atau ByteDance.</p>
+  </div>
+</footer>
+
+<script src="assets/app.js" defer></script>
+</body>
+</html>
