@@ -1,0 +1,78 @@
+{
+  "project": "TikTok Growth Lab",
+  "mission": "Menaikkan followers & views akun TikTok @elite.paimonchan (animasi AI manhwa/webtoon)",
+  "updated_at": "2026-11-13",
+  "accounts": [
+    {
+      "platform": "TikTok",
+      "handle": "@elite.paimonchan",
+      "url": "https://www.tiktok.com/@elite.paimonchan",
+      "followers": 4414,
+      "following": 11,
+      "likes": 15000,
+      "likes_label": "15K (dibulatkan TikTok)",
+      "videos": 125,
+      "bio": "manhwa enthusiast / i will make any character manhwa to live",
+      "niche": "Animasi AI karakter manhwa/webtoon (pipeline MiniMax H3)",
+      "labels": "Semua video berlabel \"Creator labeled as AI-generated\" (patuh, jangan diubah)",
+      "measured_at": "2026-11-13",
+      "source": "TikTok embed publik: /embed/@elite.paimonchan"
+    },
+    {
+      "platform": "YouTube",
+      "handle": "@ELITE.PAIMONCHAN",
+      "url": "https://www.youtube.com/@ELITE.PAIMONCHAN",
+      "subscribers": 317,
+      "videos": 122,
+      "note": "Shorts rata-rata 2–27 views (satu 2,8K). Prioritaskan TikTok dulu.",
+      "measured_at": "2026-11-13",
+      "source": "Halaman /about kanal YouTube"
+    }
+  ],
+  "headline_finding": "4.414 follower tapi video baru hanya dapat ±100 views. Jumlah follower jauh di atas jangkauan — artinya follower lama sudah tidak menonton, dan For You hampir tidak melempar.",
+  "targets": [
+    { "metric": "Like rate per video", "now": "0,6%–3% (terbaik 8,2%)", "target": "≥5% konsisten", "why": "Ukuran langsung apakah hook & durasi bekerja" },
+    { "metric": "Median views", "now": "±100", "target": "≥1.000 dalam 4 minggu", "why": "Dengan volume sama atau lebih kecil — bukti distribusi For You jalan" },
+    { "metric": "Selesai nonton (completion)", "now": "belum diketahui (butuh analytics)", "target": "≥50%", "why": "Benchmark pihak ketiga: 55% video TikTok tidak ditonton sampai habis" },
+    { "metric": "Follower baru per 1.000 views", "now": "belum diketahui", "target": "≥10", "why": "Ini metrik pertumbuhan akun, bukan jumlah views" },
+    { "metric": "Komentar per video", "now": "0–1", "target": "≥10", "why": "Komentar sinyal resmi + bahan balasan berbentuk video" }
+  ],
+  "phases": [
+    {
+      "id": "fase-1",
+      "name": "Fase 1 — Audit & perbaikan gratis",
+      "window": "Minggu 1 (13–19 Nov 2026)",
+      "status": "berjalan",
+      "goals": [
+        "Cek status kelayakan tiap video terakhir di TikTok Studio",
+        "Berhenti posting dua video <6 jam dengan tag sama",
+        "Turunkan volume ke 3–4 video/minggu"
+      ],
+      "done_when": "Semua video baru bebas catatan \"tidak layak untuk For You\" dan tidak ada lagi posting berdekatan"
+    },
+    {
+      "id": "fase-2",
+      "name": "Fase 2 — Hook, retensi, dan seri",
+      "window": "Minggu 2–4",
+      "status": "menunggu",
+      "goals": [
+        "Hook 1,5 detik + teks di layar + frame akhir menyambung ke awal",
+        "Seri bernomor (Sirin Part 1/2/3) + playlist + bio yang menjanjikan konten berulang",
+        "Uji 5 variasi dari video terbaik (27 Sep: 49,2K views, like rate 8,2%), ubah satu elemen per variasi"
+      ],
+      "done_when": "Like rate ≥5% di mayoritas video baru dan follower baru ≥10 per 1.000 views"
+    },
+    {
+      "id": "fase-3",
+      "name": "Fase 3 — Skala & aset yang bisa dipakai orang lain",
+      "window": "Bulan 2+",
+      "status": "menunggu",
+      "goals": [
+        "Dorong original sound jadi tren yang dipakai kreator lain",
+        "Perluas ke fandom manhwa spesifik (kata kunci pencarian + karakter)",
+        "Baru setelah TikTok stabil: rombak YouTube Shorts"
+      ],
+      "done_when": "Ada video dari akun lain yang memakai sound milik kita"
+    }
+  ]
+}

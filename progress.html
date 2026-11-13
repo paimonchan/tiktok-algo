@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Progress — log pertumbuhan akun TikTok kita</title>
+<meta name="description" content="Log progres bertahap akun TikTok @elite.paimonchan: tanggal, angka akun, aksi yang dijalankan, hasil yang terlihat, dan keputusan berikutnya. Update dikirim lewat Telegram.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#0f6f63">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css?v=4">
+<script>
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Lewati ke konten</a>
+
+<header class="site-header">
+  <div class="wrap inner">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>TikTok Growth Lab</a>
+    <nav class="nav" aria-label="Navigasi utama">
+      <a href="mudah.html">Mulai cepat</a>
+      <a href="index.html">Status</a>
+      <a href="audit.html">Review akun</a>
+      <a href="progress.html" aria-current="page">Progress</a>
+      <a href="playbook.html">Playbook</a>
+      <a href="bedah.html">Riset</a>
+      <a href="sumber.html">Sumber</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Ganti tema terang/gelap" title="Ganti tema">◐</button>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <section class="hero">
+      <p class="eyebrow">Log bertahap · terakhir <span id="lastUpdated">13 Nov 2026</span></p>
+      <h1>Progress</h1>
+      <p class="lede">
+        Semua perubahan akun dicatat di sini sebagai entri bertanggal: angka akun hari itu, aksi yang dijalankan,
+        hasil yang terlihat, dan keputusan berikutnya. Tujuannya satu: supaya kita tahu apa yang benar-benar bekerja,
+        bukan saling mengingat-ingat.
+      </p>
+    </section>
+
+    <section class="prose" style="padding-top:1.4rem">
+      <div class="callout">
+        <span class="label">Cara update</span>
+        <p style="margin-bottom:0" id="progressHow">Memuat…</p>
+      </div>
+      <div class="callout" id="nextCheckpoint"><span class="label">Checkpoint</span><p style="margin:0">Memuat…</p></div>
+      <h2 style="font-size:1.1rem">Yang dicatat</h2>
+      <ul id="progressWhat"><li>Memuat…</li></ul>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Garis waktu</h2>
+      <div id="progressTimeline"><p class="ui-quiet">Memuat…</p></div>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Tabel ringkas</h2>
+      <div id="progressTable"><p class="ui-quiet">Memuat…</p></div>
+      <p class="ui-quiet" style="margin-top:.8rem">
+        Kolom <strong>median views</strong> dihitung dari video-video terbaru saat entri dibuat — ini angka yang kita
+        targetkan naik ke ≥1.000, bukan rata-rata yang bisa ditarik satu video viral.
+      </p>
+    </section>
+
+    <hr>
+
+    <section class="prose">
+      <h2>Aturan pencatatan</h2>
+      <ul>
+        <li>Setiap entri menyebut <strong>aksi</strong> dan <strong>hasil</strong> secara terpisah, supaya korelasi tidak berubah jadi klaim sebab-akibat.</li>
+        <li>Satu eksperimen = satu variabel. Kalau dua hal diubah di minggu yang sama, entrinya menyebut bahwa kesimpulannya lemah.</li>
+        <li>Hasil yang jelek tetap dicatat. Log yang hanya berisi kemenangan tidak berguna untuk keputusan.</li>
+        <li>Angka yang tidak bisa diverifikasi (mis. "kayaknya naik") tidak masuk tabel — hanya angka yang terukur.</li>
+      </ul>
+      <p class="ui-quiet">Konteks diagnosis ada di <a href="audit.html">Review akun</a>; taktiknya di <a href="playbook.html">Playbook</a>.</p>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="mudah.html">Mulai cepat</a>
+      <a href="index.html">Status</a>
+      <a href="audit.html">Review akun</a>
+      <a href="progress.html">Progress</a>
+      <a href="playbook.html">Playbook</a>
+      <a href="bedah.html">Riset</a>
+      <a href="sumber.html">Sumber</a>
+    </div>
+    <p style="margin:0">TikTok Growth Lab — riset &amp; penulisan Paimon Chan · 13 Nov 2026. Tidak berafiliasi dengan TikTok atau ByteDance.</p>
+  </div>
+</footer>
+
+<script src="assets/app.js?v=4" defer></script>
+<script src="assets/growth.js?v=4" defer></script>
+</body>
+</html>

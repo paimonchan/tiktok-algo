@@ -3,12 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bedah Algoritma TikTok — arsitektur, bukti, dan playbook</title>
-<meta name="description" content="Bedah algoritma TikTok berbasis sumber primer: dokumen internal Algo 101, putusan pengadilan, paper ByteDance, audit akademik. Plus playbook yang bisa dieksekusi dan daftar mitos yang harus ditinggalkan.">
+<title>TikTok Growth Lab — menaikkan akun @elite.paimonchan</title>
+<meta name="description" content="Ruang kerja pertumbuhan akun TikTok @elite.paimonchan: status akun, target terukur, rencana bertahap, review akun berbasis data, log progres, dan riset algoritma TikTok yang bisa diverifikasi.">
 <meta name="color-scheme" content="light dark">
-<link rel="stylesheet" href="assets/style.css">
+<meta name="theme-color" content="#0f6f63">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css?v=4">
 <script>
-  // Set tema sebelum paint untuk menghindari kedip.
   try {
     var t = localStorage.getItem('theme');
     if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
@@ -20,12 +21,14 @@
 
 <header class="site-header">
   <div class="wrap inner">
-    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Bedah Algoritma TikTok</a>
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>TikTok Growth Lab</a>
     <nav class="nav" aria-label="Navigasi utama">
-      <a href="mudah.html">Versi simpel</a>
-      <a href="index.html" aria-current="page">Ringkasan</a>
-      <a href="bedah.html">Bedah + bukti</a>
+      <a href="mudah.html">Mulai cepat</a>
+      <a href="index.html" aria-current="page">Status</a>
+      <a href="audit.html">Review akun</a>
+      <a href="progress.html">Progress</a>
       <a href="playbook.html">Playbook</a>
+      <a href="bedah.html">Riset</a>
       <a href="sumber.html">Sumber</a>
     </nav>
     <button class="theme-btn" id="themeBtn" type="button" aria-label="Ganti tema terang/gelap" title="Ganti tema">◐</button>
@@ -33,151 +36,110 @@
 </header>
 
 <main id="main">
-  <section class="hero wrap">
-    <p class="eyebrow">Riset primer · diperbarui 13 November 2026</p>
-    <h1>Algoritma TikTok, dibedah dari sumbernya — bukan dari rumor</h1>
-    <p class="lede">
-      Ini bukan artikel "reverse engineering" hasil karangan. Setiap klaim di sini diberi label tingkat bukti:
-      dokumen resmi platform, putusan pengadilan, dokumen internal bocor yang keasliannya dikonfirmasi,
-      paper engineering ByteDance, atau studi audit akademik. Yang tidak punya sumber, kita sebut sebagai mitos.
-    </p>
-    <div class="hero-meta">
-      <span class="pill">40+ sumber</span>
-      <span class="pill">Paper ByteDance 2020–2026</span>
-      <span class="pill">Dokumen internal + pengadilan</span>
-      <span class="pill">Playbook yang bisa dieksekusi</span>
-    </div>
-  </section>
-
   <div class="wrap">
+    <section class="hero">
+      <p class="eyebrow">Ruang kerja · diperbarui <span id="lastUpdated">13 Nov 2026</span></p>
+      <h1>Misi: menaikkan akun TikTok kita</h1>
+      <p class="lede">
+        Akun <strong>@elite.paimonchan</strong> — animasi AI karakter manhwa/webtoon. Halaman ini memantau
+        angka yang terukur, aksi yang sedang dijalankan, dan progresnya dari waktu ke waktu.
+        Dasarnya riset algoritma TikTok yang bisa diverifikasi, bukan tips dari blog pertumbuhan.
+      </p>
+    </section>
 
-    <section class="prose" style="padding-top:2rem">
-      <div class="callout" style="margin-top:0">
-        <span class="label">Baru mulai? Baca yang ini dulu</span>
-        <p style="margin-bottom:.6em">
-          Kalau tujuanmu cuma satu — tahu cara kerja algoritmanya dan bagaimana menaikkan traffic &amp; follower —
-          buka <strong>versi simpel</strong>. Lima menit, tanpa istilah teknis, langsung berisi langkah dan tabel diagnosa.
-        </p>
-        <p style="margin-bottom:0"><a href="mudah.html" style="font-weight:640">Versi simpel (5 menit) →</a></p>
+    <section style="padding-top:1.4rem">
+      <div class="mission">
+        <h2>Temuan utama (audit 13 Nov 2026)</h2>
+        <p id="headline">Memuat data akun…</p>
       </div>
-      <h2 id="inti">Kesimpulan intinya dulu</h2>
-      <p>
-        TikTok tidak memberi nilai pada "kualitas" videomu. Per tiap request, sistem menghitung
-        <strong>nilai harapan dari beberapa aksi</strong> yang mungkin kamu lakukan — dan menyusun feed dari yang skornya tertinggi,
-        setelah dibatasi aturan safety dan diversity. Persamaan versi sederhana ini tertulis di dokumen internal
-        TikTok sendiri (<em>TikTok Algo 101</em>, keaslian dikonfirmasi perusahaan ke NYT):
-      </p>
-      <p><code>P<sub>like</sub>×V<sub>like</sub> + P<sub>comment</sub>×V<sub>comment</sub> + E<sub>playtime</sub>×V<sub>playtime</sub> + P<sub>play</sub>×V<sub>play</sub></code></p>
-      <p>
-        <span class="tier t2">T2</span> Dokumen yang sama juga menyebut sudah ada suku <strong>negatif</strong> seperti
-        <code>same_author_seen</code> dan <code>same_tag_today</code> — bosan lalu keluar aplikasi dihitung sebagai nilai total yang turun.
-        Empat tujuan yang tertulis di dokumen itu: <em>user value</em>, <em>long-term user value</em>,
-        <em>creator value</em>, <em>platform value</em>, dengan metrik yang dioptimasi: <strong>retention</strong> dan <strong>time spent</strong>.
-      </p>
-      <p>
-        Konsekuensi praktisnya: yang menentukan bukan "#fyp" atau tag, tapi apakah penonton bertahan,
-        mengulang, menyimpan, membagikan, dan <em>mengikuti</em> kamu.
-      </p>
+
+      <div class="stats" id="statusStats"><p class="ui-quiet" style="margin:0">Memuat…</p></div>
+
+      <div class="grid cols-2" style="margin-top:1.6rem">
+        <article class="card">
+          <h3>Tiga langkah berikutnya (Fase 1)</h3>
+          <ul id="nextActions"><li>Memuat…</li></ul>
+          <p class="ui-quiet" style="margin-bottom:0">Rincian caranya di <a href="playbook.html">Playbook</a>; alasan tiap langkah ada di <a href="audit.html">Review akun</a>.</p>
+        </article>
+        <article class="card">
+          <h3>Aturan main kita</h3>
+          <ul style="margin-bottom:0">
+            <li><strong>Ukur dulu, baru resep.</strong> Tidak ada rekomendasi tanpa angka.</li>
+            <li><strong>Satu variabel per batch</strong> (3–5 video), dinilai setelah 72 jam.</li>
+            <li><strong>Volume bukan jawaban</strong> — 125 video dengan median 100 views; masalahnya retensi, bukan jumlah.</li>
+            <li><strong>Yang menang diulang, yang kalah dibuang</strong> — termasuk saran dari aku.</li>
+          </ul>
+        </article>
+      </div>
     </section>
 
     <hr>
 
-    <h2 id="peta">Isi situs</h2>
-    <div class="grid cols-3">
-
-      <article class="card">
-        <a class="card-link" href="mudah.html">
-          <h3>0. Versi simpel (5 menit)</h3>
-          <p class="ui-quiet">Bahasa manusia, tanpa istilah teknis: cara kerjanya, kerangka video, rutinitas mingguan, dan tabel "kalau angka analytics jelek, ini obatnya".</p>
-        </a>
-      </article>
-
-      <article class="card">
-        <a class="card-link" href="bedah.html">
-          <h3>1. Bedah + bukti</h3>
-          <p class="ui-quiet">Arsitektur funnel (recall → prediksi → ranking → 打散 → aturan), fungsi objektif, infrastruktur real-time Monolith, apa yang berubah 2024–2026, dan tabel mitos vs fakta.</p>
-          <p class="ui-quiet" style="margin-bottom:0">Tingkat bukti T1–T5 dijelaskan di sini.</p>
-        </a>
-      </article>
-
-      <article class="card">
-        <a class="card-link" href="playbook.html">
-          <h3>2. Playbook: biar rame</h3>
-          <p class="ui-quiet">Strategi yang diturunkan dari mekanisme yang <em>terbukti</em>: hook &amp; retensi, sinyal yang benar-benar dimodelkan, konsistensi niche saat cold start, kenapa seri/episode lebih kuat daripada satu video viral.</p>
-        </a>
-      </article>
-
-      <article class="card">
-        <a class="card-link" href="playbook.html#protokol">
-          <h3>3. Protokol eksperimen</h3>
-          <p class="ui-quiet">Cara menguji sendiri: 1 variabel per 3–5 post, metrik yang dibaca, dan benchmark dari data donation 9,2 juta rekomendasi.</p>
-        </a>
-      </article>
-
-      <article class="card">
-        <a class="card-link" href="bedah.html#mitos">
-          <h3>4. Mitos yang mahal</h3>
-          <p class="ui-quiet">"Kolam 200–500 viewer lalu naik kalau completion &gt;45%", "algoritma pakai tag", "#fyp menaikkan jangkauan". Mana yang tidak punya sumber primer sama sekali.</p>
-        </a>
-      </article>
-
-      <article class="card">
-        <a class="card-link" href="sumber.html">
-          <h3>5. Sumber</h3>
-          <p class="ui-quiet">40+ tautan dengan label tingkat bukti: putusan D.C. Circuit, Komisi Eropa, paper ByteDance, dokumen gugatan, studi audit.</p>
-        </a>
-      </article>
-
-      <article class="card">
-        <a class="card-link" href="riset-lengkap.md">
-          <h3>6. Versi markdown</h3>
-          <p class="ui-quiet">Riset lengkap dalam satu file <code>.md</code> — untuk dibaca offline atau dipakai sebagai basis riset lanjutan.</p>
-        </a>
-      </article>
-
-    </div>
+    <section>
+      <h2>Target terukur</h2>
+      <p class="prose ui-quiet" style="margin-top:0">Angka inilah yang menentukan kita menang atau cuma sibuk.</p>
+      <div id="statusTargets"><p class="ui-quiet">Memuat…</p></div>
+    </section>
 
     <hr>
 
-    <section class="prose" id="cara-pakai">
-      <h2>Cara pakai situs ini</h2>
-      <ol>
-        <li><strong>Baca ringkasan di halaman ini</strong> (±3 menit) untuk tahu bentuk sistemnya.</li>
-        <li><strong>Buka playbook</strong> kalau tujuanmu langsung: video rame dan follower naik. Setiap taktik ada label bukti + cara mengujinya.</li>
-        <li><strong>Buka "Bedah + bukti"</strong> kalau mau memverifikasi sendiri atau mematahkan klaim di playbook.</li>
-        <li><strong>Jangan percaya tulisan "system design TikTok" di internet</strong> tanpa sumber. Angka populer seperti "ranker 500M parameter", "200+ fitur", "1.000 kandidat", "73k QPS" tidak berasal dari ByteDance. Lihat bagian <a href="bedah.html#mitos">mitos</a>.</li>
-      </ol>
+    <section>
+      <h2>Rencana bertahap</h2>
+      <div class="grid cols-3" id="statusPhases"><p class="ui-quiet">Memuat…</p></div>
+    </section>
 
-      <div class="callout">
-        <span class="label">Prinsip kerja</span>
-        <p style="margin-bottom:0">
-          Pisahkan <em>mekanisme</em> dari <em>folklore</em>. Mekanisme punya jejak: dokumen, putusan, paper, atau eksperimen terkontrol.
-          Folklore punya angka yang rapi dan tidak bisa ditelusuri. Kalau sebuah klaim memberi ambang batas presisi
-          ("completion 45% naik pool"), tanyakan sumber, sampel, tanggal, dan cakupannya.
-        </p>
+    <hr>
+
+    <section>
+      <h2>Progres terakhir</h2>
+      <div class="card" id="latestProgress"><p class="ui-quiet" style="margin:0">Memuat…</p></div>
+      <p style="margin-top:1rem"><a href="progress.html" style="font-weight:640">Semua log progres + cara update →</a></p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Halaman lain</h2>
+      <div class="grid cols-3">
+        <article class="card"><a class="card-link" href="mudah.html"><h3>Mulai cepat (5 menit)</h3><p class="ui-quiet" style="margin-bottom:0">Cara kerja algoritmanya dalam bahasa manusia + langkah praktis. Bacaan wajib sebelum merekam.</p></a></article>
+        <article class="card"><a class="card-link" href="audit.html"><h3>Review akun</h3><p class="ui-quiet" style="margin-bottom:0">Angka 12 video terakhir, dua mode kegagalan (reach vs resonansi), prioritas perbaikan.</p></a></article>
+        <article class="card"><a class="card-link" href="progress.html"><h3>Progress</h3><p class="ui-quiet" style="margin-bottom:0">Log bertahap: tanggal, angka akun, aksi, hasil, keputusan. Update dikirim lewat Telegram.</p></a></article>
+        <article class="card"><a class="card-link" href="playbook.html"><h3>Playbook</h3><p class="ui-quiet" style="margin-bottom:0">Taktik per taktik: alasan mekanismenya, tingkat bukti, dan cara mengukurnya.</p></a></article>
+        <article class="card"><a class="card-link" href="bedah.html"><h3>Riset &amp; bukti</h3><p class="ui-quiet" style="margin-bottom:0">Arsitektur algoritma, dokumen internal, putusan pengadilan, paper ByteDance. Untuk verifikasi mandiri.</p></a></article>
+        <article class="card" id="ytCard"><p class="ui-quiet" style="margin:0">Memuat…</p></article>
       </div>
     </section>
 
+    <hr>
+
+    <section class="prose">
+      <h2>Metode &amp; keterbatasan</h2>
+      <ul>
+        <li>Angka publik diambil dari endpoint embed TikTok (<code>/embed/@elite.paimonchan</code> dan <code>/embed/v2/&lt;id&gt;</code>), karena halaman utama memblokir akses server. Tanggal unggahan dihitung dari bit timestamp di dalam ID video.</li>
+        <li>Yang <strong>tidak</strong> bisa dilihat dari luar: rata-rata durasi tonton, persentase selesai, sumber traffic, dan status kelayakan per video — itu hanya ada di TikTok Studio milik pemilik akun. Karena itu diagnosis selalu ditandai sebagai hipotesis sampai angka tersebut datang.</li>
+        <li>Angka pembulatan tetap dibulatkan: TikTok menampilkan "15K likes", bukan 15.000.</li>
+      </ul>
+      <p class="ui-quiet">50 rujukan dengan tingkat bukti ada di <a href="sumber.html">halaman Sumber</a>; riset mentahnya di <a href="riset-lengkap.md">riset-lengkap.md</a>.</p>
+    </section>
   </div>
 </main>
 
 <footer class="site-footer">
   <div class="wrap">
     <div class="foot-links">
-      <a href="mudah.html">Versi simpel</a>
-      <a href="index.html">Ringkasan</a>
-      <a href="bedah.html">Bedah + bukti</a>
+      <a href="mudah.html">Mulai cepat</a>
+      <a href="index.html">Status</a>
+      <a href="audit.html">Review akun</a>
+      <a href="progress.html">Progress</a>
       <a href="playbook.html">Playbook</a>
+      <a href="bedah.html">Riset</a>
       <a href="sumber.html">Sumber</a>
-      <a href="riset-lengkap.md">riset-lengkap.md</a>
     </div>
-    <p style="margin:0">
-      Riset &amp; penulisan: Paimon Chan · 13 Nov 2026. Konten bersifat analitis dan tidak berafiliasi dengan TikTok atau ByteDance.
-      Semua klaim dapat diverifikasi lewat tautan di halaman <a href="sumber.html">Sumber</a>.
-    </p>
+    <p style="margin:0">TikTok Growth Lab — riset &amp; penulisan Paimon Chan · 13 Nov 2026. Tidak berafiliasi dengan TikTok atau ByteDance.</p>
   </div>
 </footer>
 
-<script src="assets/app.js" defer></script>
+<script src="assets/app.js?v=4" defer></script>
+<script src="assets/growth.js?v=4" defer></script>
 </body>
 </html>

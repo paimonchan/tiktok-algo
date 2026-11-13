@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Review akun @elite.paimonchan — audit berbasis data</title>
+<meta name="description" content="Audit akun TikTok @elite.paimonchan: angka 12 video terakhir, like rate, dua mode kegagalan (reach tanpa resonansi vs resonansi tanpa reach), pola kerusakan yang bisa diperbaiki sendiri, dan prioritas tindakan.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#0f6f63">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css?v=4">
+<script>
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Lewati ke konten</a>
+
+<header class="site-header">
+  <div class="wrap inner">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>TikTok Growth Lab</a>
+    <nav class="nav" aria-label="Navigasi utama">
+      <a href="mudah.html">Mulai cepat</a>
+      <a href="index.html">Status</a>
+      <a href="audit.html" aria-current="page">Review akun</a>
+      <a href="progress.html">Progress</a>
+      <a href="playbook.html">Playbook</a>
+      <a href="bedah.html">Riset</a>
+      <a href="sumber.html">Sumber</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Ganti tema terang/gelap" title="Ganti tema">◐</button>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <section class="hero">
+      <p class="eyebrow">Audit · diukur <span id="auditDate">13 Nov 2026</span></p>
+      <h1>Review akun @elite.paimonchan</h1>
+      <p class="lede">
+        Semua angka di bawah ini diukur langsung dari data publik TikTok, bukan dari ingatan atau perkiraan.
+        Nama akun, tanggal, dan view count per video; like/komentar/share dari endpoint per video;
+        tanggal unggahan dihitung dari ID video (urutan &amp; jarak antar unggahan jadi terlihat).
+      </p>
+      <p class="ui-quiet" id="auditMethod">Memuat metode…</p>
+      <div class="hero-meta">
+        <a class="pill" href="https://www.tiktok.com/@elite.paimonchan">Profil live di TikTok</a>
+        <a class="pill" href="https://www.youtube.com/@ELITE.PAIMONCHAN">Kanal YouTube</a>
+      </div>
+    </section>
+
+    <section class="prose" style="padding-top:1.6rem">
+      <div class="callout danger">
+        <span class="label">Diagnosis kepala</span>
+        <p style="margin-bottom:0">
+          Akun ini punya <strong>4.414 follower</strong>, tetapi 10 dari 12 video terakhir hanya mendapat
+          <strong>77–217 views</strong> (median ±100). Follower ada, penonton tidak. Ini bukan masalah "kurang viral" —
+          ini masalah distribusi per video: video baru gagal memenangkan prediksi di detik-detik pertama,
+          sehingga For You tidak melemparnya, dan follower lama sudah tidak aktif menonton.
+        </p>
+      </div>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>12 video terakhir (terbaru di atas)</h2>
+      <p class="prose ui-quiet" style="margin-top:0">
+        Kolom <strong>like rate</strong> = likes ÷ views. Ini pembeda paling berguna: ia memisahkan
+        "tidak dilempar" dari "dilempar tapi tidak nyangkut".
+      </p>
+      <div id="auditVideos"><p class="ui-quiet">Memuat…</p></div>
+
+      <details>
+        <summary>Kenapa ada video yang tidak punya kolom like/komentar/share?</summary>
+        <p>
+          Endpoint per video menyediakan tiga angka (likes, komentar, share). Untuk sebagian video, angka itu belum tersedia
+          saat audit dijalankan, jadi dibiarkan kosong alih-alih ditebak. View count selalu tersedia karena diambil dari daftar
+          video di profil.
+        </p>
+      </details>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Sampel lebih lama (likes saja)</h2>
+      <p class="prose ui-quiet" style="margin-top:0">
+        Diambil dari cuplikan mesin pencari, jadi likes-nya bisa tertinggal dari kondisi sekarang.
+        Berguna hanya untuk melihat rentang performa, bukan sebagai angka terkini.
+      </p>
+      <div id="auditOlder"><p class="ui-quiet">Memuat…</p></div>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Pola yang terlihat</h2>
+      <div class="grid cols-2" id="auditPatterns"><p class="ui-quiet">Memuat…</p></div>
+    </section>
+
+    <hr>
+
+    <section class="prose">
+      <h2>Dua penyakit yang mirip tapi obatnya beda</h2>
+      <div class="grid cols-2" style="margin:1.2em 0">
+        <article class="card">
+          <h3>Resonansi tanpa reach</h3>
+          <p style="margin-bottom:.4em"><strong>Contoh dari akun ini:</strong> 13 Nov — 217 views, 32 likes (like rate 14,7%), 7 share.</p>
+          <p class="ui-quiet" style="margin-bottom:0"><strong>Artinya:</strong> yang menonton menyukainya, tapi jumlahnya kecil. Masalahnya di <em>prediksi</em>: hook dan retensi awal belum cukup meyakinkan sistem untuk melempar lebih jauh. Obatnya: perbaiki 1,5 detik pertama dan struktur video — bukan ganti topik.</p>
+        </article>
+        <article class="card">
+          <h3>Reach tanpa resonansi</h3>
+          <p style="margin-bottom:.4em"><strong>Contoh dari akun ini:</strong> 12 Nov — 21,1K views, tetapi 133 likes (0,63%) dan hanya 1 komentar.</p>
+          <p class="ui-quiet" style="margin-bottom:0"><strong>Artinya:</strong> video dilempar ke audiens yang bukan penggemar kontennya. Biasanya karena tertarik oleh sound/hashtag/kata kunci, bukan oleh ceritanya. Obatnya: konteks di layar pada detik pertama — siapa karakternya, dari manhwa apa, kenapa harus peduli.</p>
+        </article>
+      </div>
+      <p>
+        Keduanya sering dicampur dalam satu kesimpulan ("views naik-turun nggak jelas"). Dipisahkan, keduanya jadi
+        pekerjaan yang jelas dan bisa diuji terpisah.
+      </p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Prioritas tindakan</h2>
+      <div class="table-wrap">
+        <table class="stack">
+          <thead><tr><th>Prioritas</th><th>Tindakan</th><th>Kenapa ini dulu</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Prioritas"><span class="badge badge-live">P0 hari ini</span></td>
+              <td data-label="Tindakan">Cek status kelayakan tiap video terakhir di TikTok Studio (apakah ada "tidak layak untuk For You")</td>
+              <td data-label="Kenapa">Kalau ada, semua perbaikan lain tidak akan terlihat efeknya. Ini juga menjelaskan views mentok di bawah 200.</td>
+            </tr>
+            <tr>
+              <td data-label="Prioritas"><span class="badge badge-live">P0 hari ini</span></td>
+              <td data-label="Tindakan">Hentikan unggahan berdekatan: 8 Nov ada dua video berjarak 1 menit; 9 &amp; 12 Nov dua video sehari dengan set hashtag sama</td>
+              <td data-label="Kenapa">Sistem punya suku negatif untuk kreator/tag yang berulang di hari yang sama — videonya saling berebut slot yang sama. Perbaikan ini gratis.</td>
+            </tr>
+            <tr>
+              <td data-label="Prioritas"><span class="badge badge-idle">P1 minggu ini</span></td>
+              <td data-label="Tindakan">Turunkan volume ke 3–4 video/minggu; naikkan standar per video</td>
+              <td data-label="Kenapa">125 video dengan median 100 views membuktikan jumlah bukan kendala. Yang kurang retensi.</td>
+            </tr>
+            <tr>
+              <td data-label="Prioritas"><span class="badge badge-idle">P1 minggu ini</span></td>
+              <td data-label="Tindakan">Hook 1,5 detik + teks konteks di layar + frame akhir menyambung ke awal</td>
+              <td data-label="Kenapa">Ini tiga tuas yang paling dekat dengan prediksi yang menentukan: selesai nonton dan tonton ulang.</td>
+            </tr>
+            <tr>
+              <td data-label="Prioritas"><span class="badge badge-idle">P2 minggu 2–4</span></td>
+              <td data-label="Tindakan">Seri bernomor (Sirin Part 1/2/3) + playlist + bio yang menjanjikan jadwal</td>
+              <td data-label="Kenapa">Follow adalah target prediksi resmi, dan follow tumbuh dari alasan menonton berikutnya — bukan dari lonjakan views.</td>
+            </tr>
+            <tr>
+              <td data-label="Prioritas"><span class="badge badge-idle">P2 minggu 2–4</span></td>
+              <td data-label="Tindakan">Uji 5 variasi dari video 27 Sep (49,2K views, like rate 8,2%, 290 share)</td>
+              <td data-label="Kenapa">Bukti bahwa niche ini bisa jalan sudah ada di akun sendiri. Yang menang diulang, satu elemen diubah per variasi.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Eksperimen yang sudah dijadwalkan</h2>
+      <div id="auditExperiments"><p class="ui-quiet">Memuat…</p></div>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Angka yang cuma bisa dilihat pemilik akun</h2>
+      <p class="prose ui-quiet" style="margin-top:0">
+        Empat angka ini memisahkan hipotesis "masalah hook" dari "masalah kelayakan/jangkauan". Kirimkan, lalu diagnosisnya
+        dipastikan — tidak lagi ditandai hipotesis.
+      </p>
+      <div id="auditWanted"><p class="ui-quiet">Memuat…</p></div>
+    </section>
+
+    <hr>
+
+    <section class="prose">
+      <h2>Catatan kejujuran</h2>
+      <ul>
+        <li>Audit ini membaca <em>luar</em> akun. Kesimpulan tentang penyebab (hooks, kelayakan, audiens inert) adalah hipotesis yang paling masuk akal dari data yang terlihat — bukan klaim pasti.</li>
+        <li>Angka bergerak cepat. Snapshot ini berlaku untuk 13 Nov 2026; yang diperbarui rutin ada di halaman <a href="progress.html">Progress</a>.</li>
+        <li>Tidak ada rekomendasi di sini yang mengandalkan trik hashtag, beli view, atau follow-tukar-follow — ketiganya nol manfaat atau berisiko kelayakan.</li>
+      </ul>
+      <p class="ui-quiet">Cara kerja sistem di balik diagnosis ini: lihat <a href="bedah.html">Riset &amp; bukti</a>, versi praktisnya di <a href="playbook.html">Playbook</a>.</p>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="mudah.html">Mulai cepat</a>
+      <a href="index.html">Status</a>
+      <a href="audit.html">Review akun</a>
+      <a href="progress.html">Progress</a>
+      <a href="playbook.html">Playbook</a>
+      <a href="bedah.html">Riset</a>
+      <a href="sumber.html">Sumber</a>
+    </div>
+    <p style="margin:0">TikTok Growth Lab — riset &amp; penulisan Paimon Chan · 13 Nov 2026. Tidak berafiliasi dengan TikTok atau ByteDance.</p>
+  </div>
+</footer>
+
+<script src="assets/app.js?v=4" defer></script>
+<script src="assets/growth.js?v=4" defer></script>
+</body>
+</html>

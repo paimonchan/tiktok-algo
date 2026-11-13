@@ -1,0 +1,7 @@
+// favicon sederhana: batang grafik naik di atas kotak membulat
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="TikTok Growth Lab">
+  <rect width="32" height="32" rx="7" fill="#0f6f63"/>
+  <rect x="7" y="18" width="4" height="7" rx="1.2" fill="#ffffff" opacity=".75"/>
+  <rect x="14" y="13" width="4" height="12" rx="1.2" fill="#ffffff" opacity=".9"/>
+  <rect x="21" y="7" width="4" height="18" rx="1.2" fill="#ffffff"/>
+</svg>
