@@ -31,11 +31,36 @@
   ],
   "headline_finding": "4.414 follower tapi video baru hanya dapat ±100 views. Jumlah follower jauh di atas jangkauan — artinya follower lama sudah tidak menonton, dan For You hampir tidak melempar.",
   "targets": [
-    { "metric": "Like rate per video", "now": "0,6%–3% (terbaik 8,2%)", "target": "≥5% konsisten", "why": "Ukuran langsung apakah hook & durasi bekerja" },
-    { "metric": "Median views", "now": "±100", "target": "≥1.000 dalam 4 minggu", "why": "Dengan volume sama atau lebih kecil — bukti distribusi For You jalan" },
-    { "metric": "Selesai nonton (completion)", "now": "belum diketahui (butuh analytics)", "target": "≥50%", "why": "Benchmark pihak ketiga: 55% video TikTok tidak ditonton sampai habis" },
-    { "metric": "Follower baru per 1.000 views", "now": "belum diketahui", "target": "≥10", "why": "Ini metrik pertumbuhan akun, bukan jumlah views" },
-    { "metric": "Komentar per video", "now": "0–1", "target": "≥10", "why": "Komentar sinyal resmi + bahan balasan berbentuk video" }
+    {
+      "metric": "Like rate per video",
+      "now": "0,6%–3% (terbaik 8,2%)",
+      "target": "≥5% konsisten",
+      "why": "Ukuran langsung: hook & durasi bekerja atau tidak"
+    },
+    {
+      "metric": "Median views",
+      "now": "±100",
+      "target": "≥1.000 dalam 4 minggu",
+      "why": "Bukti For You melempar, dengan volume yang sama"
+    },
+    {
+      "metric": "Selesai nonton (completion)",
+      "now": "belum dikirim",
+      "target": "≥50%",
+      "why": "Retensi per video, bukan jumlah video"
+    },
+    {
+      "metric": "Follower baru per 1.000 views",
+      "now": "belum dikirim",
+      "target": "≥10",
+      "why": "Metrik pertumbuhan akun, bukan jumlah views"
+    },
+    {
+      "metric": "Komentar per video",
+      "now": "0–1",
+      "target": "≥10",
+      "why": "Sinyal ranking resmi + bahan balasan berbentuk video"
+    }
   ],
   "phases": [
     {
@@ -73,6 +98,23 @@
         "Baru setelah TikTok stabil: rombak YouTube Shorts"
       ],
       "done_when": "Ada video dari akun lain yang memakai sound milik kita"
+    }
+  ],
+  "headline_stats": [
+    {
+      "k": "Follower",
+      "v": "4.414",
+      "s": "target ≥5.500 dalam 4 minggu"
+    },
+    {
+      "k": "Median views",
+      "v": "±107",
+      "s": "12 video terakhir · target ≥1.000"
+    },
+    {
+      "k": "Like rate terakhir",
+      "v": "14,7%",
+      "s": "video 13 Nov (217 views) · target ≥5%"
     }
   ]
 }

@@ -413,6 +413,19 @@ footer .foot-links { display: flex; flex-wrap: wrap; gap: .4rem 1rem; margin-bot
 .mission h2 { margin: 0 0 .35em; font-size: 1.05rem; }
 .mission p { margin-bottom: 0; }
 
+/* ---------- komponen ringkas ---------- */
+.check, .plain, .linklist { list-style: none; padding-left: 0; }
+.check li { position: relative; padding-left: 1.5rem; margin-bottom: .55rem; }
+.check li::before { content: "☐"; position: absolute; left: 0; top: -.05em; color: var(--accent); font-weight: 700; }
+.check.tight li { margin-bottom: .3rem; }
+.plain li { margin-bottom: .65rem; }
+.linklist li { margin-bottom: .45rem; }
+#statusPhases { display: grid; gap: .8rem; }
+@media (min-width: 760px) { #statusPhases { grid-template-columns: repeat(3, 1fr); } }
+details { margin: 1rem 0; }
+details summary { cursor: pointer; font-weight: 640; padding: .45rem 0; }
+details summary:hover { color: var(--accent); }
+
 @media print {
   .site-header, .theme-btn, footer.site-footer { display: none; }
   body { background: #fff; color: #000; font-size: 12pt; }

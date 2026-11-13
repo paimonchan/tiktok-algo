@@ -52,13 +52,12 @@
     var t = s.accounts[0];
     var statsWrap = el('statusStats');
     if (statsWrap) {
-      var last12 = null;
-      statsWrap.innerHTML = [
-        { k: 'Follower', v: num(t.followers), s: t.handle + ' · ' + t.platform },
-        { k: 'Likes total', v: num(t.likes), s: t.likes_label || '' },
-        { k: 'Video', v: num(t.videos), s: 'sudah diunggah' },
-        { k: 'Median views (12 video terakhir)', v: '±107', s: 'dari audit 13 Nov' }
-      ].map(function (x) {
+      var cards = s.headline_stats || [
+        { k: 'Follower', v: num(t.followers), s: t.handle },
+        { k: 'Median views', v: '±107', s: '12 video terakhir' },
+        { k: 'Like rate terakhir', v: '14,7%', s: 'video 13 Nov' }
+      ];
+      statsWrap.innerHTML = cards.map(function (x) {
         return '<article class="stat"><span class="stat-k">' + esc(x.k) + '</span><strong class="stat-v">' + esc(x.v) + '</strong><span class="stat-s">' + esc(x.s) + '</span></article>';
       }).join('');
     }
@@ -66,9 +65,9 @@
 
     var targets = el('statusTargets');
     if (targets) {
-      targets.innerHTML = '<table class="stack"><thead><tr><th>Metrik</th><th>Sekarang</th><th>Target</th><th>Kenapa ini yang diukur</th></tr></thead><tbody>' +
+      targets.innerHTML = '<table class="stack"><thead><tr><th>Metrik</th><th>Sekarang → target</th><th>Kenapa diukur</th></tr></thead><tbody>' +
         s.targets.map(function (x) {
-          return '<tr><td data-label="Metrik"><strong>' + esc(x.metric) + '</strong></td><td data-label="Sekarang">' + esc(x.now) + '</td><td data-label="Target">' + esc(x.target) + '</td><td data-label="Kenapa">' + esc(x.why) + '</td></tr>';
+          return '<tr><td data-label="Metrik"><strong>' + esc(x.metric) + '</strong></td><td data-label="Sekarang → target">' + esc(x.now) + ' → <strong>' + esc(x.target) + '</strong></td><td data-label="Kenapa">' + esc(x.why) + '</td></tr>';
         }).join('') + '</tbody></table>';
     }
 
@@ -111,17 +110,18 @@
     var tbl = el('auditVideos');
     if (tbl) {
       var rows = a.videos.slice().sort(function (x, y) { return (y.date + y.time).localeCompare(x.date + x.time); });
-      tbl.innerHTML = '<table class="stack"><thead><tr><th>Tanggal (UTC)</th><th>Views</th><th>Likes</th><th>Komentar</th><th>Share</th><th>Like rate</th><th>Catatan</th></tr></thead><tbody>' +
+      tbl.innerHTML = '<table class="stack"><thead><tr><th>Tanggal</th><th>Views</th><th>Like rate</th><th>Catatan</th></tr></thead><tbody>' +
         rows.map(function (v) {
           var lr = pct(v.likes, v.views);
+          var extra = [];
+          if (v.likes != null) extra.push(num(v.likes) + ' suka');
+          if (v.comments != null) extra.push(num(v.comments) + ' komentar');
+          if (v.shares != null) extra.push(num(v.shares) + ' share');
           var mode = v.mode ? ' <span class="badge badge-warn">' + esc(v.mode) + '</span>' : '';
           return '<tr><td data-label="Tanggal">' + esc(tgl(v.date)) + ' <span class="ui-quiet">' + esc(v.time || '') + '</span></td>' +
             '<td data-label="Views"><strong>' + compact(v.views) + '</strong></td>' +
-            '<td data-label="Likes">' + num(v.likes) + '</td>' +
-            '<td data-label="Komentar">' + num(v.comments) + '</td>' +
-            '<td data-label="Share">' + num(v.shares) + '</td>' +
             '<td data-label="Like rate">' + (lr == null ? '—' : '<strong>' + pctStr(lr) + '</strong>') + '</td>' +
-            '<td data-label="Catatan">' + esc(v.note || '') + mode + '</td></tr>';
+            '<td data-label="Catatan">' + esc(v.note || '') + mode + (extra.length ? '<br><span class="ui-quiet">' + extra.join(' · ') + '</span>' : '') + '</td></tr>';
         }).join('') + '</tbody></table>';
     }
 
@@ -136,24 +136,23 @@
     var pat = el('auditPatterns');
     if (pat) {
       pat.innerHTML = a.patterns.map(function (p) {
-        return '<article class="card"><h3>' + esc(p.title) + '</h3><p>' + esc(p.detail) + '</p><p class="ui-quiet" style="margin-bottom:0"><strong>Artinya:</strong> ' + esc(p.meaning) + '</p></article>';
+        return '<li><strong>' + esc(p.title) + '</strong> — ' + esc(p.meaning) + '</li>';
       }).join('');
     }
 
     var ex = el('auditExperiments');
     if (ex) {
-      ex.innerHTML = '<table class="stack"><thead><tr><th>#</th><th>Dasar</th><th>Yang diubah</th><th>Metrik penentu</th></tr></thead><tbody>' +
+      ex.innerHTML = '<table class="stack"><thead><tr><th>#</th><th>Yang diubah</th><th>Metrik penentu</th></tr></thead><tbody>' +
         a.experiments.map(function (e) {
-          return '<tr><td data-label="Kode"><strong>' + esc(e.id) + '</strong></td><td data-label="Dasar">' + esc(e.from) + '</td><td data-label="Perubahan">' + esc(e.change) + '</td><td data-label="Metrik">' + esc(e.metric) + '</td></tr>';
+          return '<tr><td data-label="Kode"><strong>' + esc(e.id) + '</strong></td><td data-label="Perubahan">' + esc(e.change) + '</td><td data-label="Metrik">' + esc(e.metric) + '</td></tr>';
         }).join('') + '</tbody></table>';
     }
 
     var want = el('auditWanted');
     if (want) {
-      want.innerHTML = '<table class="stack"><thead><tr><th>Angka yang diminta</th><th>Hipotesis yang dipecahkan</th></tr></thead><tbody>' +
-        a.owner_numbers_wanted.map(function (w) {
-          return '<tr><td data-label="Angka"><strong>' + esc(w.metric) + '</strong></td><td data-label="Hipotesis">' + esc(w.resolves) + '</td></tr>';
-        }).join('') + '</tbody></table>';
+      want.innerHTML = a.owner_numbers_wanted.map(function (w) {
+        return '<li><strong>' + esc(w.metric) + '</strong> — ' + esc(w.resolves) + '</li>';
+      }).join('');
     }
 
     if (el('auditMethod')) el('auditMethod').textContent = a.method;
@@ -180,9 +179,9 @@
     var tbl = el('progressTable');
     if (tbl) {
       var l2 = (p.entries || []).slice().sort(function (a, b) { return (b.date).localeCompare(a.date); });
-      tbl.innerHTML = '<table class="stack"><thead><tr><th>Tanggal</th><th>Follower</th><th>Likes</th><th>Video</th><th>Median views</th><th>Ringkas</th></tr></thead><tbody>' +
+      tbl.innerHTML = '<table class="stack"><thead><tr><th>Tanggal</th><th>Follower</th><th>Median views</th><th>Ringkas</th></tr></thead><tbody>' +
         l2.map(function (e) {
-          return '<tr><td data-label="Tanggal">' + esc(tgl(e.date)) + '</td><td data-label="Follower"><strong>' + num(e.followers) + '</strong></td><td data-label="Likes">' + num(e.likes) + '</td><td data-label="Video">' + num(e.videos) + '</td><td data-label="Median views">' + num(e.median_views) + '</td><td data-label="Ringkas">' + esc(e.result) + '</td></tr>';
+          return '<tr><td data-label="Tanggal">' + esc(tgl(e.date)) + '</td><td data-label="Follower"><strong>' + num(e.followers) + '</strong></td><td data-label="Median views">' + num(e.median_views) + '</td><td data-label="Ringkas">' + esc(e.result) + '</td></tr>';
         }).join('') + '</tbody></table>';
     }
 
