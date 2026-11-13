@@ -223,7 +223,12 @@
     {
       "title": "Video dengan kualitas TERBAIK justru jangkauan TERKECIL",
       "detail": "13 Nov (228 views, organik murni): retensi 51%, tuntas 13,2%, like 15,4%, share 3,1% — semuanya di atas video juara (41% / 12,32% / 8,2% / 0,6%).",
-      "meaning": "Kualitas dan retensi bukan penyebab jangkauan mentok. Urutan kualitas ≠ urutan jangkauan, jadi yang menghambat adalah distribusi organik/kelaikan."
+      "meaning": "Kualitas dan retensi bukan penyebab jangkauan mentok. Sumber traffic pun benar (For You 83,3%) — hanya VOLUME eksposurnya kecil (228 views dalam 18 jam). Tersangka yang tersisa: penandaan tidak layak For You, per video atau level akun."
+    },
+    {
+      "title": "Label AI-generated BUKAN penyebab jangkauan seret",
+      "detail": "TikTok menyatakannya resmi dua kali: \"Turning on the AI-generated content setting won't affect the distribution of your video as long as it doesn't violate our Community Guidelines.\" Label juga tidak diwajibkan untuk gaya artistik seperti anime.",
+      "meaning": "Jadi jangan buang tenaga mengubah label AI. Yang perlu dicek: status kelayakan For You (per video dan level akun) serta kebijakan 'unoriginal content'."
     },
     {
       "title": "Sebagian besar jangkauan dan hampir semua follower baru datang dari PROMOTE",
@@ -295,20 +300,24 @@
   ],
   "owner_numbers_wanted": [
     {
-      "metric": "Persentase traffic dari For You",
-      "resolves": "For You tinggi + views kecil = masalah prediksi/kelayakan; For You rendah = masalah akun"
+      "metric": "Hasil Account check (peringatan atau semua centang)",
+      "resolves": "Apakah akun kena pembatasan level akun"
     },
     {
-      "metric": "Status kelayakan tiap video",
-      "resolves": "Kalau ada 'tidak layak untuk For You', itu sebab tunggal views mentok ±100"
+      "metric": "Ada tidak tulisan 'Ineligible for For You feed' di analytics video",
+      "resolves": "Apakah video tertentu dicabut dari rekomendasi"
     },
     {
-      "metric": "Rata-rata durasi tonton + % selesai",
-      "resolves": "With durasi 9–15 detik: retensi tinggi atau tidak"
+      "metric": "Status akun (Healthy/Fair/Severe)",
+      "resolves": "Riwayat pelanggaran 90 hari"
     },
     {
-      "metric": "Follower baru per 1.000 views",
-      "resolves": "Apakah masalahnya konversi follow atau jangkauan"
+      "metric": "Hasil uji pencarian dari akun lain",
+      "resolves": "Pembatasan level akun (konten sulit ditemukan)"
+    },
+    {
+      "metric": "Hasil Content Check Lite sebelum posting",
+      "resolves": "Pencegahan: tahu sebelum video tayang"
     }
   ],
   "verified_at": "2026-11-13 (cek ulang dari akun)",

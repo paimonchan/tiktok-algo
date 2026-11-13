@@ -134,11 +134,27 @@
       "result": "228 views · rata-rata 6,5 detik dari 12,7 detik (51%, terbaik) · tuntas 13,2% (terbaik) · like 15,4% · share 3,1% · 0 follower baru · tidak ada tab Promote = organik murni.",
       "decision": "Hipotesis 'kualitas/hook yang menahan' GUGUR untuk jangkauan. Prioritas pindah ke: (1) cek status kelayakan tiap video, (2) uji tanpa Promote sebagai kontrol, (3) telusuri pembatasan AI-generated/unoriginal.",
       "status": "berjalan"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "riset",
+      "title": "Lengkap: 13 Nov For You 83,3% tapi volume cuma 228/18 jam; label AI bukan penyebab",
+      "followers": 4414,
+      "likes": 15000,
+      "videos": 125,
+      "median_views": 107,
+      "actions": [
+        "Baca data 13 Nov lengkap (traffic sources, kurva views 18 jam, demografi, follower/non-follower)",
+        "Riset kebijakan resmi TikTok: label AI-generated, unoriginal content, hukuman level akun, cara cek kelayakan"
+      ],
+      "result": "Video organik 13 Nov: For You 83,3% (bukan gagal sumber traffic) tapi cuma 228 views dalam 18 jam, puncak 31/jam; 16% penonton follower. Tersangka kualitas & label AI gugur; tersangka kuat: penandaan tidak layak For You per video atau level akun.",
+      "decision": "Semua hipotesis isi video ditutup. Langkah berikutnya wajib dari sisi akun: Account check, peringatan kelayakan di analytics, status akun, uji pencarian, Content Check Lite.",
+      "status": "berjalan"
     }
   ],
   "next_checkpoint": {
     "date": "2026-11-15",
-    "ask": "(1) Cek di Studio: ada peringatan kelayakan/konten tidak memenuhi syarat di video-video kecil? (2) Overview video 10 Nov sebagai pembanding ketiga",
-    "why": "Semua penjelasan berbasis kualitas sudah gugur; yang tersisa cuma kelayakan/distribusi akun"
+    "ask": "Hasil Account check + ada/tidak peringatan 'Ineligible for For You feed' di 2 video (13 Nov, 10 Nov) + status akun",
+    "why": "Ini satu-satunya jalur yang masih menjelaskan: kualitas tinggi, For You 83,3%, tapi volume 228"
   }
 }

@@ -448,15 +448,71 @@
         [
           "Kurva like",
           "puncak tajam di 00:00 lalu turun di bawah 10%"
+        ],
+        [
+          "Kurva views",
+          "18 jam, puncak cuma 31 views/jam (jatah eksposurnya kecil, bukan gagal di sumber traffic)"
+        ],
+        [
+          "Sumber traffic",
+          "83,3% dari For You → videonya MEMANG disajikan For You, cuma sedikit"
         ]
       ],
       "traffic": [
         [
-          "Belum dikirim",
-          "—"
+          "For You",
+          "83,3%"
+        ],
+        [
+          "Personal profile",
+          "10,7%"
+        ],
+        [
+          "Following",
+          "2,0%"
+        ],
+        [
+          "Search",
+          "2,0%"
+        ],
+        [
+          "Direct messages",
+          "1,5%"
+        ],
+        [
+          "Other",
+          "0,5%"
+        ],
+        [
+          "Sound",
+          "0,0%"
         ]
       ],
       "viewers": [
+        [
+          "Bukan follower",
+          "84%"
+        ],
+        [
+          "Follower",
+          "16%"
+        ],
+        [
+          "Total penonton",
+          "masih 'Processing…' di Studio"
+        ],
+        [
+          "Laki-laki",
+          "83%"
+        ],
+        [
+          "Perempuan",
+          "16%"
+        ],
+        [
+          "Lainnya",
+          "1%"
+        ],
         [
           "Usia 18–24",
           "50%"
@@ -508,11 +564,10 @@
       ],
       "catatan_angka": "Kartu Key metrics-nya berbunyi 'Updated in real time' dan TIDAK punya tombol Overall/Promote → video ini tidak pernah di-Promote.",
       "temuan": [
-        "Retensi 51% dan tuntas 13,2% — DUA-DUANYA lebih tinggi dari video juara (41% / 12,32%).",
-        "Like 15,4% dan share 3,1% dari views — jauh di atas video juara (8,2% / 0,6%).",
-        "Tapi jangkauannya hanya 228 views dan 0 follower baru → kualitas bukan penyebab jangkauan mentok.",
-        "Permintaan simpan 4,8% (11 simpan) setara video juara (4,3%) pada basis penonton 200× lebih kecil.",
-        "Audiens: 18–24 tahun (50%) + 25–34 (46%), 80,4% Indonesia → segmen muda Indonesia."
+        "For You 83,3% → video ini bukan 'tidak masuk For You'. Ia disajikan dari For You, tapi volumenya dijatah kecil: 228 views dalam 18 jam, puncak 31 views/jam.",
+        "16% penonton adalah follower (≈36 views) — jadi follower tetap disemai, tapi jumlahnya kecil dan mereka tidak menyelamatkan distribusi.",
+        "Retensi 51% + tuntas 13,2% + like 15,4% pada basis 228 penonton: sinyal kualitas kuat, tapi tidak dibalas dengan volume.",
+        "Audiens: 18–24 (50%) + 25–34 (46%), 83% laki-laki, 80,4% Indonesia → segmen muda Indonesia."
       ],
       "cari": []
     }
@@ -553,5 +608,41 @@
       "tidak ada"
     ]
   ],
-  "kesimpulan_utama": "Urutan kualitas ≠ urutan jangkauan. Video dengan retensi, ketuntasan, like, dan share TERBAIK (13 Nov) justru dapat jangkauan TERKECIL (228 views) — dan itu satu-satunya sampel organik murni. Dua video berjangkauan besar (27 Sep, 12 Nov) sebagian besar dibayar lewat Promote. Jadi yang menghambat bukan isi video, tapi distribusi organik/kelaikan."
+  "kesimpulan_utama": "Urutan kualitas ≠ urutan jangkauan. Video dengan retensi, ketuntasan, like, dan share TERBAIK (13 Nov) justru dapat jangkauan TERKECIL (228 views) — dan itu satu-satunya sampel organik murni. Dua video berjangkauan besar (27 Sep, 12 Nov) sebagian besar dibayar lewat Promote. Jadi yang menghambat bukan isi video, tapi distribusi organik/kelaikan.",
+  "penyelidikan": [
+    {
+      "tersangka": "Label AI-generated menekan jangkauan",
+      "status": "GUGUR — pernyataan resmi TikTok",
+      "bukti": "Creator Academy + Help Center: \"Turning on the AI-generated content setting won't affect the distribution of your video as long as it doesn't violate our Community Guidelines.\" Label juga tidak diwajibkan untuk gaya artistik seperti anime."
+    },
+    {
+      "tersangka": "Video ditandai tidak layak For You (per video)",
+      "status": "KUAT — belum dicek",
+      "bukti": "Community Guidelines: \"Content is also ineligible for the FYF if it includes unoriginal or reused material without anything new.\" FYF standards menyebut 'unoriginal/reused' dan 'low-quality or minimally edited content'. TikTok menampilkan alasannya di analytics video + tombol banding."
+    },
+    {
+      "tersangka": "Akun dijadikan tidak layak For You (level akun)",
+      "status": "KUAT — belum dicek",
+      "bukti": "Accounts and Features: \"Sometimes, accounts that don't break the rules still post a lot of content that's ineligible for the FYF. In those cases, we may make the account and its content ineligible for the FYF and harder to find.\" Cocok dengan pola: semua video mentok 100–230 meski retensi 51%."
+    },
+    {
+      "tersangka": "Cohort pertama tidak bertahan",
+      "status": "LEMAH untuk kasus ini",
+      "bukti": "Retensi 51%, tuntas 13,2%, like 15,4% pada 228 penonton. Catatan jujur: TikTok tidak memberi angka impresi, jadi 'banyak yang scroll tanpa menonton' tidak bisa dibantah dari data yang ada."
+    }
+  ],
+  "cara_cek": [
+    "Account check: Profil → ☰ → TikTok Studio → More tools → Account check. Cari peringatan (tanda seru) atau semua centang hijau.",
+    "Analytics video: buka video yang mentok, cari tulisan 'Ineligible for For You feed' / 'not eligible' + alasan + tombol banding.",
+    "Status akun: Pengaturan → Account status (Healthy / Fair / Severe / Banned) — mencerminkan pelanggaran 90 hari terakhir.",
+    "Uji pencarian dari akun lain: cari username persis + frasa unik dari caption. Kalau tidak muncul, itu tanda pembatasan level akun.",
+    "Content Check Lite di TikTok Studio (web): cek SEBELUM posting, dia bilang apakah video berpeluang layak direkomendasikan For You."
+  ],
+  "sumber_kebijakan": [
+    "TikTok Community Guidelines — Integrity & Authenticity: tiktok.com/safety/en/policies-and-engagement/integrity-authenticity",
+    "TikTok Community Guidelines — Accounts and Features (hukuman level akun): tiktok.com/safety/en/policies-and-engagement/accounts-features",
+    "TikTok Creator Academy — AI-generated content label (label tidak menurunkan distribusi): tiktok.com/creator-academy/en/article/ai-generated-content-label",
+    "TikTok For You feed eligibility standards: tiktok.com/community-guidelines/en/fyf-standards",
+    "TikTok Help Center — AI-generated content: tiktok.com/tns-inapp/pages/ai-generated-content"
+  ]
 }

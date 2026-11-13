@@ -93,11 +93,12 @@
       "window": "Minggu 1 (13–19 Nov 2026)",
       "status": "berjalan",
       "goals": [
-        "Cek status kelayakan tiap video di TikTok Studio — ini P0",
-        "Kirim 4 angka Studio: % traffic For You, % selesai nonton, durasi tonton rata-rata, follower baru per 1.000 views",
-        "Maksimal 1 unggahan/hari, 3–4 video per minggu"
+        "Account check: cari peringatan (Profil → ☰ → TikTok Studio → More tools → Account check)",
+        "Cek tulisan 'Ineligible for For You feed' di analytics video yang mentok (13 Nov & 10 Nov)",
+        "Cek Account status (Healthy/Fair/Severe) + uji pencarian dari akun lain",
+        "Uji kontrol: 3–4 video tanpa Promote, catat plafon organiknya"
       ],
-      "done_when": "Semua video baru bebas catatan \"tidak layak untuk For You\" dan tidak ada lagi posting berdekatan"
+      "done_when": "Sudah jelas apakah akun/video kena pembatasan For You atau tidak"
     },
     {
       "id": "fase-2",
