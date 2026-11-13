@@ -109,7 +109,7 @@
   function renderAudit(a) {
     var tbl = el('auditVideos');
     if (tbl) {
-      var rows = a.videos.slice().sort(function (x, y) { return (y.date + y.time).localeCompare(x.date + x.time); });
+      var rows = a.videos.slice().sort(function (x, y) { return (y.terbit || (y.date + y.time)).localeCompare(x.terbit || (x.date + x.time)); });
       tbl.innerHTML = '<table class="stack"><thead><tr><th>Tanggal</th><th>Views</th><th>Like rate</th><th>Catatan</th></tr></thead><tbody>' +
         rows.map(function (v) {
           var lr = pct(v.likes, v.views);
@@ -117,9 +117,11 @@
           if (v.likes != null) extra.push(num(v.likes) + ' suka');
           if (v.comments != null) extra.push(num(v.comments) + ' komentar');
           if (v.shares != null) extra.push(num(v.shares) + ' share');
+          if (v.saves != null) extra.push(num(v.saves) + ' simpan');
           var mode = v.mode ? ' <span class="badge badge-warn">' + esc(v.mode) + '</span>' : '';
-          var terbit = v.terbit_studio ? v.terbit_studio.slice(8, 10) + '.' + v.terbit_studio.slice(5, 7) + ' ' + v.terbit_studio.slice(11) : '';
-          return '<tr><td data-label="Tanggal">' + esc(tgl(v.date)) + ' <span class="ui-quiet">' + esc(v.time || '') + '</span>' + (terbit ? '<br><span class="ui-quiet">terbit ' + terbit + '</span>' : '') + '</td>' +
+          var tglTerbit = v.terbit || (v.date + 'T' + (v.time || '00:00') + ':00');
+          var ket = tglTerbit.slice(8, 10) + ' ' + ['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Agu','Sep','Okt','Nov','Des'][parseInt(tglTerbit.slice(5, 7), 10) - 1] + ' ' + tglTerbit.slice(11, 16);
+          return '<tr><td data-label="Terbit">' + ket + '</td>' +
             '<td data-label="Views"><strong>' + compact(v.views) + '</strong></td>' +
             '<td data-label="Like rate">' + (lr == null ? '—' : '<strong>' + pctStr(lr) + '</strong>') + '</td>' +
             '<td data-label="Catatan">' + (v.durasi_detik ? '<span class="ui-quiet">' + v.durasi_detik + ' dtk</span> · ' : '') + esc(v.note || '') + mode + (extra.length ? '<br><span class="ui-quiet">' + extra.join(' · ') + '</span>' : '') + '</td></tr>';

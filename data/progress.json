@@ -41,11 +41,27 @@
       "result": "Video 77 views terbit 8 Nov 12:00 dan video 93 views terbit 8 Nov 18:00 → terpisah 6 jam, bukan 1 menit. Klaim 'unggahan berdekatan' dicabut.",
       "decision": "P0 tetap cek kelayakan; jeda unggahan turun prioritas sampai waktu terbit sebenarnya terkumpul. Data waktu terbit Studio jadi sumber resmi untuk jeda posting.",
       "status": "selesai"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "data",
+      "title": "Waktu terbit asli berhasil diambil dari sumber publik",
+      "followers": 4414,
+      "likes": 15000,
+      "videos": 125,
+      "median_views": 107,
+      "actions": [
+        "Baca createTime + statistik lengkap dari halaman video publik (blob __UNIVERSAL_DATA_FOR_REHYDRATION__)",
+        "Uji 12 video; bandingkan dengan waktu terbit di TikTok Studio"
+      ],
+      "result": "Ketemu: 12/12 video punya createTime. Pasangan hari sama terpisah 6,0 j (8 Nov), 6,4 j (9 Nov), 8,2 j (12 Nov) → tidak ada unggahan berdekatan. Data baru: jumlah simpan per video (2.095 di video 49,2K).",
+      "decision": "Klaim 'unggahan berdekatan' dicabut total. Fokus pindah 100% ke kelayakan & jangkauan. Tidak perlu kirim screenshot Studio lagi untuk waktu terbit.",
+      "status": "selesai"
     }
   ],
   "next_checkpoint": {
-    "date": "2026-11-14",
-    "ask": "Screenshot sisa daftar Posts di Studio (scroll ke bawah) supaya waktu terbit 12 video terakhir terkumpul",
-    "why": "Supaya jeda antar posting dihitung dari waktu terbit asli, bukan dari timestamp ID"
+    "date": "2026-11-20",
+    "ask": "Kirim 4 angka dari Studio: % traffic For You, % selesai nonton, rata-rata durasi tonton, follower baru per 1.000 views",
+    "why": "Tanpa ini, 'kenapa jangkauan mentok' tetap hipotesis"
   }
 }

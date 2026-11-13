@@ -60,6 +60,12 @@
       "now": "0–2",
       "target": "≥10",
       "why": "Sinyal ranking resmi + bahan balasan berbentuk video"
+    },
+    {
+      "metric": "Simpan (saves) per video",
+      "now": "0–11 di video kecil (0–5% dari views)",
+      "target": "≥2% dari views konsisten",
+      "why": "Niat audiens; saat ini cuma video besar yang tinggi"
     }
   ],
   "phases": [
@@ -70,7 +76,7 @@
       "status": "berjalan",
       "goals": [
         "Cek status kelayakan tiap video di TikTok Studio — ini P0",
-        "Catat waktu terbit asli tiap video dari Studio (timestamp ID = waktu unggah, bukan terbit)",
+        "Kirim 4 angka Studio: % traffic For You, % selesai nonton, durasi tonton rata-rata, follower baru per 1.000 views",
         "Maksimal 1 unggahan/hari, 3–4 video per minggu"
       ],
       "done_when": "Semua video baru bebas catatan \"tidak layak untuk For You\" dan tidak ada lagi posting berdekatan"

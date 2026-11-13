@@ -2,7 +2,7 @@
   "handle": "@elite.paimonchan",
   "url": "https://www.tiktok.com/@elite.paimonchan",
   "measured_at": "2026-11-13",
-  "method": "TikTok memblokir akses dari server (WAF), jadi angka publik diambil dari endpoint embed: /embed/@elite.paimonchan (followers, 12 video terakhir + views) dan /embed/v2/<id> (durasi, suka, komentar, share). Tanggal/jam di ID video = waktu unggah (creation), BUKAN waktu terbit — waktu terbit hanya ada di TikTok Studio dan sudah dimasukkan untuk 3 video (lihat kolom waktu terbit).",
+  "method": "Sumber: endpoint publik yang bisa dibaca tanpa login — /embed/@elite.paimonchan (followers + daftar 12 video terakhir), /embed/v2/<id> (durasi), dan halaman video publik tiktok.com/@elite.paimonchan/video/<id> yang menyimpan createTime (= waktu terbit) serta statistik lengkap termasuk jumlah simpan (collectCount). Timestamp di ID video = waktu UNGGAH, bukan waktu terbit — selisihnya bisa detikan (kalau langsung diterbitkan) atau berjam-jam (kalau disimpan sebagai draft dulu).",
   "totals": {
     "followers": 4414,
     "following": 11,
@@ -13,154 +13,184 @@
   "headline": "4.414 follower tapi video baru hanya dapat ±100 views — follower lama tidak menonton, dan For You hampir tidak melempar.",
   "videos": [
     {
-      "id": "7690059710254288134",
-      "date": "2026-09-27",
-      "time": "03:59",
-      "durasi_detik": 14,
-      "views": 49200,
-      "likes": 4059,
-      "comments": 88,
-      "shares": 290,
-      "note": "Video terbaik sejauh ini",
-      "mode": "keduanya"
+      "id": "7707508455661178119",
+      "terbit": "2026-11-13 11:29:26",
+      "unggah_id": "2026-11-13 11:29:14",
+      "selisih_unggah_terbit_detik": 12,
+      "durasi_detik": 12,
+      "views": 223,
+      "likes": 33,
+      "comments": 1,
+      "shares": 7,
+      "saves": 11,
+      "caption": "Sirin Animeek !!!!",
+      "note": "Like rate 14,7% tapi cuma 218 views",
+      "mode": "resonansi tanpa reach"
     },
     {
-      "id": "7697834339182071048",
-      "date": "2026-10-18",
-      "time": "02:48",
-      "durasi_detik": 60,
-      "views": 8359,
-      "likes": 341,
-      "comments": 3,
-      "shares": 8,
-      "note": "Satu-satunya video 1 menit",
-      "mode": "keduanya"
-    },
-    {
-      "id": "7705416037914709269",
-      "date": "2026-11-07",
-      "time": "13:09",
-      "durasi_detik": 15,
-      "views": 105,
+      "id": "7707284411263274258",
+      "terbit": "2026-11-12 20:59:57",
+      "unggah_id": "2026-11-12 20:59:50",
+      "selisih_unggah_terbit_detik": 7,
+      "durasi_detik": 9,
+      "views": 89,
       "likes": 9,
       "comments": 0,
-      "shares": 0,
-      "note": "",
+      "shares": 1,
+      "saves": 4,
+      "caption": "Bellavi (Cola Enthusiast)",
+      "note": "Dua video di hari yang sama",
       "mode": ""
     },
     {
-      "id": "7705620884161056020",
-      "date": "2026-11-08",
-      "time": "02:24",
-      "durasi_detik": 15,
-      "views": 77,
-      "likes": 6,
-      "comments": 0,
-      "shares": 0,
-      "note": "Berjarak 64 detik dari video berikutnya",
-      "mode": "",
-      "terbit_studio": "2026-11-08 12:00",
-      "terbit_studio_catatan": "77 views · 6 suka"
-    },
-    {
-      "id": "7705621158854479124",
-      "date": "2026-11-08",
-      "time": "02:25",
-      "durasi_detik": 15,
-      "views": 93,
-      "likes": 6,
+      "id": "7707157230516276498",
+      "terbit": "2026-11-12 12:46:32",
+      "unggah_id": "2026-11-12 12:46:18",
+      "selisih_unggah_terbit_detik": 14,
+      "durasi_detik": 11,
+      "views": 21200,
+      "likes": 133,
       "comments": 1,
-      "shares": 0,
-      "note": "Berjarak 64 detik dari video sebelumnya",
-      "mode": "",
-      "terbit_studio": "2026-11-08 18:00",
-      "terbit_studio_catatan": "93 views · 6 suka · 1 komentar"
-    },
-    {
-      "id": "7706032424349748487",
-      "date": "2026-11-09",
-      "time": "05:01",
-      "durasi_detik": 14,
-      "views": 145,
-      "likes": 17,
-      "comments": 2,
-      "shares": 1,
-      "note": "Dua video di hari yang sama",
-      "mode": "",
-      "terbit_studio": "2026-11-09 12:01",
-      "terbit_studio_catatan": "145 views · 17 suka · 2 komentar (cocok dengan timestamp ID)"
-    },
-    {
-      "id": "7706130759555239176",
-      "date": "2026-11-09",
-      "time": "11:23",
-      "durasi_detik": 14,
-      "views": 106,
-      "likes": 11,
-      "comments": 0,
-      "shares": 1,
-      "note": "Dua video di hari yang sama",
-      "mode": ""
-    },
-    {
-      "id": "7706404381922577672",
-      "date": "2026-11-10",
-      "time": "05:04",
-      "durasi_detik": 15,
-      "views": 88,
-      "likes": 6,
-      "comments": 0,
-      "shares": 1,
-      "note": "",
-      "mode": ""
+      "shares": 10,
+      "saves": 45,
+      "caption": "Jurami Yapapa",
+      "note": "Dilempar jauh, tapi audiensnya tidak nyangkut",
+      "mode": "reach tanpa resonansi"
     },
     {
       "id": "7706702170921487634",
-      "date": "2026-11-11",
-      "time": "00:20",
+      "terbit": "2026-11-11 07:20:37",
+      "unggah_id": "2026-11-11 07:20:26",
+      "selisih_unggah_terbit_detik": 11,
       "durasi_detik": 13,
       "views": 107,
       "likes": 11,
       "comments": 0,
       "shares": 1,
+      "saves": 5,
+      "caption": "Hey Sirin!!!!",
       "note": "",
       "mode": ""
     },
     {
-      "id": "7707157230516276498",
-      "date": "2026-11-12",
-      "time": "05:46",
-      "durasi_detik": 11,
-      "views": 21100,
-      "likes": 133,
-      "comments": 1,
-      "shares": 10,
-      "note": "Dilempar jauh, tapi audiensnya tidak nyangkut",
-      "mode": "reach tanpa resonansi"
-    },
-    {
-      "id": "7707284411263274258",
-      "date": "2026-11-12",
-      "time": "13:59",
-      "durasi_detik": 9,
+      "id": "7706404381922577672",
+      "terbit": "2026-11-10 12:05:07",
+      "unggah_id": "2026-11-10 12:04:52",
+      "selisih_unggah_terbit_detik": 15,
+      "durasi_detik": 15,
       "views": 88,
-      "likes": 9,
+      "likes": 6,
       "comments": 0,
       "shares": 1,
+      "saves": 0,
+      "caption": "Ernan Ichi Ni San",
+      "note": "",
+      "mode": ""
+    },
+    {
+      "id": "7706130759555239176",
+      "terbit": "2026-11-09 18:23:11",
+      "unggah_id": "2026-11-09 18:23:04",
+      "selisih_unggah_terbit_detik": 7,
+      "durasi_detik": 14,
+      "views": 106,
+      "likes": 11,
+      "comments": 0,
+      "shares": 1,
+      "saves": 2,
+      "caption": "Sirin Another",
       "note": "Dua video di hari yang sama",
       "mode": ""
     },
     {
-      "id": "7707508455661178119",
-      "date": "2026-11-13",
-      "time": "04:29",
-      "durasi_detik": 12,
-      "views": 218,
-      "likes": 32,
+      "id": "7706032424349748487",
+      "terbit": "2026-11-09 12:01:47",
+      "unggah_id": "2026-11-09 12:01:29",
+      "selisih_unggah_terbit_detik": 18,
+      "durasi_detik": 14,
+      "views": 145,
+      "likes": 17,
+      "comments": 2,
+      "shares": 1,
+      "saves": 4,
+      "caption": "Are you Sirin",
+      "note": "Dua video di hari yang sama",
+      "mode": ""
+    },
+    {
+      "id": "7705621158854479124",
+      "terbit": "2026-11-08 18:00:00",
+      "unggah_id": "2026-11-08 09:25:34",
+      "selisih_unggah_terbit_detik": 30866,
+      "durasi_detik": 15,
+      "views": 93,
+      "likes": 6,
       "comments": 1,
-      "shares": 7,
-      "note": "Like rate 14,7% tapi cuma 218 views",
-      "mode": "resonansi tanpa reach"
+      "shares": 0,
+      "saves": 1,
+      "caption": "Sirin and Snack",
+      "note": "Berjarak 64 detik dari video sebelumnya · terbit 8j34m setelah diunggah",
+      "mode": ""
+    },
+    {
+      "id": "7705620884161056020",
+      "terbit": "2026-11-08 12:00:00",
+      "unggah_id": "2026-11-08 09:24:30",
+      "selisih_unggah_terbit_detik": 9330,
+      "durasi_detik": 15,
+      "views": 77,
+      "likes": 6,
+      "comments": 0,
+      "shares": 0,
+      "saves": 2,
+      "caption": "Sirin and Snake",
+      "note": "Berjarak 64 detik dari video berikutnya · terbit 2j35m setelah diunggah",
+      "mode": ""
+    },
+    {
+      "id": "7705416037914709269",
+      "terbit": "2026-11-07 20:09:39",
+      "unggah_id": "2026-11-07 20:09:35",
+      "selisih_unggah_terbit_detik": 4,
+      "durasi_detik": 15,
+      "views": 105,
+      "likes": 9,
+      "comments": 0,
+      "shares": 0,
+      "saves": 2,
+      "caption": "Sirin Sand",
+      "note": "",
+      "mode": ""
+    },
+    {
+      "id": "7697834339182071048",
+      "terbit": "2026-10-18 09:48:49",
+      "unggah_id": "2026-10-18 09:48:43",
+      "selisih_unggah_terbit_detik": 6,
+      "durasi_detik": 60,
+      "views": 8359,
+      "likes": 341,
+      "comments": 3,
+      "shares": 8,
+      "saves": 132,
+      "caption": "Sirin Daily 01",
+      "note": "Satu-satunya video 1 menit",
+      "mode": "keduanya"
+    },
+    {
+      "id": "7690059710254288134",
+      "terbit": "2026-09-27 10:59:17",
+      "unggah_id": "2026-09-27 10:59:12",
+      "selisih_unggah_terbit_detik": 5,
+      "durasi_detik": 14,
+      "views": 49200,
+      "likes": 4059,
+      "comments": 88,
+      "shares": 290,
+      "saves": 2095,
+      "caption": "Yoo nari - face check",
+      "note": "Video terbaik sejauh ini",
+      "mode": "keduanya"
     }
   ],
   "older_sample": [
@@ -191,66 +221,61 @@
   ],
   "patterns": [
     {
-      "title": "Jangkauan mentok di ±100 views",
-      "detail": "9 dari 12 video di bawah 220 views, padahal like rate-nya 6,5%–11,7%.",
-      "meaning": "Video yang dilihat orang memang disukai, tapi prediksi jangkauannya tidak jalan — indikasi masalah distribusi/gerbang kelayakan, bukan kualitas isi."
+      "title": "Semua pasangan hari sama terpisah 6 jam atau lebih",
+      "detail": "8 Nov: 12:00 & 18:00 (6,0 j) · 9 Nov: 12:01 & 18:23 (6,4 j) · 12 Nov: 12:46 & 20:59 (8,2 j).",
+      "meaning": "Klaim lama 'unggahan berdekatan' salah dan sudah dicabut. Frekuensi posting bukan masalahnya."
     },
     {
-      "title": "Like rate justru sehat (median 8,4%)",
-      "detail": "12 video: 4,1%–14,7% (median 8,4%). Terendah cuma satu video, 12 Nov (0,63%).",
-      "meaning": "Asumsi lama 'interaksi menurun' salah. Konten bukan masalah utama — jangan ganti format dulu."
+      "title": "Jangkauan mentok di ±100 views padahal like rate sehat",
+      "detail": "9 dari 12 video: 77–223 views dengan like rate 6,5%–14,8% (median 8,4%).",
+      "meaning": "Yang menonton menyukainya, tapi For You tidak melempar. Ini masalah distribusi/kelayakan, bukan isi."
+    },
+    {
+      "title": "Simpan (saves) mengikuti pola yang sama",
+      "detail": "Video 49,2K: 2.095 simpan (4,3%). Video 13 Nov: 11 simpan dari 223 views (4,9%). Video 21,2K: cuma 45 simpan (0,2%).",
+      "meaning": "Audiens kecil tapi niat (menyimpan) ada; video yang dilempar jauh justru tidak disimpan."
     },
     {
       "title": "Follower jauh di atas jangkauan",
-      "detail": "4.414 follower, tapi 10 dari 12 video terakhir di bawah 220 views.",
+      "detail": "4.414 follower, tapi 10 dari 12 video terakhir di bawah 230 views.",
       "meaning": "Follower lama sudah tidak menonton (audiens inert) dan For You tidak melempar video baru."
     },
     {
-      "title": "Durasi 9–15 detik (satu video 60 detik)",
-      "detail": "Video 1 menit (18 Okt) dapat 8,4K views dan 341 suka (4,1%).",
-      "meaning": "Durasi pendek bukan jaminan; 15 detik juga sempit untuk hook + konteks."
+      "title": "Dua mode kegagalan, obat beda",
+      "detail": "Resonansi tanpa reach (mayoritas: like 6,5–14,8% tapi ~100 views) vs reach tanpa resonansi (12 Nov: 21,2K views tapi like 0,6%).",
+      "meaning": "Yang pertama soal kelayakan/prediksi jangkauan; yang kedua soal audiens yang datang bukan penggemar kontennya."
     },
     {
       "title": "Gurun komentar",
-      "detail": "0–2 komentar per video, bahkan di video 21,1K views cuma 1.",
-      "meaning": "Tidak ada percakapan yang terbentuk meski follower 4.414 — sinyal komentar (target prediksi resmi) tidak pernah didapat."
+      "detail": "0–2 komentar per video, bahkan di video 21,2K views cuma 1.",
+      "meaning": "Tidak ada percakapan yang terbentuk meski follower 4.414 — sinyal komentar tidak pernah didapat."
     },
     {
-      "title": "Timestamp ID = waktu unggah, bukan waktu terbit",
-      "detail": "Video 93 views: ID menunjukkan 8 Nov 09:25 WIB, Studio menampilkan terbit 8 Nov 18:00. Video 145 views: ID 09 Nov 12:01:29, Studio 09 Nov 12:01 — cocok karena upload dan terbit bersamaan.",
-      "meaning": "Untuk pertanyaan 'berdekatan atau tidak', hanya waktu terbit dari Studio yang sah dipakai. Semua klaim jeda unggahan di halaman ini yang berbasis ID sudah dicabut."
-    },
-    {
-      "title": "Sudah tidak ada bukti 'unggahan berdekatan'",
-      "detail": "8 Nov: terbit 12:00 lalu 18:00 (6 jam). 9 Nov: video 145 views terbit 12:01 — pasangan harinya belum terkonfirmasi.",
-      "meaning": "Saran 'jeda ≥8 jam' diturunkan prioritasnya. P0 sekarang murni soal kelayakan dan jangkauan."
+      "title": "Durasi 9–15 detik (satu video 60 detik)",
+      "detail": "Video 60 detik (18 Okt) dapat 8,4K views, 341 suka, 132 simpan.",
+      "meaning": "Durasi bukan penentu tunggal, tapi 15 detik sempit untuk hook + konteks + alasan follow."
     }
   ],
   "experiments": [
     {
       "id": "E1",
-      "change": "Cek status kelayakan tiap video di TikTok Studio (P0 — sekarang paling menentukan)",
+      "change": "Cek status kelayakan tiap video di TikTok Studio (P0 — satu-satunya yang paling menentukan)",
       "metric": "ada/tidak 'tidak layak untuk For You'"
     },
     {
       "id": "E2",
-      "change": "Uji 5 variasi dari video 27 Sep (49,2K views, like rate 8,3%, 290 share), satu elemen per variasi",
+      "change": "Uji 5 variasi dari video 27 Sep (49,2K views, like 8,2%, 2.095 simpan), satu elemen per variasi",
       "metric": "views per video"
     },
     {
       "id": "E3",
-      "change": "Pakai struktur video 13 Nov (like rate 14,7%) sebagai standar, uji 3 pembuka berbeda",
+      "change": "Pakai struktur video 13 Nov (like 14,8%, 11 simpan dari 223 views) sebagai standar, uji 3 pembuka",
       "metric": "views per video"
     },
     {
-      "id": "E5",
-      "change": "Seri bernomor (Sirin Part 1/2/3) + playlist + bio berjadwal",
-      "metric": "follow baru per 1.000 views"
-    },
-    {
       "id": "E4",
-      "change": "Catat waktu terbit asli 12 video terakhir dari Studio (timestamp ID tidak bisa dipakai untuk ini)",
-      "metric": "daftar waktu terbit + jarak antar terbit"
+      "change": "Seri bernomor (Sirin Part 1/2/3) + playlist + bio berjadwal — follow adalah target prediksi resmi",
+      "metric": "follow baru per 1.000 views"
     }
   ],
   "owner_numbers_wanted": [
@@ -264,7 +289,7 @@
     },
     {
       "metric": "Rata-rata durasi tonton + % selesai",
-      "resolves": "Dengan durasi 9–15 detik: retensi tinggi atau tidak"
+      "resolves": "With durasi 9–15 detik: retensi tinggi atau tidak"
     },
     {
       "metric": "Follower baru per 1.000 views",
@@ -284,6 +309,12 @@
       "apa": "Ditemukan video yang tidak terlihat dari luar: 'Siri Daily 05' (label Only you) — 79 views, 8 suka, terbit 8 Nov 08:24.",
       "kenapa": "Daftar 12 video publik bukan seluruh isi akun; video private/draft tidak muncul di grid publik.",
       "sumber": "TikTok Studio"
+    },
+    {
+      "tanggal": "2026-11-13",
+      "apa": "Klaim 'unggahan berdekatan / saling berebut slot' dicabut total.",
+      "kenapa": "Waktu TERBIT asli (createTime publik, dikonfirmasi Studio): 8 Nov 12:00 & 18:00 (6,00 jam), 9 Nov 12:01 & 18:23 (6,36 jam), 12 Nov 12:46 & 20:59 (8,22 jam). Semua pasangan hari yang sama terpisah 6 jam atau lebih — tidak ada unggahan berdekatan.",
+      "sumber": "halaman video publik (createTime) + screenshot TikTok Studio"
     }
   ]
 }
