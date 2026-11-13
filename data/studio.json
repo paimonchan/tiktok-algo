@@ -155,6 +155,126 @@
         "Yang dicari orang: 'yoo nari' 14,1% + 'manhwa' 13,6% + 'nari next door webtoon' 6,1% → nama karakter + kata 'manhwa' bekerja."
       ],
       "catatan_angka": "Angka 36K views / 68 jam / 1,5K follower itu ada di tab PROMOTE (promosi) — dikoreksi pemilik akun. Yang organik/seumur hidup ada di tab Overall: 49,2K views / 77 jam / rata-rata 5,8 detik / tuntas 12,32% / 1,6K follower baru (kartu 'Updated on 11/13/2026'). Jangan campur keduanya."
+    },
+    {
+      "id": "7707157230516276498",
+      "label": "Jurami Yapapa",
+      "terbit": "12 Nov 2026 12:46 WIB",
+      "terbit_konfirmasi": "Studio: 'Posted on Nov 12, 2026, 12:46 PM' — cocok dengan waktu terbit dari data publik",
+      "durasi_detik": 11,
+      "peran": "Pembanding — reach tanpa resonansi (21,2K views tapi like 0,6%)",
+      "metrik": [
+        [
+          "Views (kartu Key metrics, tab Overall)",
+          "13,2K"
+        ],
+        [
+          "Views seumur hidup (publik)",
+          "21,2K"
+        ],
+        [
+          "Total play time",
+          "10 jam 0 menit"
+        ],
+        [
+          "Rata-rata ditonton (hitung: play time ÷ views kartu)",
+          "≈2,7 detik dari 11,1 detik"
+        ],
+        [
+          "Follower baru dari video ini",
+          "83"
+        ],
+        [
+          "Suka",
+          "133"
+        ],
+        [
+          "Komentar",
+          "1"
+        ],
+        [
+          "Share",
+          "10"
+        ],
+        [
+          "Simpan",
+          "45"
+        ]
+      ],
+      "retention": [
+        [
+          "Rata-rata ditonton (hitung sendiri)",
+          "≈2,7 detik ≈ 25% dari 11,1 detik — bandingkan video juara 5,8 detik / 41%"
+        ],
+        [
+          "Titik paling banyak disukai",
+          "0:01"
+        ],
+        [
+          "Kurva like per detik",
+          "mulai 19% di 00:00, puncak sekitar 0:01, lalu turun"
+        ],
+        [
+          "Follower baru per 1.000 views",
+          "3,9 (video juara: 32,5)"
+        ]
+      ],
+      "traffic": [
+        [
+          "Belum dikirim",
+          "—"
+        ]
+      ],
+      "viewers": [
+        [
+          "Laki-laki",
+          "54%"
+        ],
+        [
+          "Perempuan",
+          "44%"
+        ],
+        [
+          "Lainnya",
+          "2%"
+        ],
+        [
+          "Usia 25–34",
+          "38% (terbesar)"
+        ],
+        [
+          "18–24",
+          "25%"
+        ],
+        [
+          "35–44",
+          "19%"
+        ],
+        [
+          "45–54",
+          "10%"
+        ],
+        [
+          "55+",
+          "8%"
+        ],
+        [
+          "Lokasi Indonesia",
+          "99,7%"
+        ],
+        [
+          "Amerika Serikat",
+          "0,3%"
+        ]
+      ],
+      "catatan_angka": "Di satu layar yang sama ada dua angka berbeda: baris atas 21K (play count seumur hidup) vs kartu Key metrics 13,2K. Kartu video juara memberi petunjuk: catatannya berbunyi 'Chart shows the data trend during the first 7 days after posting' — jadi kartu itu berjendela (7 hari pertama), bukan seumur hidup. Belum dikonfirmasi pemilik.",
+      "temuan": [
+        "Reach besar tapi retensinya cuma separuh video juara: ≈2,7 detik (≈25%) vs 5,8 detik (41%) — inilah kenapa like rate-nya 0,6%.",
+        "Konversi follower 8× lebih buruk: 3,9 follower per 1.000 views, sementara video juara 32,5 per 1.000 views.",
+        "Simpan cuma 45 (0,2% dari views) vs video juara 2.095 (4,3%) — videonya dilempar luas tapi tidak dianggap berharga.",
+        "Komentar 1 dan 'Top word insights are not ready yet' → tidak ada percakapan sama sekali.",
+        "Audiens: 99,7% Indonesia, dominan 25–34 tahun (38%), 54% laki-laki → bahasa, humor, dan konteks harus cocok dengan segmen ini."
+      ]
     }
   ]
 }
