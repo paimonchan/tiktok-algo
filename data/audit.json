@@ -221,9 +221,19 @@
   ],
   "patterns": [
     {
-      "title": "Retensi adalah pembeda nyata antar-video (terkonfirmasi 2 video)",
-      "detail": "Video juara 27 Sep: rata-rata 5,8 detik (41%), konversi 32,5 follower/1.000 views, simpan 4,3%. Video 12 Nov: rata-rata ≈2,7 detik (≈25%), konversi 3,9 follower/1.000 views, simpan 0,2%.",
-      "meaning": "Video 12 Nov dapat 21,2K views tapi penonton pergi di detik ke-2–3 → reach besar tanpa resonansi. Jadi masalahnya bukan 'tidak dilempar', tapi retensi begitu dilempar."
+      "title": "Sebagian besar jangkauan dan hampir semua follower baru datang dari PROMOTE",
+      "detail": "Video juara: 36K dari 49,2K views (73%), 68 dari 77 jam play time, dan ~1,5K dari 1,6K follower baru ada di tab Promote. Video 12 Nov: 13,2K dari 21,2K views dan 83 dari 90 follower baru juga dari Promote.",
+      "meaning": "Angka organik sesungguhnya jauh lebih kecil (juara ≈13K, 12 Nov ≈8K) dan follower organik ≈100 vs ≈7. Pertumbuhan akun ini dibeli, bukan didapat."
+    },
+    {
+      "title": "Retensi hampir sama — pembedanya KETUNTASAN dan konversi",
+      "detail": "Juara: retensi 41% (5,8 detik), tuntas 12,32%, 32,5 follower/1.000 views. 12 Nov: retensi 38% (4,2 detik), tuntas 3,94%, 4,2 follower/1.000 views. Drop: 0:01 vs 0:02.",
+      "meaning": "Dua-duanya kehilangan orang di detik pertama, tapi video juara 3× lebih banyak yang menonton sampai habis dan 8× lebih banyak yang jadi follower. Perbaiki bagian tengah-akhir video, bukan cuma hook."
+    },
+    {
+      "title": "Follower sendiri tidak menonton",
+      "detail": "Video juara: 1% penonton adalah follower. Video 12 Nov: 0% follower, 100% non-follower. Jangkauan organik video baru cuma ±100 views untuk akun ber-4.414 follower.",
+      "meaning": "Basis follower praktis inert (sebagian hasil Promote). Setiap video harus merebut penonton baru dari nol — dan sekarang gagal di tahap itu."
     },
     {
       "title": "For You bekerja — akun tidak sedang ditekan",

@@ -145,16 +145,41 @@
         ]
       ],
       "temuan": [
-        "PENTING: sebagian views video ini berasal dari PROMOTE (36K di tab Promote). Kalau angka itu untuk video ini, maka bagian organiknya hanya ±13K — patokan 'apa yang berhasil' harus dihitung dari bagian organik saja.",
-        "For You 70,9% → akun TIDAK sedang ditekan platform; kalau retensinya cukup, kontenmu memang dilempar.",
-        "Rata-rata ditonton 5,8 detik dari 14,1 detik (41%), dan cuma 12,32% yang menonton sampai habis — penonton berhenti di tengah, bukan di akhir.",
-        "Drop terbesar di 0:01, dan di 0:01 juga paling banyak yang suka → detik pertama menentukan dua-duanya.",
-        "Views per penonton 1,8× → orang mengulang videonya. Aset nyata: video ini 'diputar ulang', bukan 'dihabiskan sekali'.",
-        "99% penonton bukan follower, dan video ini menghasilkan 1,6K follower baru → mesin tumbuh = For You, bukan follower lama.",
+        "Retensi 41% dengan drop terbesar di 0:01, dan ketuntasan 12,32% — 3× lebih baik dari video 12 Nov.",
+        "For You 70,9% · 99% penonton non-follower · 1,8 views per penonton (banyak diputar ulang).",
+        "PENTING: ≈73% views video ini (36K dari 49,2K), 88% play time, dan ≈94% follower barunya datang dari PROMOTE. Bagian organiknya: ≈13,2K views dan ≈100 follower.",
         "Simpan 2.095 (4,3%) jauh di atas share (290) dan komentar (88) → kekuatan di 'disimpan', bukan 'dibicarakan'.",
         "Yang dicari orang: 'yoo nari' 14,1% + 'manhwa' 13,6% + 'nari next door webtoon' 6,1% → nama karakter + kata 'manhwa' bekerja."
       ],
-      "catatan_angka": "Angka 36K views / 68 jam / 1,5K follower itu ada di tab PROMOTE (promosi) — dikoreksi pemilik akun. Yang organik/seumur hidup ada di tab Overall: 49,2K views / 77 jam / rata-rata 5,8 detik / tuntas 12,32% / 1,6K follower baru (kartu 'Updated on 11/13/2026'). Jangan campur keduanya."
+      "catatan_angka": "Angka 36K views / 68 jam / 1,5K follower itu ada di tab PROMOTE (promosi) — dikoreksi pemilik akun. Yang organik/seumur hidup ada di tab Overall: 49,2K views / 77 jam / rata-rata 5,8 detik / tuntas 12,32% / 1,6K follower baru (kartu 'Updated on 11/13/2026'). Jangan campur keduanya.",
+      "promote": [
+        [
+          "Views dari Promote",
+          "36K"
+        ],
+        [
+          "Play time dari Promote",
+          "68 jam"
+        ],
+        [
+          "Follower baru dari Promote",
+          "1,5K"
+        ]
+      ],
+      "organik": [
+        [
+          "Views organik (49,2K − 36K)",
+          "≈13,2K"
+        ],
+        [
+          "Follower baru organik (1,6K − 1,5K)",
+          "≈100"
+        ],
+        [
+          "Porsi views dari Promote",
+          "≈73%"
+        ]
+      ]
     },
     {
       "id": "7707157230516276498",
@@ -165,24 +190,24 @@
       "peran": "Pembanding — reach tanpa resonansi (21,2K views tapi like 0,6%)",
       "metrik": [
         [
-          "Views (kartu Key metrics, tab Overall)",
-          "13,2K"
-        ],
-        [
-          "Views seumur hidup (publik)",
+          "Views (tab Overall, seumur hidup)",
           "21,2K"
         ],
         [
           "Total play time",
-          "10 jam 0 menit"
+          "18 jam 41 menit"
         ],
         [
-          "Rata-rata ditonton (hitung: play time ÷ views kartu)",
-          "≈2,7 detik dari 11,1 detik"
+          "Rata-rata ditonton (average watch time)",
+          "4,2 detik dari 11,1 detik"
+        ],
+        [
+          "Menonton sampai habis (watched full video)",
+          "3,94%"
         ],
         [
           "Follower baru dari video ini",
-          "83"
+          "90"
         ],
         [
           "Suka",
@@ -203,29 +228,69 @@
       ],
       "retention": [
         [
-          "Rata-rata ditonton (hitung sendiri)",
-          "≈2,7 detik ≈ 25% dari 11,1 detik — bandingkan video juara 5,8 detik / 41%"
+          "Rata-rata ditonton",
+          "38% dari 11,1 detik (= 4,2 detik)"
+        ],
+        [
+          "Menonton sampai habis",
+          "3,94%"
+        ],
+        [
+          "Titik paling banyak ditinggalkan",
+          "0:02"
         ],
         [
           "Titik paling banyak disukai",
           "0:01"
         ],
         [
-          "Kurva like per detik",
-          "mulai 19% di 00:00, puncak sekitar 0:01, lalu turun"
-        ],
-        [
-          "Follower baru per 1.000 views",
-          "3,9 (video juara: 32,5)"
+          "Umur tayang",
+          "lonjakan puncak 10,3K, lalu mati dalam 41 jam"
         ]
       ],
       "traffic": [
         [
-          "Belum dikirim",
-          "—"
+          "Other",
+          "50,1%"
+        ],
+        [
+          "For You",
+          "46,7%"
+        ],
+        [
+          "Personal profile",
+          "2,1%"
+        ],
+        [
+          "Following",
+          "1,0%"
+        ],
+        [
+          "Search",
+          "0,1%"
+        ],
+        [
+          "Direct messages",
+          "0,0%"
+        ],
+        [
+          "Sound",
+          "0,0%"
         ]
       ],
       "viewers": [
+        [
+          "Bukan follower",
+          "100%"
+        ],
+        [
+          "Follower",
+          "0%"
+        ],
+        [
+          "Total penonton",
+          "masih 'Processing…' di Studio"
+        ],
         [
           "Laki-laki",
           "54%"
@@ -259,7 +324,7 @@
           "8%"
         ],
         [
-          "Lokasi Indonesia",
+          "Indonesia",
           "99,7%"
         ],
         [
@@ -267,14 +332,44 @@
           "0,3%"
         ]
       ],
-      "catatan_angka": "Di satu layar yang sama ada dua angka berbeda: baris atas 21K (play count seumur hidup) vs kartu Key metrics 13,2K. Kartu video juara memberi petunjuk: catatannya berbunyi 'Chart shows the data trend during the first 7 days after posting' — jadi kartu itu berjendela (7 hari pertama), bukan seumur hidup. Belum dikonfirmasi pemilik.",
+      "catatan_angka": "Dua angka di satu layar: baris atas 21K (play seumur hidup) vs kartu 13,2K. Pemilik akun mengonfirmasi: angka yang hitam/tersorot di kartu itu tab PROMOTE. Angka seumur hidup ada di tab Overall: 21,2K / 18 jam 41 menit / 4,2 detik / tuntas 3,94% / 90 follower.",
       "temuan": [
-        "Reach besar tapi retensinya cuma separuh video juara: ≈2,7 detik (≈25%) vs 5,8 detik (41%) — inilah kenapa like rate-nya 0,6%.",
-        "Konversi follower 8× lebih buruk: 3,9 follower per 1.000 views, sementara video juara 32,5 per 1.000 views.",
-        "Simpan cuma 45 (0,2% dari views) vs video juara 2.095 (4,3%) — videonya dilempar luas tapi tidak dianggap berharga.",
-        "Komentar 1 dan 'Top word insights are not ready yet' → tidak ada percakapan sama sekali.",
+        "Retensinya 38% (4,2 detik) — hampir sama dengan video juara (41% / 5,8 detik). TAPI ketuntasannya cuma 3,94% vs 12,32% → penonton bertahan sebentar lalu pergi sebelum habis.",
+        "Konversi follower 4,2 per 1.000 views vs 32,5 di video juara → 8× lebih buruk.",
+        "Simpan 45 (0,2% dari views) vs 2.095 (4,3%) — tidak dianggap berharga.",
+        "For You cuma 46,7%, sementara 'Other' 50,1% → separuh traffic bukan dari rekomendasi biasa (konsisten dengan porsi Promote 62%).",
+        "100% penonton bukan follower, 0% follower → follower sendiri tidak menonton video ini.",
         "Audiens: 99,7% Indonesia, dominan 25–34 tahun (38%), 54% laki-laki → bahasa, humor, dan konteks harus cocok dengan segmen ini."
+      ],
+      "promote": [
+        [
+          "Views dari Promote",
+          "13,2K"
+        ],
+        [
+          "Play time dari Promote",
+          "10 jam"
+        ],
+        [
+          "Follower baru dari Promote",
+          "83"
+        ]
+      ],
+      "organik": [
+        [
+          "Views organik (21,2K − 13,2K)",
+          "≈8,0K"
+        ],
+        [
+          "Follower baru organik (90 − 83)",
+          "≈7"
+        ],
+        [
+          "Porsi views dari Promote",
+          "≈62%"
+        ]
       ]
     }
-  ]
+  ],
+  "ringkasan_promote": "Dua video terbaik akun ini sebagian besar berbayar: Promote menyumbang ≈73% views video juara dan ≈62% views video 12 Nov, serta ≈94% dan ≈92% dari follower barunya. Artinya angka 'juara' bukan cerminan performa organik, dan follower yang didapat hampir seluruhnya hasil bayar — sementara 99–100% penonton kedua video itu bukan follower (follower sendiri tidak menonton)."
 }

@@ -29,7 +29,7 @@
       "source": "Halaman /about kanal YouTube"
     }
   ],
-  "headline_finding": "4.414 follower, tapi video baru mentok ±100 views — padahal yang menonton menyukainya (median like rate 8,4%). Masalahnya jangkauan/distribusi, bukan kualitas konten. Mulai dari P0.",
+  "headline_finding": "Jangkauan organiknya ±100 views untuk akun ber-4.414 follower; angka besarnya selama ini sebagian dari Promote (berbayar).",
   "targets": [
     {
       "metric": "Median views",
@@ -38,16 +38,22 @@
       "why": "Bottleneck sebenarnya: jangkauan per video"
     },
     {
-      "metric": "Rata-rata ditonton (retensi)",
-      "now": "41% di video juara (5,8 detik)",
-      "target": "naikkan bertahap; jaga ≥40% saat reach naik",
-      "why": "Penentu utama apakah For You melanjutkan distribusi"
+      "metric": "Menonton sampai habis",
+      "now": "12,32% (juara) vs 3,94% (12 Nov)",
+      "target": "naikkan dan jaga ≥10%",
+      "why": "Pembeda utama antara dua video — 3× selisihnya"
     },
     {
-      "metric": "Menonton sampai habis",
-      "now": "12,32% di video juara",
-      "target": "di atas 12% sambil durasi pendek",
-      "why": "Ketuntasan lemah = sinyal negatif; hasil 'diputar ulang' lebih berharga"
+      "metric": "Follower baru per 1.000 views",
+      "now": "organik ≈4–7 (sisanya dari Promote)",
+      "target": ">10 tanpa Promote",
+      "why": "Ukuran asli apakah videonya menarik orang, bukan membeli"
+    },
+    {
+      "metric": "Porsi views dari Promote",
+      "now": "≈62–73% di dua video terbaik",
+      "target": "ukur organik dengan Promote dimatikan saat uji",
+      "why": "Selama Promote jalan, angka organik tidak bisa dibaca"
     },
     {
       "metric": "Like rate per video",
@@ -125,9 +131,9 @@
       "s": "target ≥5.500 dalam 4 minggu"
     },
     {
-      "k": "Median views",
-      "v": "±107",
-      "s": "12 video terakhir · target ≥1.000"
+      "k": "Retensi (2 video)",
+      "v": "41% & 38%",
+      "s": "juara & 12 Nov"
     },
     {
       "k": "Median like rate",
