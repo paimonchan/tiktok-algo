@@ -169,7 +169,7 @@
     {
       "date": "2026-11-14",
       "type": "temuan",
-      "title": "Inbox: video dihapus 7 Nov karena melanggar Guidelines, banding ditolak",
+      "title": "Inbox dibaca persis: dua video dihapus (1 Nov dipulihkan, 7 Nov banding ditolak)",
       "followers": 4414,
       "likes": 15000,
       "videos": 125,
@@ -177,14 +177,14 @@
       "actions": [
         "Pemilik akun kirim screenshot Inbox (Account updates)"
       ],
-      "result": "'Appeal not approved' (video melanggar Community Guidelines, tidak dipulihkan) + 'System notification' (video tayang 2026-11-07 16:36:15 dihapus) + 1 video dipulihkan setelah banding (1 Nov).",
+      "result": "'A video you posted on 2026-11-01 10:20:17 has been removed...' + banding hasil 'restored it' (1 Nov); 'A video you posted on 2026-11-07 16:36:15 has been removed...' + 'Appeal not approved'. Alasan rinci tidak ada di notifikasi.",
       "decision": "Tersangka utama pindah ke riwayat pelanggaran: cocok dengan jatuhnya jangkauan organik (18 Okt 8,4K → sejak 7 Nov 77–228 views). Langkah wajib: salin alasan pelanggaran + cek Account status & Account check.",
       "status": "berjalan"
     }
   ],
   "next_checkpoint": {
     "date": "2026-11-15",
-    "ask": "(1) Alasan resmi pelanggaran dari kedua notifikasi (yang ditolak & yang dipulihkan) (2) Account status + hasil Account check",
-    "why": "Menentukan apakah perbaikannya soal jenis konten (mis. gaya karakter) atau menunggu pulihnya status akun"
+    "ask": "Screenshot Pengaturan → Account status (alasan rinci per pelanggaran + status Healthy/Fair/Severe)",
+    "why": "Alasan rinci itulah yang menentukan perbaikan kontennya (gaya karakter, adegan, atau hal lain)"
   }
 }

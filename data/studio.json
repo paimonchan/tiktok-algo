@@ -743,9 +743,9 @@
   "kesimpulan_utama": "Urutan kualitas ≠ urutan jangkauan. Empat video: yang dibayar (49,2K dan 21,2K) tetap yang berjangkauan besar apa pun kualitasnya, sementara dua video organik mentok di 228 dan 90 views — dan videonya sendiri cuma 90 views, di bawah ambang data TikTok (100). Kualitas berpengaruh lemah pada jalur organik (51% retensi → 228 views vs 21% → 90 views), tapi tidak menjelaskan selisih ratusan kali dibanding jalur berbayar.",
   "penyelidikan": [
     {
-      "tersangka": "Riwayat pelanggaran: 1 video DIHAPUS 7 Nov (banding ditolak) + 1 video dipulihkan 1 Nov",
+      "tersangka": "Riwayat pelanggaran: DUA video dihapus (1 Nov & 7 Nov); yang 7 Nov bandingnya DITOLAK",
       "status": "PALING KUAT — waktunya cocok persis dengan jatuhnya jangkauan",
-      "bukti": "Inbox: 'Appeal not approved' — video melanggar Community Guidelines dan tidak akan dipulihkan (6 hari lalu); 'System notification' — video yang tayang 2026-11-07 16:36:15 dihapus karena melanggar; 'Your video appeal result' — ada video lain yang dipulihkan setelah ditinjau (1 Nov). TikTok sendiri: pelanggaran menurunkan status akun, dan \"accounts that post a lot of content that's ineligible for the FYF may be made ineligible for the FYF as a whole\"."
+      "bukti": "Inbox, kutipan persis: (1) \"A video you posted on 2026-11-01 10:20:17 has been removed for violating our Community Guidelines\" (1 Nov); (2) \"Your video appeal result — Thanks for your appeal. Our policy team has reviewed your video, and has restored it\" (1 Nov → video dipulihkan); (3) \"A video you posted on 2026-11-07 16:36:15 has been removed for violating our Community Guidelines\" (6 hari lalu) + notifikasi \"Appeal not approved\" (video tidak dipulihkan). TikTok: pelanggaran menurunkan status akun; akun yang sering posting konten tidak layak FYF bisa dibuat tidak layak FYF secara keseluruhan. Sejak 7 Nov, semua video organik mentok 77–228 views."
     },
     {
       "tersangka": "Label AI-generated menekan jangkauan",
@@ -769,11 +769,11 @@
     }
   ],
   "cara_cek": [
-    "Buka notifikasi pelanggaran di Inbox (yang 'Appeal not approved' dan yang dipulihkan) → salin ALASAN resminya. Ini menentukan perbaikan kontennya.",
-    "Account check: Profil → ☰ → TikTok Studio → More tools → Account check. Cari peringatan (tanda seru) atau semua centang hijau.",
-    "Account status: Pengaturan → Account status (Healthy / Fair / Severe / Banned). Pelanggaran dihitung 90 hari terakhir.",
+    "Buka Pengaturan → Account status: di situ alasan rinci per video (mis. sexual content / nudity / violence) + tanggal. Ini yang paling menentukan perbaikannya.",
+    "Buka kedua notifikasi di Inbox → 'View more': kalau ada teks lengkapnya, salin.",
+    "Account check: Profil → ☰ → TikTok Studio → More tools → Account check (cari tanda seru / peringatan).",
     "Analytics video: cek tulisan 'Ineligible for For You feed' pada video yang mentok + tombol banding.",
-    "Uji pencarian dari akun lain: cari username persis + frasa unik dari caption. Kalau tidak muncul, itu tanda pembatasan level akun.",
+    "Uji pencarian dari akun lain: cari username persis + frasa unik dari caption.",
     "Content Check Lite di TikTok Studio (web): cek SEBELUM posting."
   ],
   "sumber_kebijakan": [
@@ -793,12 +793,16 @@
       "8,4K views — terakhir kali jangkauan organik masih ribuan"
     ],
     [
-      "1 Nov",
-      "ada video yang dihapus lalu DIPULIHKAN setelah banding"
+      "1 Nov 10:20",
+      "video DIHAPUS karena melanggar Guidelines → banding diterima, video DIPULIHKAN"
+    ],
+    [
+      "7 Nov 16:36",
+      "video DIHAPUS karena melanggar Guidelines → banding DITOLAK, tidak dipulihkan"
     ],
     [
       "7 Nov",
-      "105 views — dan video 7 Nov (16:36) DIHAPUS karena melanggar Guidelines"
+      "105 views (video lain yang masih tayang)"
     ],
     [
       "8 Nov",
@@ -824,5 +828,6 @@
       "13 Nov",
       "228 views — retensi terbaik (51%), 16% penonton follower"
     ]
-  ]
+  ],
+  "catatan_alasan": "Notifikasi TikTok tidak menyebut alasan rinci — hanya 'violating our Community Guidelines'. Alasan per video (mis. sexual content, nudity, violence) hanya muncul di Pengaturan → Account status. Itu sebabnya langkah berikutnya wajib ke sana."
 }
