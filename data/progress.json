@@ -211,11 +211,26 @@
       "result": "Login, Posts, Comments, Profile, DM, Account discoverability, Strikes and Warnings — semua hijau; 'No outstanding issues'; Post status 30 post terakhir tanpa penanda masalah.",
       "decision": "Tersangka utama tinggal satu: jenis konten AI-generated (pernyataan resmi TikTok). Uji 2 video non-AI tanpa Promote = langkah penentu berikutnya.",
       "status": "selesai"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "temuan",
+      "title": "Penandaan otomatis dalam menit; judul 'Smol Candy' & 'Smol & Stretch' yang kena",
+      "followers": 4414,
+      "likes": 15000,
+      "videos": 125,
+      "median_views": 98,
+      "actions": [
+        "Baca 2 halaman 'Appeal approved' (status banding + detail video)"
+      ],
+      "result": "'Sirin Smol Candy' (posting 11 Okt 08:12 · banding 09:02 · disetujui 17:23) dan 'Sirin Smol & Stretch' (posting 17 Okt 10:22 · banding 10:35 · disetujui 18 Okt 10:36). Penandaan terjadi 13–50 menit setelah posting = moderasi otomatis.",
+      "decision": "Daftar elemen berisiko disusun (kata & framing yang menggabungkan isyarat kecil/anak dengan tubuh). Langkah tetap: uji 2 video non-AI + ubah judul/kerangka konten.",
+      "status": "berhasil"
     }
   ],
   "next_checkpoint": {
     "date": "2026-11-20",
-    "ask": "Hasil uji 2 video non-AI (jangkauan organik) + jawaban: karakter animasinya buatan sendiri atau dari webtoon yang sudah ada?",
-    "why": "Semua hipotesis hukuman sudah gugur; tinggal memisahkan 'jenis konten' vs 'level akun'"
+    "ask": "(1) Uji 2 video non-AI tanpa Promote (2) Jawaban: karakter animasinya buatan sendiri atau dari webtoon yang sudah ada? (hashtag 'weebtooncharacter...' muncul di captionmu)",
+    "why": "Ini memisahkan 'jenis konten' vs 'level akun', sekaligus menutup jalur risiko unoriginal/IP"
   }
 }

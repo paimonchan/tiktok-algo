@@ -343,6 +343,19 @@
         }).join('') + '</ul>';
       if (st.catatan_pola_pelanggaran) h += '<p class="ui-quiet">' + esc(st.catatan_pola_pelanggaran) + '</p>';
     }
+
+    if (st.video_dipulihkan) {
+      h += '<h2>Video yang ditandai lalu dipulihkan (banding menang)</h2><ul class="ui-list">' +
+        st.video_dipulihkan.map(function (x) {
+          return '<li><strong>' + esc(x.caption) + '</strong><br><span class="ui-quiet">Posting ' + esc(x.posted) +
+            ' · banding diajukan ' + esc(x.banding_diajukan) + ' · disetujui ' + esc(x.banding_disetujui) + '</span><br><span class="ui-quiet">' + esc(x.catatan) + '</span></li>';
+        }).join('') + '</ul>';
+      if (st.pola_penandaan) h += '<p class="ui-quiet">' + esc(st.pola_penandaan) + '</p>';
+    }
+    if (st.elemen_berisiko) {
+      h += '<h2>Elemen yang sebaiknya dihindari</h2><ul class="ui-list">' +
+        st.elemen_berisiko.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>';
+    }
     if (st.cara_cek) {
       h += '<h2>Langkah cek (dari sisi akun) — ' + st.cara_cek.length + ' langkah</h2><ol>' +
         st.cara_cek.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ol>';

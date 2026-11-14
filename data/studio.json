@@ -874,5 +874,31 @@
     "Kalau video non-AI dapat 1.000+ views → terbukti yang menahan adalah jenis konten (AI), bukan akun dan bukan kualitas.",
     "Kalau video non-AI juga mentok ±100–230 → masalahnya level akun/distribusi, dan kita lanjut ke jalur lain."
   ],
-  "account_check_bonus": "Bonus verifikasi: Account check menampilkan waktu post dalam UTC — video 13 Nov tertulis 'Posted on 11/13/2026 04:29 AM' = 11:29 WIB, sama dengan waktu terbit yang kami hitung dari data publik. Metode waktu kita terverifikasi lagi."
+  "account_check_bonus": "Bonus verifikasi: Account check menampilkan waktu post dalam UTC — video 13 Nov tertulis 'Posted on 11/13/2026 04:29 AM' = 11:29 WIB, sama dengan waktu terbit yang kami hitung dari data publik. Metode waktu kita terverifikasi lagi.",
+  "video_dipulihkan": [
+    {
+      "caption": "Sirin Smol Candy #manhwa #manhwarecomendations #minimaxh3 #manhwamodern #weebtooncharacternakanglim",
+      "posted": "11 Okt 08:12",
+      "banding_diajukan": "11 Okt 09:02",
+      "banding_disetujui": "11 Okt 17:23",
+      "catatan": "Banding diajukan 50 menit setelah posting — jadi ditandai sistem secara OTOMATIS, bukan karena laporan orang."
+    },
+    {
+      "caption": "Sirin Smol & Stretch #webtoon #manhwaedits #aianimation #manhwa #minimaxh3",
+      "posted": "17 Okt 10:22",
+      "banding_diajukan": "17 Okt 10:35",
+      "banding_disetujui": "18 Okt 10:36",
+      "catatan": "Banding diajukan hanya 13 menit setelah posting — penandaan otomatis terjadi hampir seketika."
+    }
+  ],
+  "pola_penandaan": "Dua video yang ditandai lalu dipulihkan ini judulnya memakai kata yang menggabungkan isyarat kecil/anak dengan isyarat tubuh: “Smol Candy” dan “Smol & Stretch”. Kombinasi seperti itu adalah pemicu paling umum moderasi otomatis (youth safety / sexualisasi) pada konten anime-AI. Bandingnya dimenangkan, artinya isinya sebenarnya tidak melanggar — tapi penandaan tetap terjadi, dan penandaan itu menahan distribusi.",
+  "elemen_berisiko": [
+    "Hindari kata 'smol', 'candy', 'stretch' (atau kombinasi lain yang menggabungkan isyarat kecil/anak dengan isyarat tubuh) di judul, caption, dan hashtag.",
+    "Hindari pose/framing yang bisa dibaca sugestif: kamera menempel ke tubuh, pakaian minim, posisi melengkung/menungging, fokus ke bagian tubuh tertentu.",
+    "Hindari karakter yang tampak anak-anak dalam konteks apa pun yang bisa dibaca sugestif — ini pemicu paling sering di kategori youth safety.",
+    "Judul lebih aman: fokus ke cerita/gaya, bukan ke tubuh — mis. 'Sirin - scene kereta', 'Sirin & Bellavi: part 2'.",
+    "Hashtag lebih aman: #manhwa #aianimation #animation #storytime — hindari hashtag yang menandai karakter kecil + tema tubuh sekaligus.",
+    "Selalu ajukan banding setiap kali ditandai: 3 dari 4 bandingmu dimenangkan, jadi sistemnya memang sering salah tandai.",
+    "Cek dulu sebelum posting: Content Check Lite di TikTok Studio (web) — memberi tahu peluang kelayakan For You sebelum video tayang."
+  ]
 }
