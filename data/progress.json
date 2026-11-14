@@ -180,11 +180,27 @@
       "result": "Enam notifikasi penghapusan 'removed for violating our Community Guidelines' + tiga banding diterima (dipulihkan) dan satu ditolak (video 7 Nov). Pola jangkauan organik jatuh ke 77–228 views sejak November.",
       "decision": "Tersangka utama pindah ke riwayat pelanggaran: cocok dengan jatuhnya jangkauan organik (18 Okt 8,4K → sejak 7 Nov 77–228 views). Langkah wajib: salin alasan pelanggaran + cek Account status & Account check.",
       "status": "berjalan"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "riset",
+      "title": "Account check bersih; tersangka utama pindah ke jenis konten (AI-generated)",
+      "followers": 4414,
+      "likes": 15000,
+      "videos": 125,
+      "median_views": 98,
+      "actions": [
+        "Baca hasil Account check dari pemilik akun: 'No outstanding issues'",
+        "Riset pernyataan resmi TikTok soal konten AI di For You dan kontrol feed AI"
+      ],
+      "result": "Hipotesis hukuman akun gugur (Account check bersih). TikTok secara resmi menyatakan konten berlabel AI bisa tidak dimasukkan ke For You meski tidak melanggar; pengguna juga punya slider untuk mengurangi konten AI, dan TikTok menargetkan akun khusus AI spam.",
+      "decision": "Uji penentu: upload 2 video non-AI tanpa Promote, bandingkan dengan baseline 77–228 views. Kalau dapat 1.000+, terbukti jenis kontennya yang menahan.",
+      "status": "berjalan"
     }
   ],
   "next_checkpoint": {
-    "date": "2026-11-15",
-    "ask": "Screenshot Pengaturan → Account status: alasan rinci tiap pelanggaran + status akun (Healthy/Fair/Severe)",
-    "why": "6 penghapusan dalam 4 minggu = pemicu paling mungkin dari jangkauan seret; alasan rinci menentukan elemen konten mana yang harus dihindari"
+    "date": "2026-11-20",
+    "ask": "Hasil uji 2 video non-AI (jangkauan organik) + jawaban: karakter animasinya buatan sendiri atau dari webtoon yang sudah ada?",
+    "why": "Ini yang memisahkan 'jenis konten' vs 'level akun' sebagai penyebab"
   }
 }

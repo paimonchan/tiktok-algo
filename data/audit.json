@@ -219,78 +219,7 @@
       "source": "cuplikan mesin pencari"
     }
   ],
-  "patterns": [
-    {
-      "title": "Enam video dihapus dalam 4 minggu — pelanggaran berulang, bukan masalah kualitas",
-      "detail": "Dihapus: 11 Okt 08:12 & 19:14 · 17 Okt 10:22 & 10:40 · 1 Nov 10:20 · 7 Nov 16:36 (semua 'violating our Community Guidelines'). Tiga banding diterima (video dipulihkan), yang 7 Nov ditolak. Sejak pelanggaran November, semua video organik mentok 77–228 views.",
-      "meaning": "Kualitas video hanya menggeser sedikit di dalam rentang ratusan (51% retensi → 228 views vs 21% → 90), sementara plafon ratusan sejak November paling cocok dijelaskan oleh riwayat pelanggaran berulang → status akun. Konsekuensi praktis: perbaikan harus menyentuh jenis kontennya, bukan cuma hook."
-    },
-    {
-      "title": "Video dengan kualitas TERBAIK justru jangkauan TERKECIL",
-      "detail": "13 Nov (228 views, organik murni): retensi 51%, tuntas 13,2%, like 15,4%, share 3,1% — semuanya di atas video juara (41% / 12,32% / 8,2% / 0,6%).",
-      "meaning": "Kualitas dan retensi bukan penyebab jangkauan mentok. Sumber traffic pun benar (For You 83,3%) — hanya VOLUME eksposurnya kecil (228 views dalam 18 jam). Tersangka yang tersisa: penandaan tidak layak For You, per video atau level akun."
-    },
-    {
-      "title": "Kualitas berpengaruh lemah di jalur organik, tidak di jalur berbayar",
-      "detail": "Organik: 13 Nov (retensi 51%, tuntas 13,2%) → 228 views; 10 Nov (retensi 21%, tuntas 2,42%) → 90 views. Berbayar: 12 Nov (tuntas 3,94%) → 21,2K; 27 Sep (tuntas 12,32%) → 49,2K.",
-      "meaning": "Jadi jalur organik memang masih merespons kualitas (2,5× lebih banyak views untuk video yang jauh lebih baik), tapi plafonnya di ratusan. Yang membedakan bukan kualitas video, melainkan apakah videonya dibayar atau tidak."
-    },
-    {
-      "title": "Video organik dilempar ke kolam hangat, bukan audiens dingin",
-      "detail": "10 Nov: 61% penonton 'kembali menonton' dan ≈19% follower (82 penonton unik, 90 views). 13 Nov: 16% follower. Untuk video berbayar: 1% (27 Sep) dan 0% (12 Nov) follower.",
-      "meaning": "Video organik beredar di lingkaran orang yang sudah mengenal akunmu, dengan volume kecil. Audiens dingin baru datang saat dibayar."
-    },
-    {
-      "title": "Label AI-generated BUKAN penyebab jangkauan seret",
-      "detail": "TikTok menyatakannya resmi dua kali: \"Turning on the AI-generated content setting won't affect the distribution of your video as long as it doesn't violate our Community Guidelines.\" Label juga tidak diwajibkan untuk gaya artistik seperti anime.",
-      "meaning": "Jadi jangan buang tenaga mengubah label AI. Yang perlu dicek: status kelayakan For You (per video dan level akun) serta kebijakan 'unoriginal content'."
-    },
-    {
-      "title": "Sebagian besar jangkauan dan hampir semua follower baru datang dari PROMOTE",
-      "detail": "Video juara: 36K dari 49,2K views (73%), 68 dari 77 jam play time, dan ~1,5K dari 1,6K follower baru ada di tab Promote. Video 12 Nov: 13,2K dari 21,2K views dan 83 dari 90 follower baru juga dari Promote.",
-      "meaning": "Angka organik sesungguhnya jauh lebih kecil (juara ≈13K, 12 Nov ≈8K) dan follower organik ≈100 vs ≈7. Pertumbuhan akun ini dibeli, bukan didapat."
-    },
-    {
-      "title": "Retensi hampir sama — pembedanya KETUNTASAN dan konversi",
-      "detail": "Juara: retensi 41% (5,8 detik), tuntas 12,32%, 32,5 follower/1.000 views. 12 Nov: retensi 38% (4,2 detik), tuntas 3,94%, 4,2 follower/1.000 views. Drop: 0:01 vs 0:02.",
-      "meaning": "Dua-duanya kehilangan orang di detik pertama, tapi video juara 3× lebih banyak yang menonton sampai habis dan 8× lebih banyak yang jadi follower. Perbaiki bagian tengah-akhir video, bukan cuma hook. Catatan penting: pola ini berlaku antar-video BERJANGKAUAN, tapi tidak menjelaskan jangkauan — video 13 Nov dengan ketuntasan 13,2% tetap cuma dapat 228 views."
-    },
-    {
-      "title": "Follower sendiri tidak menonton",
-      "detail": "Video juara: 1% penonton adalah follower. Video 12 Nov: 0% follower, 100% non-follower. Jangkauan organik video baru cuma ±100 views untuk akun ber-4.414 follower.",
-      "meaning": "Basis follower praktis inert (sebagian hasil Promote). Setiap video harus merebut penonton baru dari nol — dan sekarang gagal di tahap itu."
-    },
-    {
-      "title": "For You bukan sumber masalahnya — VOLUME eksposurnya yang kecil",
-      "detail": "13 Nov (organik): For You 83,3% dari 228 views. 12 Nov: For You 46,7% dengan 'Other' 50,1% (konsisten dengan porsi berbayar 62%). 27 Sep: For You 70,9%. Video organik memang disajikan dari For You — tapi 228 views dalam 18 jam, puncak 31 views/jam.",
-      "meaning": "Jangan lagi bekerja untuk 'supaya masuk For You' — video itu sudah masuk. Pertanyaannya sekarang: kenapa jatah eksposurnya sedikit."
-    },
-    {
-      "title": "Detik pertama adalah segalanya",
-      "detail": "Video juara: rata-rata ditonton 41% dari 14 detik, penonton paling banyak berhenti di 0:01 — dan paling banyak menyukai juga di 0:01 (Studio).",
-      "meaning": "Frame pembuka menentukan dua-duanya: yang bertahan dan yang suka. Ini juga kandidat penyebab video ±100 views."
-    },
-    {
-      "title": "Follower bukan mesin jangkauan besar",
-      "detail": "Video berbayar: 99% (27 Sep) dan 100% (12 Nov) penontonnya non-follower. Video organik: 16% (13 Nov) dan ≈19% (10 Nov) penonton adalah follower — tapi volumenya cuma ratusan views, dan 61% penonton 10 Nov adalah orang yang sudah pernah menonton konten ini.",
-      "meaning": "Follower tidak membawa jangkauan besar; pada video organik follower hanya bagian kecil dari kolam hangat yang dilempar."
-    },
-    {
-      "title": "Yang kuat itu 'disimpan', bukan 'dibicarakan'",
-      "detail": "Video juara: 2.095 simpan (4,3% views), 290 share (0,6%), 88 komentar (0,2%) (Studio + publik).",
-      "meaning": "Topik kata di komentar isinya sampah platform ('via tiktok', 'tiktok lite') → tidak ada percakapan nyata. Optimasi ke simpan/share, bukan ke komentar."
-    },
-    {
-      "title": "Jangkauan mentok di ±100 views padahal like rate sehat",
-      "detail": "9 dari 12 video: 77–223 views, like rate 6,5%–14,8% (median 8,4%).",
-      "meaning": "Kontennya resonan; yang gagal adalah distribusinya."
-    },
-    {
-      "title": "Semua pasangan hari sama terpisah 6 jam atau lebih",
-      "detail": "8 Nov: 12:00 & 18:00 (6,0 j) · 9 Nov: 12:01 & 18:23 (6,4 j) · 12 Nov: 12:46 & 20:59 (8,2 j).",
-      "meaning": "Klaim lama 'unggahan berdekatan' salah dan sudah dicabut."
-    }
-  ],
+  "patterns": [],
   "experiments": [
     {
       "id": "E1",
