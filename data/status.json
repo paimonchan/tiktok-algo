@@ -32,97 +32,82 @@
   "headline_finding": "Video terbaiknya (retensi 51%, tuntas 13,2%) cuma dapat 228 views; yang berjangkauan besar justru yang dibayar Promote.",
   "targets": [
     {
-      "metric": "Median views",
-      "now": "±107",
-      "target": "≥1.000 dalam 4 minggu",
-      "why": "Bottleneck sebenarnya: jangkauan per video"
+      "metric": "Notifikasi penghapusan",
+      "now": "6 dalam sebulan",
+      "target": "0 selama 2 minggu berturut-turut",
+      "why": "Tanda formula visual sudah keluar dari zona yang ditandai otomatis"
+    },
+    {
+      "metric": "Views organik per video",
+      "now": "77–228",
+      "target": ">1.000 (baseline akun uji jadi patokan)",
+      "why": "Ukuran apakah plafon sudah tembus"
     },
     {
       "metric": "Menonton sampai habis",
-      "now": "12,32% (juara) vs 3,94% (12 Nov)",
-      "target": "naikkan dan jaga ≥10%",
-      "why": "Pembeda utama antara dua video — 3× selisihnya"
+      "now": "3,94–13,2%",
+      "target": "≥10% konsisten",
+      "why": "Pembeda nyata antar video, dan penentu konversi"
     },
     {
-      "metric": "Follower baru per 1.000 views",
-      "now": "organik ≈4–7 (sisanya dari Promote)",
-      "target": ">10 tanpa Promote",
+      "metric": "Simpan (saves)",
+      "now": "0–4,8% dari views",
+      "target": "≥4% konsisten",
+      "why": "Sinyal terkuatmu (video juara 4,3% pada basis 200× lebih besar)"
+    },
+    {
+      "metric": "Follower baru per 1.000 views (organik)",
+      "now": "0–7 (sisanya dari Promote)",
+      "target": ">10",
       "why": "Ukuran asli apakah videonya menarik orang, bukan membeli"
     },
     {
       "metric": "Porsi views dari Promote",
-      "now": "≈62–73% di dua video terbaik",
-      "target": "ukur organik dengan Promote dimatikan saat uji",
+      "now": "62–73% di dua video terbaik",
+      "target": "0% selama pengukuran organik",
       "why": "Selama Promote jalan, angka organik tidak bisa dibaca"
-    },
-    {
-      "metric": "Like rate per video",
-      "now": "4,1%–14,7% (median 8,4%)",
-      "target": "≥8% konsisten",
-      "why": "Sudah tercapai — bukan ini yang menahan"
-    },
-    {
-      "metric": "% traffic dari For You",
-      "now": "belum dikirim",
-      "target": ">60%",
-      "why": "Memisahkan masalah prediksi dari masalah kelayakan"
-    },
-    {
-      "metric": "% selesai nonton",
-      "now": "belum dikirim",
-      "target": "≥50%",
-      "why": "Durasi 9–15 detik: retensi dalam durasi pendek"
-    },
-    {
-      "metric": "Komentar per video",
-      "now": "0–2",
-      "target": "≥10",
-      "why": "Sinyal ranking resmi + bahan balasan berbentuk video"
-    },
-    {
-      "metric": "Simpan (saves) per video",
-      "now": "0–11 di video kecil (0–5% dari views)",
-      "target": "≥2% dari views konsisten",
-      "why": "Niat audiens; saat ini cuma video besar yang tinggi"
     }
   ],
   "phases": [
     {
-      "id": "fase-1",
-      "name": "Fase 1 — Audit & perbaikan gratis",
-      "window": "Minggu 1 (13–19 Nov 2026)",
+      "name": "Fase 1 — Bersihkan pemicu (minggu ini)",
+      "window": "Mulai sekarang, selesai dalam 7 hari",
       "status": "berjalan",
       "goals": [
-        "Account check: cari peringatan (Profil → ☰ → TikTok Studio → More tools → Account check)",
-        "Cek tulisan 'Ineligible for For You feed' di analytics video yang mentok (13 Nov & 10 Nov)",
-        "Cek Account status (Healthy/Fair/Severe) + uji pencarian dari akun lain",
-        "Uji kontrol: 3–4 video tanpa Promote, catat plafon organiknya"
+        "Stop pakai Promote selama uji — Promote menyumbang 62–73% views & 92–94% follower baru, jadi selama jalan angka organik tidak bisa dibaca.",
+        "Ubah formula visual: karakter jelas DEWASA, framing netral, tanpa close-up tubuh/pose melengkung. Satu perubahan per video supaya ketahuan mana yang menghentikan penandaan.",
+        "Buang kata & judul bergaya 'smol/stretch/candy' dan hashtag yang mencampur isyarat kecil/anak dengan tema tubuh.",
+        "Jalankan uji 3 video TANPA Promote: A (kontrol gaya sekarang) · B (visual diperbaiki) · C (bukan AI — rekaman layar/gambar tangan/video biasa).",
+        "Target terukur: 0 notifikasi penghapusan dalam 7 hari (sekarang 6 dalam sebulan)."
       ],
-      "done_when": "Sudah jelas apakah akun/video kena pembatasan For You atau tidak"
+      "done_when": "Ada hasil uji A/B/C + nol penandaan baru → ketahuan apakah yang menahan jenis konten, visual, atau level akun"
     },
     {
-      "id": "fase-2",
-      "name": "Fase 2 — Hook, retensi, dan seri",
-      "window": "Minggu 2–4",
+      "name": "Fase 2 — Terapkan formula yang menang (minggu 2–4)",
+      "window": "Setelah hasil uji terbaca",
       "status": "menunggu",
       "goals": [
-        "Hook 1,5 detik + teks di layar + frame akhir menyambung ke awal",
-        "Seri bernomor (Sirin Part 1/2/3) + playlist + bio yang menjanjikan konten berulang",
-        "Uji 5 variasi dari video terbaik (27 Sep: 49,2K views, like rate 8,2%), ubah satu elemen per variasi"
+        "Pakai formula dari video dengan jangkauan organik terbaik, konsisten 1 unggahan/hari.",
+        "Hook 0:00–0:01: mulai dari frame paling menarik — drop terbesar memang di detik 0:01–0:02.",
+        "Seri bernomor (Part 1/2/3) supaya penonton part 1 mencari part 2 → jalur follow dari profil (sekarang 10–11% traffic profil).",
+        "Optimasi SIMPAN & SHARE, bukan komentar: kekuatanmu 4,3–4,8% simpan; kejar 5%+.",
+        "Caption & teks di video pakai kata yang benar-benar dicari: 'manhwa' + nama karakter (di data: 'yoo nari' 14,1%, 'manhwa' 13,6%).",
+        "Balas semua komentar (sekarang 0–2 komentar/video) supaya sinyal komentar hidup.",
+        "Ukur tiap minggu: views organik, retensi, tuntas, simpan, follower per 1.000 views."
       ],
-      "done_when": "Like rate ≥5% di mayoritas video baru dan follower baru ≥10 per 1.000 views"
+      "done_when": "Rata-rata views organik naik jelas di atas baseline 77–228, atau terbukti plafonnya memang dari faktor di luar kendali"
     },
     {
-      "id": "fase-3",
-      "name": "Fase 3 — Skala & aset yang bisa dipakai orang lain",
-      "window": "Bulan 2+",
+      "name": "Fase 3 — Skala atau ganti jalur (bulan 2–3)",
+      "window": "Kalau plafon organik tidak bergerak",
       "status": "menunggu",
       "goals": [
-        "Dorong original sound jadi tren yang dipakai kreator lain",
-        "Perluas ke fandom manhwa spesifik (kata kunci pencarian + karakter)",
-        "Baru setelah TikTok stabil: rombak YouTube Shorts"
+        "Uji akun kedua dengan formula baru (kalau akun lama tetap mentok) — untuk memisahkan 'level akun' dari 'jenis konten'.",
+        "Campur jenis konten: sebagian non-AI/karya sendiri (rekaman proses, gambar tangan) supaya tidak seluruh feed berisi konten yang dibatasi.",
+        "Kalau karakter berasal dari webtoon yang sudah ada: buat karakter sendiri atau ubah cukup jauh, supaya tidak kena jalur unoriginal/IP.",
+        "Kalau sudah pulih: baru pertimbangkan Promote — dan hanya untuk mempercepat video yang sudah terbukti organik, bukan untuk menutupi."
       ],
-      "done_when": "Ada video dari akun lain yang memakai sound milik kita"
+      "done_when": "Ada setidaknya satu jalur (akun lama atau akun uji) dengan jangkauan organik 1.000+ views stabil"
     }
   ],
   "headline_stats": [
