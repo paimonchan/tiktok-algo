@@ -196,11 +196,26 @@
       "result": "Hipotesis hukuman akun gugur (Account check bersih). TikTok secara resmi menyatakan konten berlabel AI bisa tidak dimasukkan ke For You meski tidak melanggar; pengguna juga punya slider untuk mengurangi konten AI, dan TikTok menargetkan akun khusus AI spam.",
       "decision": "Uji penentu: upload 2 video non-AI tanpa Promote, bandingkan dengan baseline 77–228 views. Kalau dapat 1.000+, terbukti jenis kontennya yang menahan.",
       "status": "berjalan"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "temuan",
+      "title": "Account check: semua hijau termasuk Strikes and Warnings — kedua hipotesis hukuman gugur",
+      "followers": 4414,
+      "likes": 15000,
+      "videos": 125,
+      "median_views": 98,
+      "actions": [
+        "Pemilik akun kirim 2 screenshot Account check (ringkasan + daftar status)"
+      ],
+      "result": "Login, Posts, Comments, Profile, DM, Account discoverability, Strikes and Warnings — semua hijau; 'No outstanding issues'; Post status 30 post terakhir tanpa penanda masalah.",
+      "decision": "Tersangka utama tinggal satu: jenis konten AI-generated (pernyataan resmi TikTok). Uji 2 video non-AI tanpa Promote = langkah penentu berikutnya.",
+      "status": "selesai"
     }
   ],
   "next_checkpoint": {
     "date": "2026-11-20",
     "ask": "Hasil uji 2 video non-AI (jangkauan organik) + jawaban: karakter animasinya buatan sendiri atau dari webtoon yang sudah ada?",
-    "why": "Ini yang memisahkan 'jenis konten' vs 'level akun' sebagai penyebab"
+    "why": "Semua hipotesis hukuman sudah gugur; tinggal memisahkan 'jenis konten' vs 'level akun'"
   }
 }

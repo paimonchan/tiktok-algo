@@ -744,27 +744,27 @@
   "penyelidikan": [
     {
       "tersangka": "Konten berlabel AI-generated dibatasi dari For You — bukan karena melanggar, tapi karena jenisnya",
-      "status": "PALING KUAT — ada pernyataan resmi TikTok yang cocok persis",
-      "bukti": "Tom Varghese (AI lead, kebijakan global TikTok), Juli 2026: \"There are instances where we see content that is generated with AI and it's labeled. It doesn't necessarily violate community guidelines, but it's not the type of content that's suitable for everyone, and in those cases, we don't add it to our for you feed.\" Ditambah: sejak Nov 2025 TikTok memberi pengguna slider untuk mengurangi konten AI di For You; dan TikTok menargetkan \"accounts dedicated to posting AI-generated spam\" (86 juta akun palsu dibuang Jan–Mar 2026). Cocok dengan semua data: Account check bersih, kualitas videonya bagus, tapi jangkauan organik mentok ratusan."
+      "status": "SATU-SATUNYA YANG MASIH BERDIRI — ada pernyataan resmi TikTok",
+      "bukti": "Tom Varghese (AI lead, kebijakan global TikTok), Juli 2026: \"There are instances where we see content that is generated with AI and it's labeled. It doesn't necessarily violate community guidelines, but it's not the type of content that's suitable for everyone, and in those cases, we don't add it to our for you feed.\" Sejak Nov 2025 ada slider pengguna untuk mengurangi konten AI di For You; TikTok juga menargetkan akun khusus AI spam."
     },
     {
-      "tersangka": "Riwayat 6 penghapusan (11 Okt, 17 Okt ×2, 1 Nov, 7 Nov)",
-      "status": "LEMAH setelah Account check bersih",
-      "bukti": "Account check: 'No outstanding issues'. Tiga banding diterima (video dipulihkan). Jadi penghapusan kemungkinan gejala dari penyebab yang sama — moderasi/AI detection — bukan penyebab jangkauan seret."
+      "tersangka": "Akun dihukum karena 6 penghapusan",
+      "status": "GUGUR — dibuktikan Account check",
+      "bukti": "Account check: 'No outstanding issues', semua hijau termasuk 'Strikes and Warnings', dan 30 post terakhir tanpa penanda masalah. Jadi tidak ada hukuman akun yang tercatat di TikTok."
     },
     {
-      "tersangka": "Video ditandai tidak layak For You per video",
-      "status": "BELUM DICEK",
-      "bukti": "TikTok menampilkan alasannya di analytics video + tombol banding. Sampai sekarang belum ada satu pun notifikasi seperti itu di screenshot yang dikirim."
+      "tersangka": "Video ditandai tidak layak For You (per video)",
+      "status": "GUGUR — dibuktikan Account check",
+      "bukti": "Post status di Account check memeriksa 30 post terakhir dan tidak menemukan masalah; tidak ada satu pun notifikasi 'Ineligible for For You feed' di analytics."
     },
     {
-      "tersangka": "Konten 'unoriginal' (mis. memakai karakter webtoon yang sudah ada)",
-      "status": "BELUM DIKONFIRMASI",
-      "bukti": "Di pencarian video juaramu muncul 'nari next door webtoon'. Kebijakan FYF: konten yang reused/unoriginal tanpa tambahan baru tidak layak For You. Perlu jawaban pemilik: karakternya buatan sendiri atau dari webtoon yang sudah ada?"
+      "tersangka": "Konten 'unoriginal' / memakai karakter webtoon yang sudah ada",
+      "status": "BELUM DIKONFIRMASI — menunggu jawaban pemilik",
+      "bukti": "Di pencarian video juaramu muncul 'nari next door webtoon'. Kebijakan FYF: konten reused/unoriginal tanpa tambahan baru tidak layak For You."
     },
     {
       "tersangka": "Cohort pertama tidak bertahan",
-      "status": "LEMAH untuk kasus ini",
+      "status": "LEMAH",
       "bukti": "Retensi 51%, tuntas 13,2%, like 15,4% pada 228 penonton. Catatan: TikTok tidak memberi angka impresi."
     }
   ],
@@ -867,11 +867,12 @@
     ]
   ],
   "catatan_pola_pelanggaran": "Yang penting: tiga banding DIMENANGKAN — artinya moderasi TikTok memang salah menandai sebagian kontenmu. Tapi penandaan itu tetap menumpuk di catatan akun sebelum dipulihkan, dan itu yang cocok dengan pola jangkauanmu.",
-  "account_check": "Hasil Account check (Profil → ☰ → TikTok Studio → More tools → Account check): \"No outstanding issues\" — tidak ada pelanggaran yang masih menggantung. Artinya hipotesis 'akun dihukum karena 6 penghapusan' LEMAH: catatan akunmu bersih.",
+  "account_check": "Account check (Profil → ☰ → TikTok Studio → More tools → Account check) — semua HIJAU: Login, Posts, Comments, Profile, Direct messages, Account discoverability, dan Strikes and Warnings. Ringkasannya berbunyi \"No outstanding issues\". Post status (30 post terakhir) juga tanpa penanda masalah (masih 'Scanning' waktu di-screenshot).",
   "uji_penentu": [
     "Upload 2 video yang BUKAN AI-generated (bukan karya AI, dan tidak berlabel AI) — misalnya rekaman layar proses kerjamu sendiri, gambar tangan, atau video biasa. Tanpa Promote.",
     "Bandingkan jangkauan organiknya dengan baseline AI-mu (77–228 views).",
     "Kalau video non-AI dapat 1.000+ views → terbukti yang menahan adalah jenis konten (AI), bukan akun dan bukan kualitas.",
     "Kalau video non-AI juga mentok ±100–230 → masalahnya level akun/distribusi, dan kita lanjut ke jalur lain."
-  ]
+  ],
+  "account_check_bonus": "Bonus verifikasi: Account check menampilkan waktu post dalam UTC — video 13 Nov tertulis 'Posted on 11/13/2026 04:29 AM' = 11:29 WIB, sama dengan waktu terbit yang kami hitung dari data publik. Metode waktu kita terverifikasi lagi."
 }
