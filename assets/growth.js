@@ -335,6 +335,14 @@
           return '<li><strong>' + esc(x[0]) + '</strong> — ' + esc(x[1]) + '</li>';
         }).join('') + '</ul>';
     }
+
+    if (st.pelanggaran) {
+      h += '<h2>Catatan pelanggaran yang terlihat di Inbox</h2><ul class="ui-list">' +
+        st.pelanggaran.map(function (x) {
+          return '<li><strong>' + esc(x[0]) + '</strong> — ' + esc(x[1]) + '<br><span class="ui-quiet">' + esc(x[2]) + '</span></li>';
+        }).join('') + '</ul>';
+      if (st.catatan_pola_pelanggaran) h += '<p class="ui-quiet">' + esc(st.catatan_pola_pelanggaran) + '</p>';
+    }
     if (st.cara_cek) {
       h += '<h2>5 langkah cek (dari sisi akun)</h2><ol>' +
         st.cara_cek.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ol>';

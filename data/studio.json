@@ -743,9 +743,9 @@
   "kesimpulan_utama": "Urutan kualitas ≠ urutan jangkauan. Empat video: yang dibayar (49,2K dan 21,2K) tetap yang berjangkauan besar apa pun kualitasnya, sementara dua video organik mentok di 228 dan 90 views — dan videonya sendiri cuma 90 views, di bawah ambang data TikTok (100). Kualitas berpengaruh lemah pada jalur organik (51% retensi → 228 views vs 21% → 90 views), tapi tidak menjelaskan selisih ratusan kali dibanding jalur berbayar.",
   "penyelidikan": [
     {
-      "tersangka": "Riwayat pelanggaran: DUA video dihapus (1 Nov & 7 Nov); yang 7 Nov bandingnya DITOLAK",
-      "status": "PALING KUAT — waktunya cocok persis dengan jatuhnya jangkauan",
-      "bukti": "Inbox, kutipan persis: (1) \"A video you posted on 2026-11-01 10:20:17 has been removed for violating our Community Guidelines\" (1 Nov); (2) \"Your video appeal result — Thanks for your appeal. Our policy team has reviewed your video, and has restored it\" (1 Nov → video dipulihkan); (3) \"A video you posted on 2026-11-07 16:36:15 has been removed for violating our Community Guidelines\" (6 hari lalu) + notifikasi \"Appeal not approved\" (video tidak dipulihkan). TikTok: pelanggaran menurunkan status akun; akun yang sering posting konten tidak layak FYF bisa dibuat tidak layak FYF secara keseluruhan. Sejak 7 Nov, semua video organik mentok 77–228 views."
+      "tersangka": "Riwayat pelanggaran berulang: 6 video dihapus dalam 4 minggu (11 Okt, 17 Okt ×2, 1 Nov, 7 Nov)",
+      "status": "PALING KUAT — cocok dengan waktu jatuhnya jangkauan",
+      "bukti": "Inbox (Account updates), kutipan: \"A video you posted on 2026-10-11 08:12:12 has been removed...\", \"...2026-10-11 19:14:39...\", \"...2026-10-17 10:22:49...\", \"...2026-10-17 10:40:24...\", \"...2026-11-01 10:20:17...\", \"...2026-11-07 16:36:15...\" — semua \"removed for violating our Community Guidelines\". Tiga banding diterima (video dipulihkan), satu DITOLAK (video 7 Nov). TikTok: pelanggaran berulang menurunkan status akun, dan akun yang banyak memposting konten tidak layak FYF bisa dibuat tidak layak FYF secara keseluruhan. Sejak pelanggaran November, semua video organik mentok 77–228 views."
     },
     {
       "tersangka": "Label AI-generated menekan jangkauan",
@@ -829,5 +829,38 @@
       "228 views — retensi terbaik (51%), 16% penonton follower"
     ]
   ],
-  "catatan_alasan": "Notifikasi TikTok tidak menyebut alasan rinci — hanya 'violating our Community Guidelines'. Alasan per video (mis. sexual content, nudity, violence) hanya muncul di Pengaturan → Account status. Itu sebabnya langkah berikutnya wajib ke sana."
+  "catatan_alasan": "Notifikasi TikTok tidak menyebut alasan rinci — hanya 'violating our Community Guidelines'. Alasan per video (mis. sexual content, nudity, violence) hanya muncul di Pengaturan → Account status. Itu sebabnya langkah berikutnya wajib ke sana.",
+  "pelanggaran": [
+    [
+      "11 Okt 08:12:12",
+      "video dihapus (melanggar Community Guidelines)",
+      "banding DITERIMA → dipulihkan"
+    ],
+    [
+      "11 Okt 19:14:39",
+      "video dihapus (melanggar Community Guidelines)",
+      "tidak terlihat hasil bandingnya"
+    ],
+    [
+      "17 Okt 10:22:49",
+      "video dihapus (melanggar Community Guidelines)",
+      "tidak terlihat hasil bandingnya"
+    ],
+    [
+      "17 Okt 10:40:24",
+      "video dihapus (melanggar Community Guidelines)",
+      "banding DITERIMA (18 Okt) → dipulihkan"
+    ],
+    [
+      "1 Nov 10:20:17",
+      "video dihapus (melanggar Community Guidelines)",
+      "banding DITERIMA (1 Nov) → dipulihkan"
+    ],
+    [
+      "7 Nov 16:36:15",
+      "video dihapus (melanggar Community Guidelines)",
+      "banding DITOLAK → tidak dipulihkan"
+    ]
+  ],
+  "catatan_pola_pelanggaran": "Yang penting: tiga banding DIMENANGKAN — artinya moderasi TikTok memang salah menandai sebagian kontenmu. Tapi penandaan itu tetap menumpuk di catatan akun sebelum dipulihkan, dan itu yang cocok dengan pola jangkauanmu."
 }
