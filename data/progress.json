@@ -226,6 +226,21 @@
       "result": "'Sirin Smol Candy' (posting 11 Okt 08:12 · banding 09:02 · disetujui 17:23) dan 'Sirin Smol & Stretch' (posting 17 Okt 10:22 · banding 10:35 · disetujui 18 Okt 10:36). Penandaan terjadi 13–50 menit setelah posting = moderasi otomatis.",
       "decision": "Daftar elemen berisiko disusun (kata & framing yang menggabungkan isyarat kecil/anak dengan tubuh). Langkah tetap: uji 2 video non-AI + ubah judul/kerangka konten.",
       "status": "berhasil"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "koreksi",
+      "title": "Video ke-3 dipulihkan berjudul netral — koreksi: pemicu penandaan ada di visual, bukan judul",
+      "followers": 4414,
+      "likes": 15000,
+      "videos": 125,
+      "median_views": 98,
+      "actions": [
+        "Baca halaman appeal 'Sirin and Kanglim' (posting 1 Nov 10:20 · banding 11:20 · disetujui 23:35)"
+      ],
+      "result": "Tiga video yang ditandai lalu dipulihkan; yang ketiga berjudul netral tanpa kata berisiko, tetap ditandai dalam 1 jam. Jadi pemicunya visual (animasi anime-AI), bukan judul.",
+      "decision": "Daftar elemen berisiko diubah jadi visual-first: karakter harus terlihat jelas dewasa, framing netral, uji satu perubahan visual sekaligus. Uji 2 video non-AI tetap jadi langkah penentu.",
+      "status": "berhasil"
     }
   ],
   "next_checkpoint": {

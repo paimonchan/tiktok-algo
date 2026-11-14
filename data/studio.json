@@ -889,16 +889,23 @@
       "banding_diajukan": "17 Okt 10:35",
       "banding_disetujui": "18 Okt 10:36",
       "catatan": "Banding diajukan hanya 13 menit setelah posting — penandaan otomatis terjadi hampir seketika."
+    },
+    {
+      "caption": "Sirin and Kanglim #aianimation #manhwa ...",
+      "posted": "1 Nov 10:20",
+      "banding_diajukan": "1 Nov 11:20",
+      "banding_disetujui": "1 Nov 23:35",
+      "catatan": "Banding diajukan 1 jam setelah posting. Judulnya NETRAL (tidak ada kata berisiko) tapi tetap ditandai → pemicunya bukan di judul, melainkan di visualnya."
     }
   ],
-  "pola_penandaan": "Dua video yang ditandai lalu dipulihkan ini judulnya memakai kata yang menggabungkan isyarat kecil/anak dengan isyarat tubuh: “Smol Candy” dan “Smol & Stretch”. Kombinasi seperti itu adalah pemicu paling umum moderasi otomatis (youth safety / sexualisasi) pada konten anime-AI. Bandingnya dimenangkan, artinya isinya sebenarnya tidak melanggar — tapi penandaan tetap terjadi, dan penandaan itu menahan distribusi.",
+  "pola_penandaan": "Koreksi penting: judul berisiko (“Smol Candy”, “Smol & Stretch”) memang ada di dua video, TAPI video ketiga — “Sirin and Kanglim” — judulnya netral dan tetap ditandai dalam 1 jam. Jadi pemicu utamanya bukan kata di judul, melainkan VISUAL kontennya (animasi anime-AI dengan karakter yang sama, gaya yang sama). Penandaan terjadi 13–100 menit setelah posting pada ketiga video = moderasi otomatis, dan 3 dari 4 banding dimenangkan = sistemnya memang salah tandai.",
   "elemen_berisiko": [
-    "Hindari kata 'smol', 'candy', 'stretch' (atau kombinasi lain yang menggabungkan isyarat kecil/anak dengan isyarat tubuh) di judul, caption, dan hashtag.",
-    "Hindari pose/framing yang bisa dibaca sugestif: kamera menempel ke tubuh, pakaian minim, posisi melengkung/menungging, fokus ke bagian tubuh tertentu.",
-    "Hindari karakter yang tampak anak-anak dalam konteks apa pun yang bisa dibaca sugestif — ini pemicu paling sering di kategori youth safety.",
-    "Judul lebih aman: fokus ke cerita/gaya, bukan ke tubuh — mis. 'Sirin - scene kereta', 'Sirin & Bellavi: part 2'.",
-    "Hashtag lebih aman: #manhwa #aianimation #animation #storytime — hindari hashtag yang menandai karakter kecil + tema tubuh sekaligus.",
-    "Selalu ajukan banding setiap kali ditandai: 3 dari 4 bandingmu dimenangkan, jadi sistemnya memang sering salah tandai.",
-    "Cek dulu sebelum posting: Content Check Lite di TikTok Studio (web) — memberi tahu peluang kelayakan For You sebelum video tayang."
+    "Prioritas utama (karena pemicunya di visual, bukan judul): buat karakter terlihat jelas DEWASA — proporsi tubuh, tinggi, wajah, dan gaya rambut yang tidak kekanak-kanakan.",
+    "Hindari framing yang bisa dibaca sugestif: kamera menempel ke tubuh, close-up bagian tubuh, pakaian minim, pose melengkung/menungging.",
+    "Hindari adegan yang bisa dibaca sugestif walau sekilas — moderasi otomatis menilai per-frame, bukan niat.",
+    "Judul tetap dijaga: hindari kata seperti 'smol', 'candy', 'stretch' (kombinasi isyarat kecil/anak + tema tubuh).",
+    "Uji satu perubahan visual sekaligus (mis. ganti desain karakter jadi jelas dewasa) supaya ketahuan mana yang menghentikan penandaan.",
+    "Selalu ajukan banding cepat begitu ada notifikasi penghapusan: 3 dari 4 bandingmu dimenangkan.",
+    "Cek sebelum posting: Content Check Lite di TikTok Studio (web) memberi tahu peluang kelayakan For You sebelum video tayang."
   ]
 }
