@@ -328,6 +328,13 @@
           return '<li><strong>' + esc(x.tersangka) + '</strong> — <em>' + esc(x.status) + '</em><br><span class="ui-quiet">' + esc(x.bukti) + '</span></li>';
         }).join('') + '</ul>';
     }
+
+    if (st.timeline_jangkauan) {
+      h += '<h2>Timeline: kapan jangkauannya jatuh</h2><ul class="ui-list">' +
+        st.timeline_jangkauan.map(function (x) {
+          return '<li><strong>' + esc(x[0]) + '</strong> — ' + esc(x[1]) + '</li>';
+        }).join('') + '</ul>';
+    }
     if (st.cara_cek) {
       h += '<h2>5 langkah cek (dari sisi akun)</h2><ol>' +
         st.cara_cek.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ol>';

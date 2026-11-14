@@ -743,6 +743,11 @@
   "kesimpulan_utama": "Urutan kualitas ≠ urutan jangkauan. Empat video: yang dibayar (49,2K dan 21,2K) tetap yang berjangkauan besar apa pun kualitasnya, sementara dua video organik mentok di 228 dan 90 views — dan videonya sendiri cuma 90 views, di bawah ambang data TikTok (100). Kualitas berpengaruh lemah pada jalur organik (51% retensi → 228 views vs 21% → 90 views), tapi tidak menjelaskan selisih ratusan kali dibanding jalur berbayar.",
   "penyelidikan": [
     {
+      "tersangka": "Riwayat pelanggaran: 1 video DIHAPUS 7 Nov (banding ditolak) + 1 video dipulihkan 1 Nov",
+      "status": "PALING KUAT — waktunya cocok persis dengan jatuhnya jangkauan",
+      "bukti": "Inbox: 'Appeal not approved' — video melanggar Community Guidelines dan tidak akan dipulihkan (6 hari lalu); 'System notification' — video yang tayang 2026-11-07 16:36:15 dihapus karena melanggar; 'Your video appeal result' — ada video lain yang dipulihkan setelah ditinjau (1 Nov). TikTok sendiri: pelanggaran menurunkan status akun, dan \"accounts that post a lot of content that's ineligible for the FYF may be made ineligible for the FYF as a whole\"."
+    },
+    {
       "tersangka": "Label AI-generated menekan jangkauan",
       "status": "GUGUR — pernyataan resmi TikTok",
       "bukti": "Creator Academy + Help Center: \"Turning on the AI-generated content setting won't affect the distribution of your video as long as it doesn't violate our Community Guidelines.\" Label juga tidak diwajibkan untuk gaya artistik seperti anime."
@@ -764,11 +769,12 @@
     }
   ],
   "cara_cek": [
+    "Buka notifikasi pelanggaran di Inbox (yang 'Appeal not approved' dan yang dipulihkan) → salin ALASAN resminya. Ini menentukan perbaikan kontennya.",
     "Account check: Profil → ☰ → TikTok Studio → More tools → Account check. Cari peringatan (tanda seru) atau semua centang hijau.",
-    "Analytics video: buka video yang mentok, cari tulisan 'Ineligible for For You feed' / 'not eligible' + alasan + tombol banding.",
-    "Status akun: Pengaturan → Account status (Healthy / Fair / Severe / Banned) — mencerminkan pelanggaran 90 hari terakhir.",
+    "Account status: Pengaturan → Account status (Healthy / Fair / Severe / Banned). Pelanggaran dihitung 90 hari terakhir.",
+    "Analytics video: cek tulisan 'Ineligible for For You feed' pada video yang mentok + tombol banding.",
     "Uji pencarian dari akun lain: cari username persis + frasa unik dari caption. Kalau tidak muncul, itu tanda pembatasan level akun.",
-    "Content Check Lite di TikTok Studio (web): cek SEBELUM posting, dia bilang apakah video berpeluang layak direkomendasikan For You."
+    "Content Check Lite di TikTok Studio (web): cek SEBELUM posting."
   ],
   "sumber_kebijakan": [
     "TikTok Community Guidelines — Integrity & Authenticity: tiktok.com/safety/en/policies-and-engagement/integrity-authenticity",
@@ -776,5 +782,47 @@
     "TikTok Creator Academy — AI-generated content label (label tidak menurunkan distribusi): tiktok.com/creator-academy/en/article/ai-generated-content-label",
     "TikTok For You feed eligibility standards: tiktok.com/community-guidelines/en/fyf-standards",
     "TikTok Help Center — AI-generated content: tiktok.com/tns-inapp/pages/ai-generated-content"
+  ],
+  "timeline_jangkauan": [
+    [
+      "27 Sep",
+      "49,2K views — ≈73% dibayar (organik ≈13K)"
+    ],
+    [
+      "18 Okt",
+      "8,4K views — terakhir kali jangkauan organik masih ribuan"
+    ],
+    [
+      "1 Nov",
+      "ada video yang dihapus lalu DIPULIHKAN setelah banding"
+    ],
+    [
+      "7 Nov",
+      "105 views — dan video 7 Nov (16:36) DIHAPUS karena melanggar Guidelines"
+    ],
+    [
+      "8 Nov",
+      "77 & 93 views"
+    ],
+    [
+      "9 Nov",
+      "145 & 106 views"
+    ],
+    [
+      "10 Nov",
+      "90 views — 21% retensi, 2,42% tuntas, 0 follower"
+    ],
+    [
+      "11 Nov",
+      "107 views"
+    ],
+    [
+      "12 Nov",
+      "21,2K views — ≈62% dibayar (organik ≈8K)"
+    ],
+    [
+      "13 Nov",
+      "228 views — retensi terbaik (51%), 16% penonton follower"
+    ]
   ]
 }
