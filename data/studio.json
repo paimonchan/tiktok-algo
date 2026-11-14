@@ -869,10 +869,12 @@
   "catatan_pola_pelanggaran": "Yang penting: tiga banding DIMENANGKAN — artinya moderasi TikTok memang salah menandai sebagian kontenmu. Tapi penandaan itu tetap menumpuk di catatan akun sebelum dipulihkan, dan itu yang cocok dengan pola jangkauanmu.",
   "account_check": "Account check (Profil → ☰ → TikTok Studio → More tools → Account check) — semua HIJAU: Login, Posts, Comments, Profile, Direct messages, Account discoverability, dan Strikes and Warnings. Ringkasannya berbunyi \"No outstanding issues\". Post status (30 post terakhir) juga tanpa penanda masalah (masih 'Scanning' waktu di-screenshot).",
   "uji_penentu": [
-    "Upload 2 video yang BUKAN AI-generated (bukan karya AI, dan tidak berlabel AI) — misalnya rekaman layar proses kerjamu sendiri, gambar tangan, atau video biasa. Tanpa Promote.",
-    "Bandingkan jangkauan organiknya dengan baseline AI-mu (77–228 views).",
-    "Kalau video non-AI dapat 1.000+ views → terbukti yang menahan adalah jenis konten (AI), bukan akun dan bukan kualitas.",
-    "Kalau video non-AI juga mentok ±100–230 → masalahnya level akun/distribusi, dan kita lanjut ke jalur lain."
+    "Video A — KONTROL: gaya seperti sekarang (animasi anime-AI, karakter & framing sekarang). Tanpa Promote.",
+    "Video B — VISUAL DIPERBAIKI: gaya sama, tapi karakter dibuat jelas dewasa dan framing netral (tanpa close-up tubuh/pose sugestif). Tanpa Promote.",
+    "Video C — BUKAN AI: rekaman layar proses kerjamu, gambar tangan, atau video biasa (tidak dibuat AI, tidak berlabel AI). Tanpa Promote.",
+    "Catat per video selama 48 jam: views organik, retensi, like/share/simpan, dan APAKAH ada notifikasi penghapusan.",
+    "Baca hasilnya: (a) C dapat 1.000+ views & B/A tetap ratusan → yang menahan jenis konten AI. (b) B dapat ribuan, A tetap ratusan → yang menahan visual/framing spesifik. (c) A, B, C sama-sama ratusan → masalahnya level akun/distribusi, bukan konten.",
+    "Jangan pakai Promote selama uji — kalau dipakai, angka organik tidak bisa dibaca."
   ],
   "account_check_bonus": "Bonus verifikasi: Account check menampilkan waktu post dalam UTC — video 13 Nov tertulis 'Posted on 11/13/2026 04:29 AM' = 11:29 WIB, sama dengan waktu terbit yang kami hitung dari data publik. Metode waktu kita terverifikasi lagi.",
   "video_dipulihkan": [
