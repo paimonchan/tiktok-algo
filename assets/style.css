@@ -538,3 +538,8 @@ body.drawer-open .drawer { transform: none; visibility: visible; }
   details > summary { display: none; }
   .card { box-shadow: none; }
 }
+
+/* ---------- anti-overflow: kata panjang tidak boleh melebarkan layout ---------- */
+html, body { max-width: 100%; }
+.layout > *, .wrap > *, .content, .content * { min-width: 0; }
+.content, .content p, .content li, .content td, .content dd, .side-block, .side-block * { overflow-wrap: anywhere; }
