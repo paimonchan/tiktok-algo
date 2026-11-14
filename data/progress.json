@@ -241,6 +241,21 @@
       "result": "Tiga video yang ditandai lalu dipulihkan; yang ketiga berjudul netral tanpa kata berisiko, tetap ditandai dalam 1 jam. Jadi pemicunya visual (animasi anime-AI), bukan judul.",
       "decision": "Daftar elemen berisiko diubah jadi visual-first: karakter harus terlihat jelas dewasa, framing netral, uji satu perubahan visual sekaligus. Uji 2 video non-AI tetap jadi langkah penentu.",
       "status": "berhasil"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "temuan",
+      "title": "Banding 7 Nov ditolak; TikTok hanya menyebut 'Community Guidelines' tanpa alasan spesifik",
+      "followers": 4414,
+      "likes": 15000,
+      "videos": 125,
+      "median_views": 98,
+      "actions": [
+        "Baca halaman 'Appeal not approved' untuk video 7 Nov"
+      ],
+      "result": "Banding diajukan & ditolak 7 Nov 16:53. Alasan yang diberikan hanya 'Community Guidelines' — tidak ada kategori spesifik. Metadata video yang dihapus hilang (tanggal tertulis '01-01 at 7:00 AM' = placeholder).",
+      "decision": "Penggalian dari sisi TikTok selesai (tidak ada alasan rinci yang tersedia). Bukti berikutnya harus dari uji terkontrol: desain 3 video tanpa Promote.",
+      "status": "selesai"
     }
   ],
   "next_checkpoint": {

@@ -352,6 +352,11 @@
         }).join('') + '</ul>';
       if (st.pola_penandaan) h += '<p class="ui-quiet">' + esc(st.pola_penandaan) + '</p>';
     }
+
+    if (st.alasan_dari_tiktok) {
+      h += '<h2>Apa kata TikTok soal alasannya</h2><p>' + esc(st.alasan_dari_tiktok) + '</p>';
+      if (st.catatan_metadata) h += '<p class="ui-quiet">' + esc(st.catatan_metadata) + '</p>';
+    }
     if (st.elemen_berisiko) {
       h += '<h2>Elemen yang sebaiknya dihindari</h2><ul class="ui-list">' +
         st.elemen_berisiko.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>';

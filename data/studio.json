@@ -750,7 +750,7 @@
     {
       "tersangka": "Akun dihukum karena 6 penghapusan",
       "status": "GUGUR — dibuktikan Account check",
-      "bukti": "Account check: 'No outstanding issues', semua hijau termasuk 'Strikes and Warnings', dan 30 post terakhir tanpa penanda masalah. Jadi tidak ada hukuman akun yang tercatat di TikTok."
+      "bukti": "Account check: 'No outstanding issues', semua hijau termasuk 'Strikes and Warnings', dan 30 post terakhir tanpa penanda masalah. Jadi tidak ada hukuman akun yang tercatat di TikTok. Catatan: semua notifikasi & halaman banding hanya menyebut “Community Guidelines” tanpa kategori spesifik — jadi tidak ada alasan rinci yang bisa ditarik dari sisi TikTok."
     },
     {
       "tersangka": "Video ditandai tidak layak For You (per video)",
@@ -863,7 +863,7 @@
     [
       "7 Nov 16:36:15",
       "video dihapus (melanggar Community Guidelines)",
-      "banding DITOLAK → tidak dipulihkan"
+      "banding DITOLAK (diajukan & ditolak 7 Nov 16:53) → video tidak dipulihkan"
     ]
   ],
   "catatan_pola_pelanggaran": "Yang penting: tiga banding DIMENANGKAN — artinya moderasi TikTok memang salah menandai sebagian kontenmu. Tapi penandaan itu tetap menumpuk di catatan akun sebelum dipulihkan, dan itu yang cocok dengan pola jangkauanmu.",
@@ -909,5 +909,7 @@
     "Uji satu perubahan visual sekaligus (mis. ganti desain karakter jadi jelas dewasa) supaya ketahuan mana yang menghentikan penandaan.",
     "Selalu ajukan banding cepat begitu ada notifikasi penghapusan: 3 dari 4 bandingmu dimenangkan.",
     "Cek sebelum posting: Content Check Lite di TikTok Studio (web) memberi tahu peluang kelayakan For You sebelum video tayang."
-  ]
+  ],
+  "alasan_dari_tiktok": "Halaman banding yang ditolak berbunyi: “We reviewed your appeal and found that your video violates our Community Guidelines. Your video will not be restored.” Bagian “Violation reasons” hanya menulis kategori umum: “Community Guidelines” — TIDAK ada kategori spesifik (mis. sexual content / nudity / violence). Jadi penyebab pastinya tidak bisa digali lebih jauh dari sisi TikTok; yang tersisa hanya uji terkontrol.",
+  "catatan_metadata": "Di halaman video yang sudah dihapus, metadata-nya hilang: caption kosong dan tanggal posting tertulis “01-01 at 7:00 AM” — itu placeholder, bukan tanggal asli. Waktu asli video 7 Nov tetap 7 Nov 16:36 (UTC) dari notifikasi penghapusan."
 }
