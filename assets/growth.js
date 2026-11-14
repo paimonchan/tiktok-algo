@@ -344,7 +344,7 @@
       if (st.catatan_pola_pelanggaran) h += '<p class="ui-quiet">' + esc(st.catatan_pola_pelanggaran) + '</p>';
     }
     if (st.cara_cek) {
-      h += '<h2>5 langkah cek (dari sisi akun)</h2><ol>' +
+      h += '<h2>Langkah cek (dari sisi akun) — ' + st.cara_cek.length + ' langkah</h2><ol>' +
         st.cara_cek.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ol>';
     }
     if (st.sumber_kebijakan) {
